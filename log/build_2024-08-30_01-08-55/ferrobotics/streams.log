@@ -1,0 +1,34 @@
+[0.012s] Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24
+[0.147s] [  2%] Built target ferrobotics__cpp
+[0.147s] [ 12%] Built target ferrobotics__rosidl_generator_c
+[0.147s] [ 12%] Built target ament_cmake_python_symlink_ferrobotics
+[0.147s] [ 27%] Built target ferrobotics__rosidl_typesupport_c
+[0.147s] [ 34%] Built target ferrobotics__rosidl_typesupport_cpp
+[0.147s] [ 44%] Built target ferrobotics__rosidl_typesupport_introspection_cpp
+[0.147s] [ 55%] Built target ferrobotics__rosidl_typesupport_fastrtps_cpp
+[0.147s] [ 65%] Built target ferrobotics__rosidl_typesupport_fastrtps_c
+[0.147s] [ 76%] Built target ferrobotics__rosidl_typesupport_introspection_c
+[0.147s] [ 76%] Built target ferrobotics
+[0.147s] [ 78%] Built target ferrobotics__py
+[0.147s] [ 87%] Built target ferrobotics__rosidl_generator_py
+[0.147s] [ 95%] Built target ferrobotics__rosidl_typesupport_fastrtps_c__pyext
+[0.147s] [ 95%] Built target ferrobotics__rosidl_typesupport_introspection_c__pyext
+[0.147s] [100%] Built target ferrobotics__rosidl_typesupport_c__pyext
+[0.147s] Traceback (most recent call last):
+[0.147s]   File "/home/zzy/ur_real/build/ferrobotics/ament_cmake_python/ferrobotics/setup.py", line 1, in <module>
+[0.147s]     from setuptools import find_packages
+[0.147s]   File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/__init__.py", line 27, in <module>
+[0.147s]     from .dist import Distribution
+[0.147s]   File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/dist.py", line 18, in <module>
+[0.147s]     from . import (
+[0.147s]   File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_entry_points.py", line 6, in <module>
+[0.147s]     from jaraco.text import yield_lines
+[0.147s]   File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_vendor/jaraco/text/__init__.py", line 12, in <module>
+[0.148s]     from jaraco.context import ExceptionTrap
+[0.148s]   File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_vendor/jaraco/context.py", line 17, in <module>
+[0.148s]     from backports import tarfile
+[0.148s] ImportError: cannot import name 'tarfile' from 'backports' (/home/zzy/anaconda3/lib/python3.11/site-packages/backports/__init__.py)
+[0.148s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_ferrobotics_egg.dir/build.make:70：CMakeFiles/ament_cmake_python_build_ferrobotics_egg] 错误 1
+[0.148s] gmake[1]: *** [CMakeFiles/Makefile2:447：CMakeFiles/ament_cmake_python_build_ferrobotics_egg.dir/all] 错误 2
+[0.148s] gmake: *** [Makefile:146：all] 错误 2
+[0.152s] Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24

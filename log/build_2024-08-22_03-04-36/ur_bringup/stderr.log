@@ -1,0 +1,19 @@
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `X509_STORE_CTX_init_rpk@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `BIO_recvmmsg@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `OSSL_ERR_STATE_restore@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `OPENSSL_LH_set_thunks@OPENSSL_3.3.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `BIO_sendmmsg@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `BIO_err_is_non_fatal@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `BIO_get_rpoll_descriptor@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `OSSL_ERR_STATE_free@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `OSSL_STACK_OF_X509_free@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `OSSL_ERR_STATE_save_to_mark@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `OSSL_ERR_STATE_save@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `BIO_get_wpoll_descriptor@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `BIO_s_dgram_mem@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `OSSL_ERR_STATE_new@OPENSSL_3.2.0'
+/usr/bin/ld: /home/zzy/anaconda3/lib/libssl.so.3: undefined reference to `ERR_count_to_mark@OPENSSL_3.2.0'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/ur_bringup.dir/build.make:355：ur_bringup] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ur_bringup.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

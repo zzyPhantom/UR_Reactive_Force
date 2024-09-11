@@ -1,0 +1,26 @@
+[0.388s] Invoking command in '/home/zzy/ur_real/src/ur10_vel': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data
+[0.545s] running egg_info
+[0.546s] writing ../../build/ur10_vel/ur10_vel.egg-info/PKG-INFO
+[0.546s] writing dependency_links to ../../build/ur10_vel/ur10_vel.egg-info/dependency_links.txt
+[0.546s] writing entry points to ../../build/ur10_vel/ur10_vel.egg-info/entry_points.txt
+[0.546s] writing requirements to ../../build/ur10_vel/ur10_vel.egg-info/requires.txt
+[0.546s] writing top-level names to ../../build/ur10_vel/ur10_vel.egg-info/top_level.txt
+[0.547s] reading manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[0.547s] writing manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[0.547s] running build
+[0.547s] running build_py
+[0.548s] copying ur10_vel/check_collision.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.548s] running install
+[0.548s] running install_lib
+[0.548s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/check_collision.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel
+[0.549s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel/check_collision.py to check_collision.cpython-310.pyc
+[0.549s] running install_data
+[0.549s] running install_egg_info
+[0.550s] removing '/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info' (and everything under it)
+[0.550s] Copying ../../build/ur10_vel/ur10_vel.egg-info to /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info
+[0.551s] running install_scripts
+[0.564s] Installing check_collision script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[0.564s] Installing joint_velocity_IK script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[0.564s] Installing publisher_forward_velocity_controller script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[0.564s] writing list of installed files to '/home/zzy/ur_real/build/ur10_vel/install.log'
+[0.580s] Invoked command in '/home/zzy/ur_real/src/ur10_vel' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data

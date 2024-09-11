@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target ur_bringup[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ur_bringup.dir/src/check_collision.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ur_bringup[0m

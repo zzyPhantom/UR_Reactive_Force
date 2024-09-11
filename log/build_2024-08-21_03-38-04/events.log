@@ -1,0 +1,133 @@
+[0.000000] (-) TimerEvent: {}
+[0.000139] (ur10_vel) JobQueued: {'identifier': 'ur10_vel', 'dependencies': OrderedDict()}
+[0.000164] (ur_bringup) JobQueued: {'identifier': 'ur_bringup', 'dependencies': OrderedDict()}
+[0.000177] (ur10_vel) JobStarted: {'identifier': 'ur10_vel'}
+[0.004706] (ur_bringup) JobStarted: {'identifier': 'ur_bringup'}
+[0.099435] (-) TimerEvent: {}
+[0.183293] (ur_bringup) JobProgress: {'identifier': 'ur_bringup', 'progress': 'cmake'}
+[0.183964] (ur_bringup) JobProgress: {'identifier': 'ur_bringup', 'progress': 'build'}
+[0.184729] (ur_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zzy/ur_real/build/ur_bringup', '--', '-j24', '-l24'], 'cwd': '/home/zzy/ur_real/build/ur_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zzy'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin'), ('HOME', '/home/zzy'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zzy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zzy/anaconda3/bin:/home/zzy/anaconda3/condabin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zzy-ROG:@/tmp/.ICE-unix/2867,unix/zzy-ROG:/tmp/.ICE-unix/2867'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/01b1e2df_731f_4710_af91_e9535725cb3f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.116'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/zzy/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/zzy/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zzy/ur_real/build/ur_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zzy/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/zzy/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.199542] (-) TimerEvent: {}
+[0.220247] (ur_bringup) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur_bringup\x1b[0m\n'}
+[0.235333] (ur_bringup) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o\x1b[0m\n'}
+[0.299710] (-) TimerEvent: {}
+[0.399961] (-) TimerEvent: {}
+[0.437921] (ur10_vel) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ur10_vel', 'build', '--build-base', '/home/zzy/ur_real/build/ur10_vel/build', 'install', '--record', '/home/zzy/ur_real/build/ur10_vel/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/zzy/ur_real/src/ur10_vel', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'LANGUAGE': 'zh_CN:zh', 'USER': 'zzy', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin', 'HOME': '/home/zzy', 'CONDA_SHLVL': '1', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '6380', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'zzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'zzy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/zzy/anaconda3/bin:/home/zzy/anaconda3/condabin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/zzy-ROG:@/tmp/.ICE-unix/2867,unix/zzy-ROG:/tmp/.ICE-unix/2867', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/01b1e2df_731f_4710_af91_e9535725cb3f', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.116', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/zzy/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/zzy/anaconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/zzy/ur_real/build/ur10_vel', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/zzy/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/zzy/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.500048] (-) TimerEvent: {}
+[0.600374] (-) TimerEvent: {}
+[0.606579] (ur10_vel) StdoutLine: {'line': b'running egg_info\n'}
+[0.607023] (ur10_vel) StdoutLine: {'line': b'writing ../../build/ur10_vel/ur10_vel.egg-info/PKG-INFO\n'}
+[0.607141] (ur10_vel) StdoutLine: {'line': b'writing dependency_links to ../../build/ur10_vel/ur10_vel.egg-info/dependency_links.txt\n'}
+[0.607215] (ur10_vel) StdoutLine: {'line': b'writing entry points to ../../build/ur10_vel/ur10_vel.egg-info/entry_points.txt\n'}
+[0.607274] (ur10_vel) StdoutLine: {'line': b'writing requirements to ../../build/ur10_vel/ur10_vel.egg-info/requires.txt\n'}
+[0.607319] (ur10_vel) StdoutLine: {'line': b'writing top-level names to ../../build/ur10_vel/ur10_vel.egg-info/top_level.txt\n'}
+[0.608521] (ur10_vel) StdoutLine: {'line': b"reading manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'\n"}
+[0.609114] (ur10_vel) StdoutLine: {'line': b"writing manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'\n"}
+[0.609200] (ur10_vel) StdoutLine: {'line': b'running build\n'}
+[0.609243] (ur10_vel) StdoutLine: {'line': b'running build_py\n'}
+[0.609444] (ur10_vel) StdoutLine: {'line': b'running install\n'}
+[0.609648] (ur10_vel) StdoutLine: {'line': b'running install_lib\n'}
+[0.610582] (ur10_vel) StdoutLine: {'line': b'running install_data\n'}
+[0.610669] (ur10_vel) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.611855] (ur10_vel) StdoutLine: {'line': b"removing '/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.612052] (ur10_vel) StdoutLine: {'line': b'Copying ../../build/ur10_vel/ur10_vel.egg-info to /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info\n'}
+[0.612429] (ur10_vel) StdoutLine: {'line': b'running install_scripts\n'}
+[0.631151] (ur10_vel) StdoutLine: {'line': b'Installing check_collision script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[0.631308] (ur10_vel) StdoutLine: {'line': b'Installing joint_velocity_IK script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[0.631350] (ur10_vel) StdoutLine: {'line': b'Installing publisher_forward_velocity_controller script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[0.631482] (ur10_vel) StdoutLine: {'line': b"writing list of installed files to '/home/zzy/ur_real/build/ur10_vel/install.log'\n"}
+[0.648317] (ur10_vel) CommandEnded: {'returncode': 0}
+[0.654737] (ur10_vel) JobEnded: {'identifier': 'ur10_vel', 'rc': 0}
+[0.700493] (-) TimerEvent: {}
+[0.800811] (-) TimerEvent: {}
+[0.901093] (-) TimerEvent: {}
+[1.001357] (-) TimerEvent: {}
+[1.101618] (-) TimerEvent: {}
+[1.201872] (-) TimerEvent: {}
+[1.302127] (-) TimerEvent: {}
+[1.402374] (-) TimerEvent: {}
+[1.502612] (-) TimerEvent: {}
+[1.602865] (-) TimerEvent: {}
+[1.703143] (-) TimerEvent: {}
+[1.803475] (-) TimerEvent: {}
+[1.903801] (-) TimerEvent: {}
+[2.004111] (-) TimerEvent: {}
+[2.104416] (-) TimerEvent: {}
+[2.204701] (-) TimerEvent: {}
+[2.305222] (-) TimerEvent: {}
+[2.405508] (-) TimerEvent: {}
+[2.505831] (-) TimerEvent: {}
+[2.606212] (-) TimerEvent: {}
+[2.706550] (-) TimerEvent: {}
+[2.806879] (-) TimerEvent: {}
+[2.907206] (-) TimerEvent: {}
+[3.007586] (-) TimerEvent: {}
+[3.107965] (-) TimerEvent: {}
+[3.208334] (-) TimerEvent: {}
+[3.293047] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:39:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRobotModelLoader\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmoveit::core\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KRobotModelWeakPtr\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.293248] (ur_bringup) StderrLine: {'line': b'   39 |   std::shared_ptr<moveit::core::\x1b[01;31m\x1b[KRobotModelLoader\x1b[m\x1b[K> robot_model_loader_;\n'}
+[3.293322] (ur_bringup) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.293390] (ur_bringup) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[KRobotModelWeakPtr\x1b[m\x1b[K\n'}
+[3.293455] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:39:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.293521] (ur_bringup) StderrLine: {'line': b'   39 |   std::shared_ptr<moveit::core::RobotModelLoader\x1b[01;31m\x1b[K>\x1b[m\x1b[K robot_model_loader_;\n'}
+[3.293587] (ur_bringup) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.295038] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMoveIt2Node::MoveIt2Node()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.295153] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:15:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRobotModelLoader\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmoveit::core\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KRobotModelWeakPtr\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.295228] (ur_bringup) StderrLine: {'line': b'   15 |     robot_model_loader_ = std::make_shared<moveit::core::\x1b[01;31m\x1b[KRobotModelLoader\x1b[m\x1b[K>("robot_description");\n'}
+[3.295296] (ur_bringup) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.295361] (ur_bringup) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[KRobotModelWeakPtr\x1b[m\x1b[K\n'}
+[3.295425] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:15:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >(const char [18])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.295490] (ur_bringup) StderrLine: {'line': b'   15 | ot_model_loader_ = \x1b[01;31m\x1b[Kstd::make_shared<moveit::core::RobotModelLoader>("robot_description")\x1b[m\x1b[K;\n'}
+[3.295564] (ur_bringup) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.295628] (ur_bringup) StderrLine: {'line': b'\n'}
+[3.295690] (ur_bringup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[3.295753] (ur_bringup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[3.295814] (ur_bringup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:1\x1b[m\x1b[K:\n'}
+[3.295875] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.295939] (ur_bringup) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[3.296000] (ur_bringup) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.296062] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.296123] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:15:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.296186] (ur_bringup) StderrLine: {'line': b'   15 | ot_model_loader_ = \x1b[01;31m\x1b[Kstd::make_shared<moveit::core::RobotModelLoader>("robot_description")\x1b[m\x1b[K;\n'}
+[3.296247] (ur_bringup) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.296308] (ur_bringup) StderrLine: {'line': b'\n'}
+[3.296367] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:16:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.296428] (ur_bringup) StderrLine: {'line': b'   16 |     robot_model_ = robot_model_loader_\x1b[01;31m\x1b[K->\x1b[m\x1b[KgetModel();\n'}
+[3.296488] (ur_bringup) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.308455] (-) TimerEvent: {}
+[3.408712] (-) TimerEvent: {}
+[3.509085] (-) TimerEvent: {}
+[3.609402] (-) TimerEvent: {}
+[3.709692] (-) TimerEvent: {}
+[3.810204] (-) TimerEvent: {}
+[3.910446] (-) TimerEvent: {}
+[4.010751] (-) TimerEvent: {}
+[4.110978] (-) TimerEvent: {}
+[4.211199] (-) TimerEvent: {}
+[4.311537] (-) TimerEvent: {}
+[4.411831] (-) TimerEvent: {}
+[4.512123] (-) TimerEvent: {}
+[4.612420] (-) TimerEvent: {}
+[4.712730] (-) TimerEvent: {}
+[4.812988] (-) TimerEvent: {}
+[4.913219] (-) TimerEvent: {}
+[5.013468] (-) TimerEvent: {}
+[5.113722] (-) TimerEvent: {}
+[5.213968] (-) TimerEvent: {}
+[5.314219] (-) TimerEvent: {}
+[5.414463] (-) TimerEvent: {}
+[5.514712] (-) TimerEvent: {}
+[5.615020] (-) TimerEvent: {}
+[5.715267] (-) TimerEvent: {}
+[5.815591] (-) TimerEvent: {}
+[5.915910] (-) TimerEvent: {}
+[6.016280] (-) TimerEvent: {}
+[6.116543] (-) TimerEvent: {}
+[6.216875] (-) TimerEvent: {}
+[6.317111] (-) TimerEvent: {}
+[6.330810] (ur_bringup) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ur_bringup.dir/build.make:76\xef\xbc\x9aCMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[6.331104] (ur_bringup) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/ur_bringup.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.331226] (ur_bringup) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.332762] (ur_bringup) CommandEnded: {'returncode': 2}
+[6.352264] (ur_bringup) JobEnded: {'identifier': 'ur_bringup', 'rc': 2}
+[6.362841] (-) EventReactorShutdown: {}

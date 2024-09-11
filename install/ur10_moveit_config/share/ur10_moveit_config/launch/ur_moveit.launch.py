@@ -1,0 +1,1 @@
+/home/zzy/ur_real/src/ur10_moveit_config/launch/ur_moveit.launch.py

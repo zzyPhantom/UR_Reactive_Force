@@ -1,0 +1,6 @@
+[console_scripts]
+Joint_Velocity_Transfer = ur10_vel.Joint_Velocity_Transfer:main
+check_collision = ur10_vel.check_collision:main
+check_keyboard = ur10_vel.check_keyboard:main
+joint_velocity_IK = ur10_vel.joint_velocity_IK:main
+publisher_forward_velocity_controller = ur10_vel.publisher_forward_velocity_controller:main

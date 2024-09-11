@@ -1,0 +1,23 @@
+[0.008s] Invoking command in '/home/zzy/ur_real/build/abc': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(mujoco_env) /usr/bin/cmake /home/zzy/ur_real/src/abc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/abc
+[0.016s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.099s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.103s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.119s] Traceback (most recent call last):
+[0.119s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[0.119s]     from catkin_pkg.package import parse_package_string
+[0.119s] ModuleNotFoundError: No module named 'catkin_pkg'
+[0.121s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.122s]   execute_process(/home/zzy/anaconda3/bin/python3
+[0.122s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.122s]   /home/zzy/ur_real/src/abc/package.xml
+[0.122s]   /home/zzy/ur_real/build/abc/ament_cmake_core/package.cmake) returned error
+[0.122s]   code 1
+[0.122s] Call Stack (most recent call first):
+[0.122s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.122s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.122s]   CMakeLists.txt:23 (ament_lint_auto_find_test_dependencies)
+[0.122s] 
+[0.122s] [0m
+[0.122s] -- Configuring incomplete, errors occurred!
+[0.122s] See also "/home/zzy/ur_real/build/abc/CMakeFiles/CMakeOutput.log".
+[0.169s] Invoked command in '/home/zzy/ur_real/build/abc' returned '1': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(mujoco_env) /usr/bin/cmake /home/zzy/ur_real/src/abc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/abc

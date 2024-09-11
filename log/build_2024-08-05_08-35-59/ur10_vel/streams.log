@@ -1,0 +1,30 @@
+[0.382s] Invoking command in '/home/zzy/ur_real/build/ur10_vel': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/zzy/ur_real/build/ur10_vel/build
+[0.539s] running develop
+[0.539s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.539s]   warnings.warn(
+[0.638s] Removing /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10-vel.egg-link (link to .)
+[0.654s] Invoked command in '/home/zzy/ur_real/build/ur10_vel' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/zzy/ur_real/build/ur10_vel/build
+[0.654s] Invoking command in '/home/zzy/ur_real/src/ur10_vel': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data --force
+[0.800s] running egg_info
+[0.800s] writing ../../build/ur10_vel/ur10_vel.egg-info/PKG-INFO
+[0.800s] writing dependency_links to ../../build/ur10_vel/ur10_vel.egg-info/dependency_links.txt
+[0.800s] writing entry points to ../../build/ur10_vel/ur10_vel.egg-info/entry_points.txt
+[0.800s] writing requirements to ../../build/ur10_vel/ur10_vel.egg-info/requires.txt
+[0.800s] writing top-level names to ../../build/ur10_vel/ur10_vel.egg-info/top_level.txt
+[0.801s] reading manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[0.802s] writing manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[0.802s] running build
+[0.802s] running build_py
+[0.802s] running install
+[0.802s] running install_lib
+[0.803s] creating /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel
+[0.803s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/__init__.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel
+[0.803s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel/__init__.py to __init__.cpython-310.pyc
+[0.803s] running install_data
+[0.803s] copying resource/ur10_vel -> /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index/packages
+[0.803s] copying package.xml -> /home/zzy/ur_real/install/ur10_vel/share/ur10_vel
+[0.803s] running install_egg_info
+[0.804s] Copying ../../build/ur10_vel/ur10_vel.egg-info to /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info
+[0.804s] running install_scripts
+[0.817s] writing list of installed files to '/home/zzy/ur_real/build/ur10_vel/install.log'
+[0.831s] Invoked command in '/home/zzy/ur_real/src/ur10_vel' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data --force

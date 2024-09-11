@@ -1,0 +1,2 @@
+Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ur10_moveit_config -- -j24 -l24
+Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ur10_moveit_config -- -j24 -l24

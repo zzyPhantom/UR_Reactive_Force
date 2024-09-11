@@ -1,0 +1,37 @@
+[0.139s] Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ur_bringup -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ur_bringup
+[0.147s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.230s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.234s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.253s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.255s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.258s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.265s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.275s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.312s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.313s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.332s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.434s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.520s] -- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.531s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: date_time filesystem program_options system thread 
+[1.018s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.025s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.040s] -- Found rclcpp_lifecycle: 16.0.9 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.084s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: filesystem 
+[1.114s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.222s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.583s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: system filesystem date_time program_options thread chrono 
+[1.956s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: thread system filesystem regex date_time program_options 
+[2.130s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: system filesystem date_time program_options thread 
+[2.415s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.487s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.487s] -- Configured cppcheck include dirs: 
+[2.487s] -- Configured cppcheck exclude dirs and/or files: 
+[2.487s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.488s] -- Added test 'lint_cmake' to check CMake code style
+[2.488s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.491s] -- Added test 'uncrustify' to check C / C++ code style
+[2.491s] -- Configured uncrustify additional arguments: 
+[2.492s] -- Added test 'xmllint' to check XML markup files
+[2.493s] -- Configuring done
+[2.497s] -- Generating done
+[2.498s] -- Build files have been written to: /home/zzy/ur_real/build/ur_bringup

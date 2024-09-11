@@ -1,0 +1,50 @@
+[0.141s] Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics
+[0.403s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.403s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.403s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.403s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.403s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.403s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.403s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.403s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.403s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.403s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.405s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.508s] -- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)
+[0.508s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.649s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[0.649s]   execute_process(/home/zzy/.pyenv/shims/python3 -m rosidl_adapter
+[0.649s]   --package-name ferrobotics --arguments-file
+[0.649s]   /home/zzy/ur_real/build/ferrobotics/rosidl_adapter__arguments__ferrobotics.json
+[0.649s]   --output-dir /home/zzy/ur_real/build/ferrobotics/rosidl_adapter/ferrobotics
+[0.649s]   --output-file
+[0.649s]   /home/zzy/ur_real/build/ferrobotics/rosidl_adapter/ferrobotics.idls)
+[0.649s]   returned error code 1:
+[0.649s] 
+[0.649s]   Traceback (most recent call last):
+[0.649s] 
+[0.649s]     File "/home/zzy/.pyenv/versions/3.10.12/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[0.649s]       return _run_code(code, main_globals, None,
+[0.649s]     File "/home/zzy/.pyenv/versions/3.10.12/lib/python3.10/runpy.py", line 86, in _run_code
+[0.649s]       exec(code, run_globals)
+[0.649s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.649s]       sys.exit(main())
+[0.649s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[0.649s]       abs_idl_file = convert_to_idl(
+[0.649s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl
+[0.649s]       from rosidl_adapter.msg import convert_msg_to_idl
+[0.649s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>
+[0.649s]       from rosidl_adapter.resource import expand_template
+[0.649s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>
+[0.649s]       import em
+[0.649s] 
+[0.650s]   ModuleNotFoundError: No module named 'em'
+[0.650s] 
+[0.650s] Call Stack (most recent call first):
+[0.650s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.650s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[0.650s] 
+[0.650s] [0m
+[0.650s] -- Configuring incomplete, errors occurred!
+[0.650s] See also "/home/zzy/ur_real/build/ferrobotics/CMakeFiles/CMakeOutput.log".
+[0.655s] Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics

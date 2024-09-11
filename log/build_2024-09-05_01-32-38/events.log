@@ -1,0 +1,360 @@
+[0.000000] (-) TimerEvent: {}
+[0.000114] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.000134] (ferrobotics) JobQueued: {'identifier': 'ferrobotics', 'dependencies': OrderedDict()}
+[0.000145] (ferrobotics_acf) JobQueued: {'identifier': 'ferrobotics_acf', 'dependencies': OrderedDict()}
+[0.000154] (ur10_moveit_config) JobQueued: {'identifier': 'ur10_moveit_config', 'dependencies': OrderedDict()}
+[0.000162] (ur10_vel) JobQueued: {'identifier': 'ur10_vel', 'dependencies': OrderedDict()}
+[0.000170] (ur_bringup) JobQueued: {'identifier': 'ur_bringup', 'dependencies': OrderedDict()}
+[0.000575] (camera) JobStarted: {'identifier': 'camera'}
+[0.004852] (ferrobotics) JobStarted: {'identifier': 'ferrobotics'}
+[0.007129] (ferrobotics_acf) JobStarted: {'identifier': 'ferrobotics_acf'}
+[0.009808] (ur10_moveit_config) JobStarted: {'identifier': 'ur10_moveit_config'}
+[0.011708] (ur10_vel) JobStarted: {'identifier': 'ur10_vel'}
+[0.014720] (ur_bringup) JobStarted: {'identifier': 'ur_bringup'}
+[0.099945] (-) TimerEvent: {}
+[0.146066] (ferrobotics) JobProgress: {'identifier': 'ferrobotics', 'progress': 'cmake'}
+[0.146479] (ferrobotics) Command: {'cmd': ['/usr/bin/cmake', '/home/zzy/ur_real/src/ferrobotics', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics'], 'cwd': '/home/zzy/ur_real/build/ferrobotics', 'env': OrderedDict([('PYENV_VIRTUALENV_INIT', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zzy'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zzy/ur_real/install/ferrobotics/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin:/home/zzy/mujoco-3.1.6/bin'), ('HOME', '/home/zzy'), ('OLDPWD', '/home/zzy'), ('DESKTOP_SESSION', 'ubuntu'), ('PYENV_SHELL', 'bash'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2571'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/zzy/ur_real/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zzy'), ('_', '/home/zzy/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zzy/.pyenv/plugins/pyenv-virtualenv/shims:/home/zzy/.pyenv/shims:~/.pyenv/bin:/opt/ros/humble/bin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zzy-ROG:@/tmp/.ICE-unix/2544,unix/zzy-ROG:/tmp/.ICE-unix/2544'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2302cb0_dd9e_47b3_99a5_ded0e087f20a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.111'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/abc:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zzy/ur_real/build/ferrobotics'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zzy/ur_real/build/ur10_vel:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/home/zzy/ur_real/build/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:/home/zzy/ur_real/install/ferrobotics/lib/python3.11/site-packages:/home/zzy/ur_real/build/camera:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/abc:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/opt/ros/humble')]), 'shell': False}
+[0.200056] (-) TimerEvent: {}
+[0.278454] (ur10_moveit_config) JobProgress: {'identifier': 'ur10_moveit_config', 'progress': 'cmake'}
+[0.278657] (ur10_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '/home/zzy/ur_real/src/ur10_moveit_config', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ur10_moveit_config'], 'cwd': '/home/zzy/ur_real/build/ur10_moveit_config', 'env': OrderedDict([('PYENV_VIRTUALENV_INIT', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zzy'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zzy/ur_real/install/ferrobotics/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin:/home/zzy/mujoco-3.1.6/bin'), ('HOME', '/home/zzy'), ('OLDPWD', '/home/zzy'), ('DESKTOP_SESSION', 'ubuntu'), ('PYENV_SHELL', 'bash'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2571'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/zzy/ur_real/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zzy'), ('_', '/home/zzy/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zzy/.pyenv/plugins/pyenv-virtualenv/shims:/home/zzy/.pyenv/shims:~/.pyenv/bin:/opt/ros/humble/bin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zzy-ROG:@/tmp/.ICE-unix/2544,unix/zzy-ROG:/tmp/.ICE-unix/2544'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2302cb0_dd9e_47b3_99a5_ded0e087f20a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.111'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/abc:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zzy/ur_real/build/ur10_moveit_config'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zzy/ur_real/build/ur10_vel:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/home/zzy/ur_real/build/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:/home/zzy/ur_real/install/ferrobotics/lib/python3.11/site-packages:/home/zzy/ur_real/build/camera:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/abc:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/opt/ros/humble')]), 'shell': False}
+[0.300160] (-) TimerEvent: {}
+[0.400451] (-) TimerEvent: {}
+[0.410478] (ferrobotics) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.410999] (ferrobotics) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.411239] (ferrobotics) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.411319] (ferrobotics) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.411386] (ferrobotics) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.411638] (ferrobotics) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.412120] (ferrobotics) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.412298] (ferrobotics) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.412891] (ferrobotics) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.413147] (ferrobotics) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.413288] (ferrobotics) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.413621] (ferrobotics) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.413921] (ferrobotics) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.414112] (ur10_moveit_config) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.414339] (ur10_moveit_config) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.414604] (ur10_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.414736] (ur10_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.415071] (ur10_moveit_config) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.415579] (ur10_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.416107] (ur10_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.416163] (ur10_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.416198] (ur_bringup) JobProgress: {'identifier': 'ur_bringup', 'progress': 'cmake'}
+[0.416211] (ur_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/zzy/ur_real/src/ur_bringup', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ur_bringup'], 'cwd': '/home/zzy/ur_real/build/ur_bringup', 'env': OrderedDict([('PYENV_VIRTUALENV_INIT', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zzy'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zzy/ur_real/install/ferrobotics/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin:/home/zzy/mujoco-3.1.6/bin'), ('HOME', '/home/zzy'), ('OLDPWD', '/home/zzy'), ('DESKTOP_SESSION', 'ubuntu'), ('PYENV_SHELL', 'bash'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2571'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/zzy/ur_real/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zzy'), ('_', '/home/zzy/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zzy/.pyenv/plugins/pyenv-virtualenv/shims:/home/zzy/.pyenv/shims:~/.pyenv/bin:/opt/ros/humble/bin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zzy-ROG:@/tmp/.ICE-unix/2544,unix/zzy-ROG:/tmp/.ICE-unix/2544'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2302cb0_dd9e_47b3_99a5_ded0e087f20a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.111'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/abc:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zzy/ur_real/build/ur_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zzy/ur_real/build/ur10_vel:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/home/zzy/ur_real/build/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:/home/zzy/ur_real/install/ferrobotics/lib/python3.11/site-packages:/home/zzy/ur_real/build/camera:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/abc:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/opt/ros/humble')]), 'shell': False}
+[0.446065] (ur_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.452884] (ur10_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.457805] (ur10_moveit_config) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.457961] (ur10_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.458142] (ur10_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.459912] (ur10_moveit_config) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.481610] (ur_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.486235] (ur_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500656] (-) TimerEvent: {}
+[0.527857] (ur_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.532673] (ur_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.532862] (ur_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.533091] (ur_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.535016] (ur_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.583577] (ur_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.588739] (ur_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.589004] (ur_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.589241] (ur_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.590761] (ur_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600719] (-) TimerEvent: {}
+[0.701012] (-) TimerEvent: {}
+[0.743009] (camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/zzy/ur_real/build/camera/build', '--no-deps', 'symlink_data'], 'cwd': '/home/zzy/ur_real/build/camera', 'env': {'PYENV_VIRTUALENV_INIT': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:zh', 'USER': 'zzy', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/zzy/ur_real/install/ferrobotics/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin:/home/zzy/mujoco-3.1.6/bin', 'HOME': '/home/zzy', 'OLDPWD': '/home/zzy', 'DESKTOP_SESSION': 'ubuntu', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2571', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/zzy/ur_real/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'zzy', '_': '/home/zzy/.local/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'zzy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/zzy/.pyenv/plugins/pyenv-virtualenv/shims:/home/zzy/.pyenv/shims:~/.pyenv/bin:/opt/ros/humble/bin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/zzy-ROG:@/tmp/.ICE-unix/2544,unix/zzy-ROG:/tmp/.ICE-unix/2544', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f2302cb0_dd9e_47b3_99a5_ded0e087f20a', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.111', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/abc:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/zzy/ur_real/build/camera', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/zzy/ur_real/build/camera/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:/home/zzy/ur_real/build/ur10_vel:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/home/zzy/ur_real/build/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:/home/zzy/ur_real/install/ferrobotics/lib/python3.11/site-packages:/home/zzy/ur_real/build/camera:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/abc'}, 'shell': False}
+[0.746305] (ur10_vel) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/zzy/ur_real/build/ur10_vel/build', '--no-deps', 'symlink_data'], 'cwd': '/home/zzy/ur_real/build/ur10_vel', 'env': {'PYENV_VIRTUALENV_INIT': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:zh', 'USER': 'zzy', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/zzy/ur_real/install/ferrobotics/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin:/home/zzy/mujoco-3.1.6/bin', 'HOME': '/home/zzy', 'OLDPWD': '/home/zzy', 'DESKTOP_SESSION': 'ubuntu', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2571', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/zzy/ur_real/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'zzy', '_': '/home/zzy/.local/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'zzy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/zzy/.pyenv/plugins/pyenv-virtualenv/shims:/home/zzy/.pyenv/shims:~/.pyenv/bin:/opt/ros/humble/bin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/zzy-ROG:@/tmp/.ICE-unix/2544,unix/zzy-ROG:/tmp/.ICE-unix/2544', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f2302cb0_dd9e_47b3_99a5_ded0e087f20a', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.111', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/abc:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/zzy/ur_real/build/ur10_vel', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/home/zzy/ur_real/build/ur10_vel:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/home/zzy/ur_real/build/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:/home/zzy/ur_real/install/ferrobotics/lib/python3.11/site-packages:/home/zzy/ur_real/build/camera:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/abc'}, 'shell': False}
+[0.750834] (ferrobotics_acf) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/zzy/ur_real/build/ferrobotics_acf/build', '--no-deps', 'symlink_data'], 'cwd': '/home/zzy/ur_real/build/ferrobotics_acf', 'env': {'PYENV_VIRTUALENV_INIT': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:zh', 'USER': 'zzy', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/zzy/ur_real/install/ferrobotics/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin:/home/zzy/mujoco-3.1.6/bin', 'HOME': '/home/zzy', 'OLDPWD': '/home/zzy', 'DESKTOP_SESSION': 'ubuntu', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2571', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/zzy/ur_real/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'zzy', '_': '/home/zzy/.local/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'zzy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/zzy/.pyenv/plugins/pyenv-virtualenv/shims:/home/zzy/.pyenv/shims:~/.pyenv/bin:/opt/ros/humble/bin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/zzy-ROG:@/tmp/.ICE-unix/2544,unix/zzy-ROG:/tmp/.ICE-unix/2544', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f2302cb0_dd9e_47b3_99a5_ded0e087f20a', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.111', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/abc:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/zzy/ur_real/build/ferrobotics_acf', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/zzy/ur_real/build/ferrobotics_acf/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:/home/zzy/ur_real/build/ur10_vel:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/home/zzy/ur_real/build/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:/home/zzy/ur_real/install/ferrobotics/lib/python3.11/site-packages:/home/zzy/ur_real/build/camera:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/abc'}, 'shell': False}
+[0.801115] (-) TimerEvent: {}
+[0.843601] (camera) StderrLine: {'line': b"/home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[0.843813] (camera) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[0.846353] (ur10_vel) StderrLine: {'line': b"/home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[0.846466] (ur10_vel) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[0.852205] (ferrobotics_acf) StderrLine: {'line': b"/home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[0.852309] (ferrobotics_acf) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[0.860240] (ferrobotics) StdoutLine: {'line': b'-- Found Python3: /home/zzy/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.901277] (-) TimerEvent: {}
+[0.929102] (ur10_moveit_config) StdoutLine: {'line': b'-- Found Python3: /home/zzy/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.944455] (camera) StdoutLine: {'line': b'running develop\n'}
+[0.944750] (camera) StderrLine: {'line': b'/home/zzy/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[0.944849] (camera) StderrLine: {'line': b'!!\n'}
+[0.944932] (camera) StderrLine: {'line': b'\n'}
+[0.945002] (camera) StderrLine: {'line': b'        ********************************************************************************\n'}
+[0.945073] (camera) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[0.945138] (camera) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[0.945201] (camera) StderrLine: {'line': b'        standards-based tools.\n'}
+[0.945265] (camera) StderrLine: {'line': b'\n'}
+[0.945337] (camera) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[0.945409] (camera) StderrLine: {'line': b'        ********************************************************************************\n'}
+[0.945481] (camera) StderrLine: {'line': b'\n'}
+[0.945552] (camera) StderrLine: {'line': b'!!\n'}
+[0.945622] (camera) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[0.947967] (ur10_vel) StdoutLine: {'line': b'running develop\n'}
+[0.948278] (ur10_vel) StderrLine: {'line': b'/home/zzy/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[0.948389] (ur10_vel) StderrLine: {'line': b'!!\n'}
+[0.948467] (ur10_vel) StderrLine: {'line': b'\n'}
+[0.948541] (ur10_vel) StderrLine: {'line': b'        ********************************************************************************\n'}
+[0.948613] (ur10_vel) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[0.948683] (ur10_vel) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[0.948752] (ur10_vel) StderrLine: {'line': b'        standards-based tools.\n'}
+[0.948820] (ur10_vel) StderrLine: {'line': b'\n'}
+[0.948888] (ur10_vel) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[0.948956] (ur10_vel) StderrLine: {'line': b'        ********************************************************************************\n'}
+[0.949021] (ur10_vel) StderrLine: {'line': b'\n'}
+[0.949095] (ur10_vel) StderrLine: {'line': b'!!\n'}
+[0.949161] (ur10_vel) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[0.953972] (ferrobotics_acf) StdoutLine: {'line': b'running develop\n'}
+[0.954214] (ferrobotics_acf) StderrLine: {'line': b'/home/zzy/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[0.954293] (ferrobotics_acf) StderrLine: {'line': b'!!\n'}
+[0.954360] (ferrobotics_acf) StderrLine: {'line': b'\n'}
+[0.954423] (ferrobotics_acf) StderrLine: {'line': b'        ********************************************************************************\n'}
+[0.954486] (ferrobotics_acf) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[0.954549] (ferrobotics_acf) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[0.954610] (ferrobotics_acf) StderrLine: {'line': b'        standards-based tools.\n'}
+[0.954673] (ferrobotics_acf) StderrLine: {'line': b'\n'}
+[0.954734] (ferrobotics_acf) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[0.954797] (ferrobotics_acf) StderrLine: {'line': b'        ********************************************************************************\n'}
+[0.954861] (ferrobotics_acf) StderrLine: {'line': b'\n'}
+[0.954924] (ferrobotics_acf) StderrLine: {'line': b'!!\n'}
+[0.954987] (ferrobotics_acf) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[0.955637] (ferrobotics) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.974529] (ferrobotics) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.001415] (-) TimerEvent: {}
+[1.003857] (ferrobotics) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.007558] (ferrobotics) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.013187] (ferrobotics) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.014863] (ur10_moveit_config) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.022392] (ferrobotics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.035472] (ur10_moveit_config) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.035710] (ferrobotics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.063591] (ur_bringup) StdoutLine: {'line': b'-- Found Python3: /home/zzy/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.064566] (ur10_moveit_config) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.068017] (ur10_moveit_config) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.072339] (camera) StdoutLine: {'line': b'running egg_info\n'}
+[1.072482] (camera) StdoutLine: {'line': b'creating camera.egg-info\n'}
+[1.073740] (ur10_moveit_config) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.080809] (ur10_vel) StdoutLine: {'line': b'running egg_info\n'}
+[1.080950] (ur10_vel) StdoutLine: {'line': b'creating ur10_vel.egg-info\n'}
+[1.081483] (camera) StdoutLine: {'line': b'writing camera.egg-info/PKG-INFO\n'}
+[1.081778] (camera) StdoutLine: {'line': b'writing dependency_links to camera.egg-info/dependency_links.txt\n'}
+[1.081896] (camera) StdoutLine: {'line': b'writing entry points to camera.egg-info/entry_points.txt\n'}
+[1.082003] (camera) StdoutLine: {'line': b'writing requirements to camera.egg-info/requires.txt\n'}
+[1.082083] (camera) StdoutLine: {'line': b'writing top-level names to camera.egg-info/top_level.txt\n'}
+[1.082147] (camera) StdoutLine: {'line': b"writing manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[1.082328] (ferrobotics) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.082815] (ur10_moveit_config) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.084214] (ferrobotics) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.084409] (ferrobotics_acf) StdoutLine: {'line': b'running egg_info\n'}
+[1.084495] (ferrobotics_acf) StdoutLine: {'line': b'creating ferrobotics_acf.egg-info\n'}
+[1.089914] (ur10_vel) StdoutLine: {'line': b'writing ur10_vel.egg-info/PKG-INFO\n'}
+[1.090170] (ur10_vel) StdoutLine: {'line': b'writing dependency_links to ur10_vel.egg-info/dependency_links.txt\n'}
+[1.090369] (ur10_vel) StdoutLine: {'line': b'writing entry points to ur10_vel.egg-info/entry_points.txt\n'}
+[1.090551] (ur10_vel) StdoutLine: {'line': b'writing requirements to ur10_vel.egg-info/requires.txt\n'}
+[1.090647] (ur10_vel) StdoutLine: {'line': b'writing top-level names to ur10_vel.egg-info/top_level.txt\n'}
+[1.090716] (ur10_vel) StdoutLine: {'line': b"writing manifest file 'ur10_vel.egg-info/SOURCES.txt'\n"}
+[1.093658] (ferrobotics_acf) StdoutLine: {'line': b'writing ferrobotics_acf.egg-info/PKG-INFO\n'}
+[1.093906] (ferrobotics_acf) StdoutLine: {'line': b'writing dependency_links to ferrobotics_acf.egg-info/dependency_links.txt\n'}
+[1.094007] (ferrobotics_acf) StdoutLine: {'line': b'writing entry points to ferrobotics_acf.egg-info/entry_points.txt\n'}
+[1.094160] (ferrobotics_acf) StdoutLine: {'line': b'writing requirements to ferrobotics_acf.egg-info/requires.txt\n'}
+[1.094259] (ferrobotics_acf) StdoutLine: {'line': b'writing top-level names to ferrobotics_acf.egg-info/top_level.txt\n'}
+[1.094332] (ferrobotics_acf) StdoutLine: {'line': b"writing manifest file 'ferrobotics_acf.egg-info/SOURCES.txt'\n"}
+[1.095885] (ur10_moveit_config) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.100554] (camera) StdoutLine: {'line': b"reading manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[1.101128] (camera) StdoutLine: {'line': b"writing manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[1.101469] (-) TimerEvent: {}
+[1.106477] (ferrobotics) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.108909] (ur10_vel) StdoutLine: {'line': b"reading manifest file 'ur10_vel.egg-info/SOURCES.txt'\n"}
+[1.109540] (ur10_vel) StdoutLine: {'line': b"writing manifest file 'ur10_vel.egg-info/SOURCES.txt'\n"}
+[1.110942] (camera) StdoutLine: {'line': b'running build_ext\n'}
+[1.111082] (camera) StdoutLine: {'line': b'Creating /home/zzy/ur_real/install/camera/lib/python3.10/site-packages/camera.egg-link (link to .)\n'}
+[1.111436] (camera) StdoutLine: {'line': b'Installing realsense_ArUco_reader script to /home/zzy/ur_real/install/camera/lib/camera\n'}
+[1.111648] (camera) StdoutLine: {'line': b'\n'}
+[1.111749] (camera) StdoutLine: {'line': b'Installed /home/zzy/ur_real/build/camera\n'}
+[1.111821] (camera) StdoutLine: {'line': b'running symlink_data\n'}
+[1.111992] (camera) StdoutLine: {'line': b'creating /home/zzy/ur_real/install/camera/share/ament_index\n'}
+[1.112098] (camera) StdoutLine: {'line': b'creating /home/zzy/ur_real/install/camera/share/ament_index/resource_index\n'}
+[1.112171] (camera) StdoutLine: {'line': b'creating /home/zzy/ur_real/install/camera/share/ament_index/resource_index/packages\n'}
+[1.112238] (camera) StdoutLine: {'line': b'symbolically linking /home/zzy/ur_real/build/camera/resource/camera -> /home/zzy/ur_real/install/camera/share/ament_index/resource_index/packages\n'}
+[1.112303] (camera) StdoutLine: {'line': b'symbolically linking /home/zzy/ur_real/build/camera/package.xml -> /home/zzy/ur_real/install/camera/share/camera\n'}
+[1.112772] (ferrobotics_acf) StdoutLine: {'line': b"reading manifest file 'ferrobotics_acf.egg-info/SOURCES.txt'\n"}
+[1.113120] (ferrobotics) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.113590] (ferrobotics_acf) StdoutLine: {'line': b"writing manifest file 'ferrobotics_acf.egg-info/SOURCES.txt'\n"}
+[1.119525] (ur10_vel) StdoutLine: {'line': b'running build_ext\n'}
+[1.119729] (ur10_vel) StdoutLine: {'line': b'Creating /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10-vel.egg-link (link to .)\n'}
+[1.120217] (ur10_vel) StdoutLine: {'line': b'Installing Joint_Velocity_Transfer script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[1.120461] (ur10_vel) StdoutLine: {'line': b'Installing check_collision script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[1.120642] (ur10_vel) StdoutLine: {'line': b'Installing check_keyboard script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[1.120755] (ur10_vel) StdoutLine: {'line': b'Installing joint_velocity_IK script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[1.120826] (ur10_vel) StdoutLine: {'line': b'Installing publisher_forward_velocity_controller script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[1.120893] (ur10_vel) StdoutLine: {'line': b'\n'}
+[1.120959] (ur10_vel) StdoutLine: {'line': b'Installed /home/zzy/ur_real/build/ur10_vel\n'}
+[1.121023] (ur10_vel) StdoutLine: {'line': b'running symlink_data\n'}
+[1.121087] (ur10_vel) StdoutLine: {'line': b'creating /home/zzy/ur_real/install/ur10_vel/share/ament_index\n'}
+[1.121151] (ur10_vel) StdoutLine: {'line': b'creating /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index\n'}
+[1.121215] (ur10_vel) StdoutLine: {'line': b'creating /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index/packages\n'}
+[1.121405] (ur10_vel) StdoutLine: {'line': b'symbolically linking /home/zzy/ur_real/build/ur10_vel/resource/ur10_vel -> /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index/packages\n'}
+[1.121446] (ur10_vel) StdoutLine: {'line': b'symbolically linking /home/zzy/ur_real/build/ur10_vel/package.xml -> /home/zzy/ur_real/install/ur10_vel/share/ur10_vel\n'}
+[1.124083] (ferrobotics_acf) StdoutLine: {'line': b'running build_ext\n'}
+[1.124190] (ferrobotics_acf) StdoutLine: {'line': b'Creating /home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages/ferrobotics-acf.egg-link (link to .)\n'}
+[1.124722] (ferrobotics_acf) StdoutLine: {'line': b'Installing acf script to /home/zzy/ur_real/install/ferrobotics_acf/lib/ferrobotics_acf\n'}
+[1.124834] (ferrobotics_acf) StdoutLine: {'line': b'\n'}
+[1.124874] (ferrobotics_acf) StdoutLine: {'line': b'Installed /home/zzy/ur_real/build/ferrobotics_acf\n'}
+[1.124907] (ferrobotics_acf) StdoutLine: {'line': b'running symlink_data\n'}
+[1.124969] (ferrobotics_acf) StdoutLine: {'line': b'creating /home/zzy/ur_real/install/ferrobotics_acf/share/ament_index\n'}
+[1.125002] (ferrobotics_acf) StdoutLine: {'line': b'creating /home/zzy/ur_real/install/ferrobotics_acf/share/ament_index/resource_index\n'}
+[1.125034] (ferrobotics_acf) StdoutLine: {'line': b'creating /home/zzy/ur_real/install/ferrobotics_acf/share/ament_index/resource_index/packages\n'}
+[1.125080] (ferrobotics_acf) StdoutLine: {'line': b'symbolically linking /home/zzy/ur_real/build/ferrobotics_acf/resource/ferrobotics_acf -> /home/zzy/ur_real/install/ferrobotics_acf/share/ament_index/resource_index/packages\n'}
+[1.125128] (ferrobotics_acf) StdoutLine: {'line': b'symbolically linking /home/zzy/ur_real/build/ferrobotics_acf/package.xml -> /home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf\n'}
+[1.132119] (camera) CommandEnded: {'returncode': 0}
+[1.140132] (camera) JobEnded: {'identifier': 'camera', 'rc': 0}
+[1.142816] (ur10_vel) CommandEnded: {'returncode': 0}
+[1.143862] (ur10_moveit_config) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.145787] (ur10_moveit_config) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.147465] (ur10_vel) JobEnded: {'identifier': 'ur10_vel', 'rc': 0}
+[1.148185] (ferrobotics_acf) CommandEnded: {'returncode': 0}
+[1.148846] (ur_bringup) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.151974] (ferrobotics_acf) JobEnded: {'identifier': 'ferrobotics_acf', 'rc': 0}
+[1.161800] (ferrobotics) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.161962] (ferrobotics) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.166864] (ur_bringup) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.167918] (ur10_moveit_config) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.174452] (ur10_moveit_config) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.196217] (ur_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.199474] (ur_bringup) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.201564] (-) TimerEvent: {}
+[1.205275] (ur_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.209238] (ferrobotics) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.210137] (ferrobotics) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.214359] (ur_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.216595] (ur10_moveit_config) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.216848] (ur10_moveit_config) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.227318] (ur_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.264575] (ur10_moveit_config) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.265670] (ur10_moveit_config) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.273921] (ur_bringup) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.275876] (ur_bringup) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.297413] (ur_bringup) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.301711] (-) TimerEvent: {}
+[1.303952] (ur_bringup) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.316292] (ferrobotics) StdoutLine: {'line': b'-- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.317403] (ferrobotics) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.348559] (ur_bringup) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.348685] (ur_bringup) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.374596] (ur10_moveit_config) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.393336] (ur_bringup) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.393999] (ur_bringup) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.401793] (-) TimerEvent: {}
+[1.426839] (ur10_moveit_config) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.426950] (ur10_moveit_config) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>\n'}
+[1.426989] (ur10_moveit_config) StderrLine: {'line': b'    from catkin_pkg.package import parse_package_string\n'}
+[1.427019] (ur10_moveit_config) StderrLine: {'line': b"ModuleNotFoundError: No module named 'catkin_pkg'\n"}
+[1.429122] (ur10_moveit_config) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[1.429211] (ur10_moveit_config) StderrLine: {'line': b'  execute_process(/home/zzy/.pyenv/shims/python3\n'}
+[1.429247] (ur10_moveit_config) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[1.429279] (ur10_moveit_config) StderrLine: {'line': b'  /home/zzy/ur_real/src/ur10_moveit_config/package.xml\n'}
+[1.429308] (ur10_moveit_config) StderrLine: {'line': b'  /home/zzy/ur_real/build/ur10_moveit_config/ament_cmake_core/package.cmake)\n'}
+[1.429337] (ur10_moveit_config) StderrLine: {'line': b'  returned error code 1\n'}
+[1.429367] (ur10_moveit_config) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.429397] (ur10_moveit_config) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[1.429425] (ur10_moveit_config) StderrLine: {'line': b'  /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)\n'}
+[1.429454] (ur10_moveit_config) StderrLine: {'line': b'  CMakeLists.txt:43 (ament_lint_auto_find_test_dependencies)\n'}
+[1.429483] (ur10_moveit_config) StderrLine: {'line': b'\n'}
+[1.429510] (ur10_moveit_config) StderrLine: {'line': b'\x1b[0m\n'}
+[1.429602] (ur10_moveit_config) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.429640] (ur10_moveit_config) StdoutLine: {'line': b'See also "/home/zzy/ur_real/build/ur10_moveit_config/CMakeFiles/CMakeOutput.log".\n'}
+[1.434775] (ur10_moveit_config) CommandEnded: {'returncode': 1}
+[1.444375] (ur10_moveit_config) JobEnded: {'identifier': 'ur10_moveit_config', 'rc': 1}
+[1.467835] (ferrobotics) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):\n'}
+[1.467944] (ferrobotics) StderrLine: {'line': b'  execute_process(/home/zzy/.pyenv/shims/python3 -m rosidl_adapter\n'}
+[1.467980] (ferrobotics) StderrLine: {'line': b'  --package-name ferrobotics --arguments-file\n'}
+[1.468014] (ferrobotics) StderrLine: {'line': b'  /home/zzy/ur_real/build/ferrobotics/rosidl_adapter__arguments__ferrobotics.json\n'}
+[1.468044] (ferrobotics) StderrLine: {'line': b'  --output-dir /home/zzy/ur_real/build/ferrobotics/rosidl_adapter/ferrobotics\n'}
+[1.468075] (ferrobotics) StderrLine: {'line': b'  --output-file\n'}
+[1.468103] (ferrobotics) StderrLine: {'line': b'  /home/zzy/ur_real/build/ferrobotics/rosidl_adapter/ferrobotics.idls)\n'}
+[1.468130] (ferrobotics) StderrLine: {'line': b'  returned error code 1:\n'}
+[1.468296] (ferrobotics) StderrLine: {'line': b'\n'}
+[1.468342] (ferrobotics) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[1.468373] (ferrobotics) StderrLine: {'line': b'\n'}
+[1.468402] (ferrobotics) StderrLine: {'line': b'    File "/home/zzy/.pyenv/versions/3.10.12/lib/python3.10/runpy.py", line 196, in _run_module_as_main\n'}
+[1.468430] (ferrobotics) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[1.468457] (ferrobotics) StderrLine: {'line': b'    File "/home/zzy/.pyenv/versions/3.10.12/lib/python3.10/runpy.py", line 86, in _run_code\n'}
+[1.468483] (ferrobotics) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[1.468510] (ferrobotics) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[1.468536] (ferrobotics) StderrLine: {'line': b'      sys.exit(main())\n'}
+[1.468563] (ferrobotics) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[1.468588] (ferrobotics) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[1.468613] (ferrobotics) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl\n'}
+[1.468639] (ferrobotics) StderrLine: {'line': b'      from rosidl_adapter.msg import convert_msg_to_idl\n'}
+[1.468669] (ferrobotics) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>\n'}
+[1.468698] (ferrobotics) StderrLine: {'line': b'      from rosidl_adapter.resource import expand_template\n'}
+[1.468728] (ferrobotics) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>\n'}
+[1.468753] (ferrobotics) StderrLine: {'line': b'      import em\n'}
+[1.468778] (ferrobotics) StderrLine: {'line': b'\n'}
+[1.468804] (ferrobotics) StderrLine: {'line': b"  ModuleNotFoundError: No module named 'em'\n"}
+[1.468828] (ferrobotics) StderrLine: {'line': b'\n'}
+[1.468852] (ferrobotics) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.468877] (ferrobotics) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[1.468902] (ferrobotics) StderrLine: {'line': b'  CMakeLists.txt:16 (rosidl_generate_interfaces)\n'}
+[1.468926] (ferrobotics) StderrLine: {'line': b'\n'}
+[1.468950] (ferrobotics) StderrLine: {'line': b'\x1b[0m\n'}
+[1.468976] (ferrobotics) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.469008] (ferrobotics) StdoutLine: {'line': b'See also "/home/zzy/ur_real/build/ferrobotics/CMakeFiles/CMakeOutput.log".\n'}
+[1.474471] (ferrobotics) JobEnded: {'identifier': 'ferrobotics', 'rc': 'SIGINT'}
+[1.500706] (ur_bringup) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.501944] (-) TimerEvent: {}
+[1.586425] (ur_bringup) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[1.602095] (-) TimerEvent: {}
+[1.616766] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[1.702258] (-) TimerEvent: {}
+[1.802503] (-) TimerEvent: {}
+[1.902747] (-) TimerEvent: {}
+[2.002989] (-) TimerEvent: {}
+[2.103267] (-) TimerEvent: {}
+[2.112516] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[2.121613] (ur_bringup) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[2.137661] (ur_bringup) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.9 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[2.170263] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[2.203426] (-) TimerEvent: {}
+[2.238793] (ur_bringup) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[2.303585] (-) TimerEvent: {}
+[2.349378] (ur_bringup) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.349476] (ur_bringup) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.403738] (-) TimerEvent: {}
+[2.503933] (-) TimerEvent: {}
+[2.604197] (-) TimerEvent: {}
+[2.704453] (-) TimerEvent: {}
+[2.734992] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[2.804616] (-) TimerEvent: {}
+[2.904849] (-) TimerEvent: {}
+[3.005084] (-) TimerEvent: {}
+[3.105380] (-) TimerEvent: {}
+[3.115678] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[3.205523] (-) TimerEvent: {}
+[3.305783] (-) TimerEvent: {}
+[3.324349] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[3.405896] (-) TimerEvent: {}
+[3.506090] (-) TimerEvent: {}
+[3.606329] (-) TimerEvent: {}
+[3.613809] (ur_bringup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.687918] (ur_bringup) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[3.688050] (ur_bringup) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>\n'}
+[3.688088] (ur_bringup) StderrLine: {'line': b'    from catkin_pkg.package import parse_package_string\n'}
+[3.688118] (ur_bringup) StderrLine: {'line': b"ModuleNotFoundError: No module named 'catkin_pkg'\n"}
+[3.690199] (ur_bringup) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[3.690274] (ur_bringup) StderrLine: {'line': b'  execute_process(/home/zzy/.pyenv/shims/python3\n'}
+[3.690313] (ur_bringup) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[3.690344] (ur_bringup) StderrLine: {'line': b'  /home/zzy/ur_real/src/ur_bringup/package.xml\n'}
+[3.690373] (ur_bringup) StderrLine: {'line': b'  /home/zzy/ur_real/build/ur_bringup/ament_cmake_core/package.cmake) returned\n'}
+[3.690402] (ur_bringup) StderrLine: {'line': b'  error code 1\n'}
+[3.690430] (ur_bringup) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[3.690497] (ur_bringup) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[3.690532] (ur_bringup) StderrLine: {'line': b'  /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)\n'}
+[3.690560] (ur_bringup) StderrLine: {'line': b'  CMakeLists.txt:38 (ament_lint_auto_find_test_dependencies)\n'}
+[3.690587] (ur_bringup) StderrLine: {'line': b'\n'}
+[3.690613] (ur_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[3.690639] (ur_bringup) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.690672] (ur_bringup) StdoutLine: {'line': b'See also "/home/zzy/ur_real/build/ur_bringup/CMakeFiles/CMakeOutput.log".\n'}
+[3.699375] (ur_bringup) JobEnded: {'identifier': 'ur_bringup', 'rc': 'SIGINT'}
+[3.706504] (-) TimerEvent: {}
+[3.710088] (-) EventReactorShutdown: {}

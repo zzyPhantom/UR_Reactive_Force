@@ -1,0 +1,32 @@
+[0.166s] Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24
+[0.179s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.260s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.265s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.322s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.322s] -- Added test 'lint_cmake' to check CMake code style
+[0.323s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.323s] -- Added test 'xmllint' to check XML markup files
+[0.324s] -- Configuring done
+[0.325s] -- Generating done
+[0.325s] -- Build files have been written to: /home/zzy/ur_real/build/ur_bringup
+[0.340s] Invoked command in '/home/zzy/ur_real/build/ur_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24
+[0.357s] Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/zzy/ur_real/build/ur_bringup
+[0.361s] -- Install configuration: ""
+[0.361s] -- Execute custom install script
+[0.362s] -- Symlinking: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/test_scaled_joint_trajectory_controller.launch.py
+[0.367s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ament_index/resource_index/package_run_dependencies/ur_bringup
+[0.367s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ament_index/resource_index/parent_prefix_path/ur_bringup
+[0.367s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/environment/ament_prefix_path.sh
+[0.367s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/environment/ament_prefix_path.dsv
+[0.367s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/environment/path.sh
+[0.367s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/environment/path.dsv
+[0.367s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/local_setup.bash
+[0.368s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/local_setup.sh
+[0.368s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/local_setup.zsh
+[0.368s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/local_setup.dsv
+[0.368s] -- Symlinking: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.dsv
+[0.373s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ament_index/resource_index/packages/ur_bringup
+[0.373s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/cmake/ur_bringupConfig.cmake
+[0.373s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/cmake/ur_bringupConfig-version.cmake
+[0.373s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.xml
+[0.375s] Invoked command in '/home/zzy/ur_real/build/ur_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/zzy/ur_real/build/ur_bringup

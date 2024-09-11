@@ -1,0 +1,121 @@
+[0.000000] (-) TimerEvent: {}
+[0.000331] (ur10_vel) JobQueued: {'identifier': 'ur10_vel', 'dependencies': OrderedDict()}
+[0.000355] (ur_bringup) JobQueued: {'identifier': 'ur_bringup', 'dependencies': OrderedDict()}
+[0.000775] (ur10_vel) JobStarted: {'identifier': 'ur10_vel'}
+[0.005270] (ur_bringup) JobStarted: {'identifier': 'ur_bringup'}
+[0.100075] (-) TimerEvent: {}
+[0.180226] (ur_bringup) JobProgress: {'identifier': 'ur_bringup', 'progress': 'cmake'}
+[0.180994] (ur_bringup) JobProgress: {'identifier': 'ur_bringup', 'progress': 'build'}
+[0.181032] (ur_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zzy/ur_real/build/ur_bringup', '--', '-j24', '-l24'], 'cwd': '/home/zzy/ur_real/build/ur_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zzy'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin'), ('HOME', '/home/zzy'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zzy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zzy/anaconda3/bin:/home/zzy/anaconda3/condabin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zzy-ROG:@/tmp/.ICE-unix/2867,unix/zzy-ROG:/tmp/.ICE-unix/2867'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/01b1e2df_731f_4710_af91_e9535725cb3f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.116'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/zzy/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/zzy/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zzy/ur_real/build/ur_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zzy/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/zzy/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.200236] (-) TimerEvent: {}
+[0.200660] (ur_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.291957] (ur_bringup) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.299442] (ur_bringup) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.300338] (-) TimerEvent: {}
+[0.321555] (ur_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.323160] (ur_bringup) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.327457] (ur_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.335764] (ur_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.346769] (ur_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.389477] (ur_bringup) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.390441] (ur_bringup) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.400423] (-) TimerEvent: {}
+[0.411613] (ur_bringup) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.428154] (ur10_vel) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ur10_vel', 'build', '--build-base', '/home/zzy/ur_real/build/ur10_vel/build', 'install', '--record', '/home/zzy/ur_real/build/ur10_vel/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/zzy/ur_real/src/ur10_vel', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'LANGUAGE': 'zh_CN:zh', 'USER': 'zzy', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin', 'HOME': '/home/zzy', 'CONDA_SHLVL': '1', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '6380', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'zzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'zzy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/zzy/anaconda3/bin:/home/zzy/anaconda3/condabin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/zzy-ROG:@/tmp/.ICE-unix/2867,unix/zzy-ROG:/tmp/.ICE-unix/2867', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/01b1e2df_731f_4710_af91_e9535725cb3f', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.116', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/zzy/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/zzy/anaconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/zzy/ur_real/build/ur10_vel', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/zzy/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/zzy/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.500530] (-) TimerEvent: {}
+[0.530316] (ur_bringup) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.600639] (-) TimerEvent: {}
+[0.601719] (ur10_vel) StdoutLine: {'line': b'running egg_info\n'}
+[0.602070] (ur10_vel) StdoutLine: {'line': b'writing ../../build/ur10_vel/ur10_vel.egg-info/PKG-INFO\n'}
+[0.602147] (ur10_vel) StdoutLine: {'line': b'writing dependency_links to ../../build/ur10_vel/ur10_vel.egg-info/dependency_links.txt\n'}
+[0.602253] (ur10_vel) StdoutLine: {'line': b'writing entry points to ../../build/ur10_vel/ur10_vel.egg-info/entry_points.txt\n'}
+[0.602322] (ur10_vel) StdoutLine: {'line': b'writing requirements to ../../build/ur10_vel/ur10_vel.egg-info/requires.txt\n'}
+[0.602366] (ur10_vel) StdoutLine: {'line': b'writing top-level names to ../../build/ur10_vel/ur10_vel.egg-info/top_level.txt\n'}
+[0.603656] (ur10_vel) StdoutLine: {'line': b"reading manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'\n"}
+[0.604099] (ur10_vel) StdoutLine: {'line': b"writing manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'\n"}
+[0.604201] (ur10_vel) StdoutLine: {'line': b'running build\n'}
+[0.604241] (ur10_vel) StdoutLine: {'line': b'running build_py\n'}
+[0.604483] (ur10_vel) StdoutLine: {'line': b'running install\n'}
+[0.604731] (ur10_vel) StdoutLine: {'line': b'running install_lib\n'}
+[0.605572] (ur10_vel) StdoutLine: {'line': b'running install_data\n'}
+[0.605671] (ur10_vel) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.606874] (ur10_vel) StdoutLine: {'line': b"removing '/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.607033] (ur10_vel) StdoutLine: {'line': b'Copying ../../build/ur10_vel/ur10_vel.egg-info to /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info\n'}
+[0.607413] (ur10_vel) StdoutLine: {'line': b'running install_scripts\n'}
+[0.621464] (ur_bringup) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[0.622322] (ur10_vel) StdoutLine: {'line': b'Installing check_collision script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[0.622383] (ur10_vel) StdoutLine: {'line': b'Installing joint_velocity_IK script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[0.622434] (ur10_vel) StdoutLine: {'line': b'Installing publisher_forward_velocity_controller script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[0.622667] (ur10_vel) StdoutLine: {'line': b"writing list of installed files to '/home/zzy/ur_real/build/ur10_vel/install.log'\n"}
+[0.630242] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: date_time filesystem program_options system thread \n'}
+[0.641542] (ur10_vel) CommandEnded: {'returncode': 0}
+[0.648781] (ur10_vel) JobEnded: {'identifier': 'ur10_vel', 'rc': 0}
+[0.700798] (-) TimerEvent: {}
+[0.801188] (-) TimerEvent: {}
+[0.901544] (-) TimerEvent: {}
+[1.001885] (-) TimerEvent: {}
+[1.102171] (-) TimerEvent: {}
+[1.142991] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.148307] (ur_bringup) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.157083] (ur_bringup) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.9 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[1.188194] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: filesystem \n'}
+[1.202356] (-) TimerEvent: {}
+[1.215899] (ur_bringup) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.302447] (-) TimerEvent: {}
+[1.325992] (ur_bringup) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.402537] (-) TimerEvent: {}
+[1.502775] (-) TimerEvent: {}
+[1.603071] (-) TimerEvent: {}
+[1.698832] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: system filesystem date_time program_options thread chrono \n'}
+[1.703161] (-) TimerEvent: {}
+[1.803455] (-) TimerEvent: {}
+[1.903781] (-) TimerEvent: {}
+[2.004163] (-) TimerEvent: {}
+[2.092708] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: thread system filesystem regex date_time program_options \n'}
+[2.104329] (-) TimerEvent: {}
+[2.204693] (-) TimerEvent: {}
+[2.281592] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: system filesystem date_time program_options thread \n'}
+[2.304816] (-) TimerEvent: {}
+[2.405172] (-) TimerEvent: {}
+[2.505457] (-) TimerEvent: {}
+[2.598721] (ur_bringup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.605576] (-) TimerEvent: {}
+[2.665945] (ur_bringup) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.666180] (ur_bringup) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.666377] (ur_bringup) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.666502] (ur_bringup) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.666681] (ur_bringup) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.666908] (ur_bringup) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.667193] (ur_bringup) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.667291] (ur_bringup) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.667405] (ur_bringup) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.667970] (ur_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.685241] (ur_bringup) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:18 (add_executable):\n'}
+[2.685441] (ur_bringup) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target ur_bringup because\n'}
+[2.685527] (ur_bringup) StderrLine: {'line': b'  files in some directories may conflict with libraries in implicit\n'}
+[2.685603] (ur_bringup) StderrLine: {'line': b'  directories:\n'}
+[2.685674] (ur_bringup) StderrLine: {'line': b'\n'}
+[2.685745] (ur_bringup) StderrLine: {'line': b'    runtime library [libcurl.so.4] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[2.685817] (ur_bringup) StderrLine: {'line': b'      /home/zzy/anaconda3/lib\n'}
+[2.685886] (ur_bringup) StderrLine: {'line': b'    runtime library [libcrypto.so.3] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[2.685964] (ur_bringup) StderrLine: {'line': b'      /home/zzy/anaconda3/lib\n'}
+[2.686034] (ur_bringup) StderrLine: {'line': b'\n'}
+[2.686137] (ur_bringup) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[2.686207] (ur_bringup) StderrLine: {'line': b'\n'}
+[2.686285] (ur_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[2.686355] (ur_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[2.687568] (ur_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/zzy/ur_real/build/ur_bringup\n'}
+[2.705682] (-) TimerEvent: {}
+[2.715874] (ur_bringup) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o\x1b[0m\n'}
+[2.805816] (-) TimerEvent: {}
+[2.886126] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:2:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kmoveit/planning_interface/planning_interface.hpp: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[2.886322] (ur_bringup) StderrLine: {'line': b'    2 | #include \x1b[01;31m\x1b[K"moveit/planning_interface/planning_interface.hpp"\x1b[m\x1b[K\n'}
+[2.886463] (ur_bringup) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.886514] (ur_bringup) StderrLine: {'line': b'compilation terminated.\n'}
+[2.895989] (ur_bringup) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ur_bringup.dir/build.make:76\xef\xbc\x9aCMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[2.896212] (ur_bringup) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/ur_bringup.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[2.896288] (ur_bringup) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[2.897577] (ur_bringup) CommandEnded: {'returncode': 2}
+[2.905891] (-) TimerEvent: {}
+[2.918133] (ur_bringup) JobEnded: {'identifier': 'ur_bringup', 'rc': 2}
+[2.928542] (-) EventReactorShutdown: {}

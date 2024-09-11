@@ -1,0 +1,260 @@
+[0.170s] Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics
+[0.427s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.428s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.428s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.428s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.428s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.428s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.428s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.428s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.428s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.428s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.428s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.513s] -- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)
+[0.513s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.809s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.182s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.373s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.435s] -- Found PythonInterp: /home/zzy/.pyenv/shims/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.436s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.520s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.520s] -- Using PYTHON_EXECUTABLE: /home/zzy/.pyenv/shims/python3
+[1.520s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.520s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.598s] -- Found PythonExtra: .so  
+[1.701s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.720s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.721s] -- Configured cppcheck include dirs: 
+[1.721s] -- Configured cppcheck exclude dirs and/or files: 
+[1.722s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.724s] -- Added test 'lint_cmake' to check CMake code style
+[1.726s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.733s] -- Added test 'uncrustify' to check C / C++ code style
+[1.734s] -- Configured uncrustify additional arguments: 
+[1.735s] -- Added test 'xmllint' to check XML markup files
+[1.736s] -- Configuring done
+[1.756s] -- Generating done
+[1.757s] -- Build files have been written to: /home/zzy/ur_real/build/ferrobotics
+[1.763s] Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics
+[1.764s] Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24
+[1.792s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.799s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.803s] [  4%] Built target ament_cmake_python_symlink_ferrobotics
+[1.955s] running egg_info
+[1.955s] creating ferrobotics.egg-info
+[1.964s] writing ferrobotics.egg-info/PKG-INFO
+[1.964s] writing dependency_links to ferrobotics.egg-info/dependency_links.txt
+[1.964s] writing top-level names to ferrobotics.egg-info/top_level.txt
+[1.964s] writing manifest file 'ferrobotics.egg-info/SOURCES.txt'
+[1.991s] reading manifest file 'ferrobotics.egg-info/SOURCES.txt'
+[1.991s] writing manifest file 'ferrobotics.egg-info/SOURCES.txt'
+[2.010s] [  4%] Built target ament_cmake_python_build_ferrobotics_egg
+[2.051s] [  4%] Built target ferrobotics__cpp
+[2.057s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.057s] [  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.058s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.060s] [ 12%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_generator_c.dir/rosidl_generator_c/ferrobotics/msg/detail/acf_telem__functions.c.o[0m
+[2.061s] [ 14%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_generator_c.dir/rosidl_generator_c/ferrobotics/srv/detail/set_float__functions.c.o[0m
+[2.061s] [ 17%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_generator_c.dir/rosidl_generator_c/ferrobotics/srv/detail/set_duration__functions.c.o[0m
+[2.099s] [ 19%] [32m[1mLinking C shared library libferrobotics__rosidl_generator_c.so[0m
+[2.123s] [ 19%] Built target ferrobotics__rosidl_generator_c
+[2.129s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.129s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.129s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.257s] [ 27%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ferrobotics/msg/acf_telem__type_support.cpp.o[0m
+[2.257s] [ 29%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ferrobotics/srv/set_float__type_support.cpp.o[0m
+[2.257s] [ 31%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ferrobotics/srv/set_duration__type_support.cpp.o[0m
+[2.283s] [ 34%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ferrobotics/msg/detail/acf_telem__type_support.cpp.o[0m
+[2.283s] [ 38%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ferrobotics/srv/detail/set_duration__type_support.cpp.o[0m
+[2.284s] [ 38%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ferrobotics/srv/detail/set_float__type_support.cpp.o[0m
+[2.301s] [ 42%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ferrobotics/msg/detail/dds_fastrtps/acf_telem__type_support.cpp.o[0m
+[2.301s] [ 42%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ferrobotics/srv/detail/dds_fastrtps/set_float__type_support.cpp.o[0m
+[2.301s] [ 44%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ferrobotics/srv/detail/dds_fastrtps/set_duration__type_support.cpp.o[0m
+[2.330s] [ 46%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_c.dir/rosidl_typesupport_c/ferrobotics/msg/acf_telem__type_support.cpp.o[0m
+[2.333s] [ 48%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_c.dir/rosidl_typesupport_c/ferrobotics/srv/set_float__type_support.cpp.o[0m
+[2.333s] [ 51%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_c.dir/rosidl_typesupport_c/ferrobotics/srv/set_duration__type_support.cpp.o[0m
+[2.352s] [ 53%] [32m[1mLinking CXX shared library libferrobotics__rosidl_typesupport_c.so[0m
+[2.378s] [ 53%] Built target ferrobotics__rosidl_typesupport_c
+[2.378s] [ 57%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ferrobotics/msg/detail/acf_telem__type_support.c.o[0m
+[2.378s] [ 57%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ferrobotics/srv/detail/set_duration__type_support.c.o[0m
+[2.379s] [ 59%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ferrobotics/srv/detail/set_float__type_support.c.o[0m
+[2.390s] [ 63%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ferrobotics/msg/detail/acf_telem__type_support_c.cpp.o[0m
+[2.390s] [ 63%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ferrobotics/srv/detail/set_duration__type_support_c.cpp.o[0m
+[2.391s] [ 65%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ferrobotics/srv/detail/set_float__type_support_c.cpp.o[0m
+[2.413s] [ 68%] [32m[1mLinking C shared library libferrobotics__rosidl_typesupport_introspection_c.so[0m
+[2.437s] [ 68%] Built target ferrobotics__rosidl_typesupport_introspection_c
+[2.534s] [ 70%] [32m[1mLinking CXX shared library libferrobotics__rosidl_typesupport_cpp.so[0m
+[2.560s] [ 70%] Built target ferrobotics__rosidl_typesupport_cpp
+[2.576s] [ 72%] [32m[1mLinking CXX shared library libferrobotics__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.589s] [ 74%] [32m[1mLinking CXX shared library libferrobotics__rosidl_typesupport_fastrtps_c.so[0m
+[2.612s] [ 76%] [32m[1mLinking CXX shared library libferrobotics__rosidl_typesupport_introspection_cpp.so[0m
+[2.626s] [ 76%] Built target ferrobotics__rosidl_typesupport_fastrtps_cpp
+[2.638s] [ 76%] Built target ferrobotics__rosidl_typesupport_fastrtps_c
+[2.659s] [ 76%] Built target ferrobotics__rosidl_typesupport_introspection_cpp
+[2.674s] [ 76%] Built target ferrobotics
+[2.698s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.137s] [ 78%] Built target ferrobotics__py
+[3.149s] [ 80%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_generator_py.dir/rosidl_generator_py/ferrobotics/msg/_acf_telem_s.c.o[0m
+[3.150s] [ 82%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_generator_py.dir/rosidl_generator_py/ferrobotics/srv/_set_float_s.c.o[0m
+[3.150s] [ 85%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_generator_py.dir/rosidl_generator_py/ferrobotics/srv/_set_duration_s.c.o[0m
+[3.229s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/ferrobotics/libferrobotics__rosidl_generator_py.so[0m
+[3.259s] [ 87%] Built target ferrobotics__rosidl_generator_py
+[3.273s] [ 89%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ferrobotics/_ferrobotics_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.274s] [ 91%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ferrobotics/_ferrobotics_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.274s] [ 93%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ferrobotics/_ferrobotics_s.ep.rosidl_typesupport_c.c.o[0m
+[3.339s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ferrobotics/ferrobotics_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.339s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ferrobotics/ferrobotics_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.339s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ferrobotics/ferrobotics_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.363s] [100%] Built target ferrobotics__rosidl_typesupport_c__pyext
+[3.363s] [100%] Built target ferrobotics__rosidl_typesupport_introspection_c__pyext
+[3.363s] [100%] Built target ferrobotics__rosidl_typesupport_fastrtps_c__pyext
+[3.371s] Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24
+[3.476s] Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ferrobotics
+[3.485s] -- Install configuration: ""
+[3.486s] -- Execute custom install script
+[3.487s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ament_index/resource_index/rosidl_interfaces/ferrobotics
+[3.498s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/acf_telem.h
+[3.508s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/detail/acf_telem__functions.h
+[3.517s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/detail/acf_telem__struct.h
+[3.527s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/detail/acf_telem__type_support.h
+[3.536s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/rosidl_generator_c__visibility_control.h
+[3.545s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_duration__functions.h
+[3.555s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_duration__struct.h
+[3.561s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_duration__type_support.h
+[3.567s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_float__functions.h
+[3.574s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_float__struct.h
+[3.580s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_float__type_support.h
+[3.586s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/set_duration.h
+[3.592s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/set_float.h
+[3.598s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/environment/library_path.sh
+[3.604s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/environment/library_path.dsv
+[3.611s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/detail/acf_telem__rosidl_typesupport_fastrtps_c.h
+[3.617s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.627s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_duration__rosidl_typesupport_fastrtps_c.h
+[3.637s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_float__rosidl_typesupport_fastrtps_c.h
+[3.646s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/acf_telem.hpp
+[3.655s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/detail/acf_telem__builder.hpp
+[3.664s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/detail/acf_telem__struct.hpp
+[3.673s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/detail/acf_telem__traits.hpp
+[3.682s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_duration__builder.hpp
+[3.691s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_duration__struct.hpp
+[3.700s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_duration__traits.hpp
+[3.708s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_float__builder.hpp
+[3.717s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_float__struct.hpp
+[3.725s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_float__traits.hpp
+[3.734s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/set_duration.hpp
+[3.743s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/set_float.hpp
+[3.752s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/detail/acf_telem__rosidl_typesupport_fastrtps_cpp.hpp
+[3.762s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.771s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_duration__rosidl_typesupport_fastrtps_cpp.hpp
+[3.780s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_float__rosidl_typesupport_fastrtps_cpp.hpp
+[3.790s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/detail/acf_telem__rosidl_typesupport_introspection_c.h
+[3.800s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.810s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_duration__rosidl_typesupport_introspection_c.h
+[3.819s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_float__rosidl_typesupport_introspection_c.h
+[3.829s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/msg/detail/acf_telem__rosidl_typesupport_introspection_cpp.hpp
+[3.840s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_duration__rosidl_typesupport_introspection_cpp.hpp
+[3.849s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/include/ferrobotics/ferrobotics/srv/detail/set_float__rosidl_typesupport_introspection_cpp.hpp
+[3.858s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/environment/pythonpath.sh
+[3.868s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/environment/pythonpath.dsv
+[3.879s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics-0.0.0-py3.10.egg-info/PKG-INFO
+[3.888s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.898s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.908s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics-0.0.0-py3.10.egg-info/top_level.txt
+[3.917s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/__init__.py
+[3.926s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/_ferrobotics_s.ep.rosidl_typesupport_c.c
+[3.937s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/_ferrobotics_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.948s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/_ferrobotics_s.ep.rosidl_typesupport_introspection_c.c
+[3.958s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/ferrobotics_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.968s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/ferrobotics_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.978s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/ferrobotics_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.988s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/libferrobotics__rosidl_generator_py.so
+[3.996s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/msg/__init__.py
+[4.005s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/msg/_acf_telem.py
+[4.013s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/msg/_acf_telem_s.c
+[4.021s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/srv/__init__.py
+[4.030s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/srv/_set_duration.py
+[4.040s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/srv/_set_duration_s.c
+[4.051s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/srv/_set_float.py
+[4.060s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/srv/_set_float_s.c
+[4.068s] -- Up-to-date symlink: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/ferrobotics_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.068s] -- Up-to-date symlink: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/ferrobotics_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.069s] -- Up-to-date symlink: /home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/ferrobotics_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.069s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/msg/ACFTelem.idl
+[4.074s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/srv/SetFloat.idl
+[4.079s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/srv/SetDuration.idl
+[4.084s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/msg/ACFTelem.msg
+[4.089s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/srv/SetFloat.srv
+[4.094s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/srv/SetFloat_Request.msg
+[4.101s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/srv/SetFloat_Response.msg
+[4.112s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/srv/SetDuration.srv
+[4.122s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/srv/SetDuration_Request.msg
+[4.130s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/srv/SetDuration_Response.msg
+[4.140s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/srv/srv/SetDuration.srv
+[4.150s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/srv/srv/SetFloat.srv
+[4.159s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/msg/msg/ACFTelem.msg
+[4.166s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ament_index/resource_index/package_run_dependencies/ferrobotics
+[4.175s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ament_index/resource_index/parent_prefix_path/ferrobotics
+[4.184s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/environment/ament_prefix_path.sh
+[4.192s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/environment/ament_prefix_path.dsv
+[4.201s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/environment/path.sh
+[4.210s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/environment/path.dsv
+[4.218s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/local_setup.bash
+[4.226s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/local_setup.sh
+[4.234s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/local_setup.zsh
+[4.244s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/local_setup.dsv
+[4.255s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.dsv
+[4.264s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ament_index/resource_index/packages/ferrobotics
+[4.274s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/rosidl_cmake-extras.cmake
+[4.282s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.290s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.297s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ament_cmake_export_libraries-extras.cmake
+[4.303s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ament_cmake_export_targets-extras.cmake
+[4.308s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.316s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.326s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ferroboticsConfig.cmake
+[4.336s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ferroboticsConfig-version.cmake
+[4.346s] -- Symlinking: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.xml
+[4.356s] -- Installing: /home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_generator_c.so
+[4.356s] -- Set runtime path of "/home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_generator_c.so" to ""
+[4.356s] -- Installing: /home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_fastrtps_c.so
+[4.356s] -- Set runtime path of "/home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_fastrtps_c.so" to ""
+[4.356s] -- Installing: /home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_fastrtps_cpp.so
+[4.357s] -- Set runtime path of "/home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.357s] -- Installing: /home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_introspection_c.so
+[4.357s] -- Set runtime path of "/home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_introspection_c.so" to ""
+[4.357s] -- Installing: /home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_c.so
+[4.357s] -- Set runtime path of "/home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_c.so" to ""
+[4.357s] -- Installing: /home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_introspection_cpp.so
+[4.357s] -- Set runtime path of "/home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_introspection_cpp.so" to ""
+[4.357s] -- Installing: /home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_cpp.so
+[4.357s] -- Set runtime path of "/home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_typesupport_cpp.so" to ""
+[4.443s] Listing '/home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics'...
+[4.444s] Compiling '/home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/__init__.py'...
+[4.444s] Listing '/home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/msg'...
+[4.444s] Compiling '/home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/msg/__init__.py'...
+[4.444s] Compiling '/home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/msg/_acf_telem.py'...
+[4.444s] Listing '/home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/srv'...
+[4.444s] Compiling '/home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/srv/__init__.py'...
+[4.444s] Compiling '/home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/srv/_set_duration.py'...
+[4.444s] Compiling '/home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages/ferrobotics/srv/_set_float.py'...
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_generator_py.so
+[4.447s] -- Set runtime path of "/home/zzy/ur_real/install/ferrobotics/lib/libferrobotics__rosidl_generator_py.so" to ""
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/export_ferrobotics__rosidl_generator_cExport.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/export_ferrobotics__rosidl_generator_cExport-noconfig.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/export_ferrobotics__rosidl_typesupport_fastrtps_cExport.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/export_ferrobotics__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/export_ferrobotics__rosidl_generator_cppExport.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/export_ferrobotics__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/export_ferrobotics__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ferrobotics__rosidl_typesupport_introspection_cExport.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ferrobotics__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ferrobotics__rosidl_typesupport_cExport.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ferrobotics__rosidl_typesupport_cExport-noconfig.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ferrobotics__rosidl_typesupport_introspection_cppExport.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ferrobotics__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ferrobotics__rosidl_typesupport_cppExport.cmake
+[4.447s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/ferrobotics__rosidl_typesupport_cppExport-noconfig.cmake
+[4.448s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/export_ferrobotics__rosidl_generator_pyExport.cmake
+[4.448s] -- Installing: /home/zzy/ur_real/install/ferrobotics/share/ferrobotics/cmake/export_ferrobotics__rosidl_generator_pyExport-noconfig.cmake
+[4.449s] Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ferrobotics

@@ -1,0 +1,2 @@
+Invoking command in '/home/zzy/ur_real/build/rpi_ati_net_ft': /usr/bin/cmake /home/zzy/ur_real/src/rpi_ati_net_ft -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/rpi_ati_net_ft
+Invoked command in '/home/zzy/ur_real/build/rpi_ati_net_ft' returned '1': /usr/bin/cmake /home/zzy/ur_real/src/rpi_ati_net_ft -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/rpi_ati_net_ft

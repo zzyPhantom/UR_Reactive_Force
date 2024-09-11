@@ -1,0 +1,2 @@
+Invoking command in '/home/zzy/ur_real/build/ferrobotics': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics
+Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics

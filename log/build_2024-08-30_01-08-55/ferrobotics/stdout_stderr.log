@@ -1,0 +1,32 @@
+[  2%] Built target ferrobotics__cpp
+[ 12%] Built target ferrobotics__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_symlink_ferrobotics
+[ 27%] Built target ferrobotics__rosidl_typesupport_c
+[ 34%] Built target ferrobotics__rosidl_typesupport_cpp
+[ 44%] Built target ferrobotics__rosidl_typesupport_introspection_cpp
+[ 55%] Built target ferrobotics__rosidl_typesupport_fastrtps_cpp
+[ 65%] Built target ferrobotics__rosidl_typesupport_fastrtps_c
+[ 76%] Built target ferrobotics__rosidl_typesupport_introspection_c
+[ 76%] Built target ferrobotics
+[ 78%] Built target ferrobotics__py
+[ 87%] Built target ferrobotics__rosidl_generator_py
+[ 95%] Built target ferrobotics__rosidl_typesupport_fastrtps_c__pyext
+[ 95%] Built target ferrobotics__rosidl_typesupport_introspection_c__pyext
+[100%] Built target ferrobotics__rosidl_typesupport_c__pyext
+Traceback (most recent call last):
+  File "/home/zzy/ur_real/build/ferrobotics/ament_cmake_python/ferrobotics/setup.py", line 1, in <module>
+    from setuptools import find_packages
+  File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/__init__.py", line 27, in <module>
+    from .dist import Distribution
+  File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/dist.py", line 18, in <module>
+    from . import (
+  File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_entry_points.py", line 6, in <module>
+    from jaraco.text import yield_lines
+  File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_vendor/jaraco/text/__init__.py", line 12, in <module>
+    from jaraco.context import ExceptionTrap
+  File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_vendor/jaraco/context.py", line 17, in <module>
+    from backports import tarfile
+ImportError: cannot import name 'tarfile' from 'backports' (/home/zzy/anaconda3/lib/python3.11/site-packages/backports/__init__.py)
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_ferrobotics_egg.dir/build.make:70：CMakeFiles/ament_cmake_python_build_ferrobotics_egg] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:447：CMakeFiles/ament_cmake_python_build_ferrobotics_egg.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,27 @@
+[1.011s] Invoking command in '/home/zzy/ur_real/src/ferrobotics_acf': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ferrobotics_acf/prefix_override:/home/zzy/anaconda3/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.11/site-packages:${PYTHONPATH} /home/zzy/anaconda3/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ferrobotics_acf build --build-base /home/zzy/ur_real/build/ferrobotics_acf/build install --record /home/zzy/ur_real/build/ferrobotics_acf/install.log --single-version-externally-managed install_data
+[1.113s] /home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[1.114s]   warnings.warn(msg)
+[1.185s] running egg_info
+[1.196s] writing ../../build/ferrobotics_acf/ferrobotics_acf.egg-info/PKG-INFO
+[1.196s] writing dependency_links to ../../build/ferrobotics_acf/ferrobotics_acf.egg-info/dependency_links.txt
+[1.196s] writing entry points to ../../build/ferrobotics_acf/ferrobotics_acf.egg-info/entry_points.txt
+[1.196s] writing requirements to ../../build/ferrobotics_acf/ferrobotics_acf.egg-info/requires.txt
+[1.197s] writing top-level names to ../../build/ferrobotics_acf/ferrobotics_acf.egg-info/top_level.txt
+[1.220s] reading manifest file '../../build/ferrobotics_acf/ferrobotics_acf.egg-info/SOURCES.txt'
+[1.221s] writing manifest file '../../build/ferrobotics_acf/ferrobotics_acf.egg-info/SOURCES.txt'
+[1.221s] running build
+[1.221s] running build_py
+[1.221s] copying ferrobotics_acf/acf.py -> /home/zzy/ur_real/build/ferrobotics_acf/build/lib/ferrobotics_acf
+[1.221s] copying ferrobotics_acf/__init__.py -> /home/zzy/ur_real/build/ferrobotics_acf/build/lib/ferrobotics_acf
+[1.221s] running install
+[1.224s] running install_lib
+[1.236s] running install_data
+[1.236s] copying resource/ferrobotics_acf -> /home/zzy/ur_real/install/ferrobotics_acf/share/ament_index/resource_index/packages
+[1.236s] copying package.xml -> /home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf
+[1.236s] running install_egg_info
+[1.248s] removing '/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.11/site-packages/ferrobotics_acf-0.0.0-py3.11.egg-info' (and everything under it)
+[1.248s] Copying ../../build/ferrobotics_acf/ferrobotics_acf.egg-info to /home/zzy/ur_real/install/ferrobotics_acf/lib/python3.11/site-packages/ferrobotics_acf-0.0.0-py3.11.egg-info
+[1.249s] running install_scripts
+[1.328s] Installing acf script to /home/zzy/ur_real/install/ferrobotics_acf/lib/ferrobotics_acf
+[1.328s] writing list of installed files to '/home/zzy/ur_real/build/ferrobotics_acf/install.log'
+[1.346s] Invoked command in '/home/zzy/ur_real/src/ferrobotics_acf' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ferrobotics_acf/prefix_override:/home/zzy/anaconda3/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.11/site-packages:${PYTHONPATH} /home/zzy/anaconda3/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ferrobotics_acf build --build-base /home/zzy/ur_real/build/ferrobotics_acf/build install --record /home/zzy/ur_real/build/ferrobotics_acf/install.log --single-version-externally-managed install_data

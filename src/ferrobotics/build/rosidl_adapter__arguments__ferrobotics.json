@@ -1,0 +1,8 @@
+{
+  "package_name": "ferrobotics",
+  "non_idl_tuples": [
+    "/home/zzy/ur_real/src/ferrobotics:msg/ACFTelem.msg",
+    "/home/zzy/ur_real/src/ferrobotics:srv/SetFloat.srv",
+    "/home/zzy/ur_real/src/ferrobotics:srv/SetDuration.srv"
+  ]
+}

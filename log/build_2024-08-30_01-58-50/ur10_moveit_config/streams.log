@@ -1,0 +1,31 @@
+[0.170s] Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur10_moveit_config -- -j24 -l24
+[0.307s] Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur10_moveit_config -- -j24 -l24
+[0.325s] Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur10_moveit_config
+[0.330s] -- Install configuration: ""
+[0.330s] -- Execute custom install script
+[0.330s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config//launch/__pycache__/ur_moveit.launch.cpython-310.pyc
+[0.330s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config//launch/ur_moveit.launch.py
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/controllers.yaml
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/joint_limits.yaml
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/kinematics.yaml
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/ompl_planning.yaml
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/ur_servo.yaml
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/srdf/ur.srdf.xacro
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/srdf/ur_macro.srdf.xacro
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/rviz/view_robot.rviz
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ament_index/resource_index/package_run_dependencies/ur10_moveit_config
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ament_index/resource_index/parent_prefix_path/ur10_moveit_config
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/ament_prefix_path.sh
+[0.331s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/ament_prefix_path.dsv
+[0.332s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/path.sh
+[0.332s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/path.dsv
+[0.332s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.bash
+[0.332s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.sh
+[0.332s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.zsh
+[0.332s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.dsv
+[0.332s] -- Symlinking: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.dsv
+[0.338s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ament_index/resource_index/packages/ur10_moveit_config
+[0.338s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/cmake/ur10_moveit_configConfig.cmake
+[0.338s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/cmake/ur10_moveit_configConfig-version.cmake
+[0.338s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.xml
+[0.339s] Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur10_moveit_config

@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000088] (-) JobUnselected: {'identifier': 'ur10_moveit_config'}
+[0.000104] (-) JobUnselected: {'identifier': 'ur10_vel'}
+[0.000114] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.000123] (-) EventReactorShutdown: {}

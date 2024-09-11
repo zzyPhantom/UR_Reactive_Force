@@ -1,0 +1,528 @@
+[0.095s] DEBUG:colcon:Command line arguments: ['/home/zzy/.local/bin/colcon', 'build', '--symlink-install']
+[0.095s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fb8fd11a950>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb8fd21b730>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb8fd21b730>>, mixin_verb=('build',))
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.122s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zzy/ur_real'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'ignore_ament_install'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['colcon_pkg']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'colcon_pkg'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['colcon_meta']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'colcon_meta'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['ros']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'ros'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['cmake', 'python']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'cmake'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'python'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['python_setup_py']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'python_setup_py'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extension 'ros'
+[0.135s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ati_sensor' with type 'ros.ament_python' and name 'ati_sensor'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ros'
+[0.136s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera' with type 'ros.ament_python' and name 'camera'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extension 'ignore_ament_install'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extensions ['colcon_pkg']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extension 'colcon_pkg'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extensions ['colcon_meta']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extension 'colcon_meta'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extensions ['ros']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extension 'ros'
+[0.137s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ferrobotics' with type 'ros.ament_cmake' and name 'ferrobotics'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extensions ['ignore', 'ignore_ament_install']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extension 'ignore'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extension 'ignore_ament_install'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extensions ['colcon_pkg']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extension 'colcon_pkg'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extensions ['colcon_meta']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extension 'colcon_meta'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extensions ['ros']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extension 'ros'
+[0.137s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ferrobotics_acf' with type 'ros.ament_python' and name 'ferrobotics_acf'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extension 'ignore'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extension 'ignore_ament_install'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extensions ['colcon_pkg']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extension 'colcon_pkg'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extensions ['colcon_meta']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extension 'colcon_meta'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extensions ['ros']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extension 'ros'
+[0.138s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur10_moveit_config' with type 'ros.ament_cmake' and name 'ur10_moveit_config'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extension 'ros'
+[0.138s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur10_vel' with type 'ros.ament_python' and name 'ur10_vel'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extension 'ros'
+[0.139s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur_bringup' with type 'ros.ament_cmake' and name 'ur_bringup'
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.154s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/zzy/ur_real/install
+[0.155s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 400 installed packages in /opt/ros/humble
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'ati_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ati_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ati_sensor', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ati_sensor', 'symlink_install': True, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/camera', 'merge_install': False, 'path': '/home/zzy/ur_real/src/camera', 'symlink_install': True, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.186s] DEBUG:colcon.colcon_core.verb:Building package 'ferrobotics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ferrobotics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ferrobotics', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ferrobotics', 'symlink_install': True, 'test_result_base': None}
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_target' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.186s] DEBUG:colcon.colcon_core.verb:Building package 'ferrobotics_acf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ferrobotics_acf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ferrobotics_acf', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ferrobotics_acf', 'symlink_install': True, 'test_result_base': None}
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.186s] DEBUG:colcon.colcon_core.verb:Building package 'ur10_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ur10_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ur10_moveit_config', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ur10_moveit_config', 'symlink_install': True, 'test_result_base': None}
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_target' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.186s] DEBUG:colcon.colcon_core.verb:Building package 'ur10_vel' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ur10_vel', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ur10_vel', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ur10_vel', 'symlink_install': True, 'test_result_base': None}
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_target' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.187s] DEBUG:colcon.colcon_core.verb:Building package 'ur_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ur_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ur_bringup', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ur_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.187s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.188s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.188s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zzy/ur_real/src/ati_sensor' with build type 'ament_python'
+[0.188s] Level 1:colcon.colcon_core.shell:create_environment_hook('ati_sensor', 'ament_prefix_path')
+[0.189s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/ament_prefix_path.ps1'
+[0.190s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/ament_prefix_path.dsv'
+[0.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/ament_prefix_path.sh'
+[0.190s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.190s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.193s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zzy/ur_real/src/camera' with build type 'ament_python'
+[0.193s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'ament_prefix_path')
+[0.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/camera/share/camera/hook/ament_prefix_path.ps1'
+[0.193s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/camera/share/camera/hook/ament_prefix_path.dsv'
+[0.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/camera/share/camera/hook/ament_prefix_path.sh'
+[0.194s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.194s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.196s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zzy/ur_real/src/ferrobotics' with build type 'ament_cmake'
+[0.196s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zzy/ur_real/src/ferrobotics'
+[0.196s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.196s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.198s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zzy/ur_real/src/ferrobotics_acf' with build type 'ament_python'
+[0.198s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics_acf', 'ament_prefix_path')
+[0.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/ament_prefix_path.ps1'
+[0.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/ament_prefix_path.dsv'
+[0.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/ament_prefix_path.sh'
+[0.198s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.198s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.200s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zzy/ur_real/src/ur10_moveit_config' with build type 'ament_cmake'
+[0.201s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zzy/ur_real/src/ur10_moveit_config'
+[0.201s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.201s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.203s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zzy/ur_real/src/ur10_vel' with build type 'ament_python'
+[0.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur10_vel', 'ament_prefix_path')
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/ament_prefix_path.ps1'
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/ament_prefix_path.dsv'
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/ament_prefix_path.sh'
+[0.204s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.204s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.205s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zzy/ur_real/src/ur_bringup' with build type 'ament_cmake'
+[0.206s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zzy/ur_real/src/ur_bringup'
+[0.206s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.206s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.340s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zzy/ur_real/src/ati_sensor'
+[0.340s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.340s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.473s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zzy/ur_real/src/camera'
+[0.473s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.473s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics
+[0.610s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zzy/ur_real/src/ferrobotics_acf'
+[0.610s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.610s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ur10_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ur10_moveit_config
+[0.747s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zzy/ur_real/src/ur10_vel'
+[0.747s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.747s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ur_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ur_bringup
+[1.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ur10_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ur10_moveit_config
+[1.059s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur10_moveit_config -- -j24 -l24
+[1.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur10_moveit_config -- -j24 -l24
+[1.101s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ferrobotics_acf/share/ament_index/resource_index/packages/ferrobotics_acf
+[1.101s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/package.xml
+[1.101s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ferrobotics_acf/lib/ferrobotics_acf/acf
+[1.102s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ferrobotics_acf/lib/ferrobotics_acf/force_publisher
+[1.103s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ferrobotics_acf': PYTHONPATH=/home/zzy/ur_real/build/ferrobotics_acf/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ferrobotics_acf/build --no-deps symlink_data --force
+[1.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur10_moveit_config
+[1.110s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ati_sensor/share/ament_index/resource_index/packages/ati_sensor
+[1.111s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ati_sensor/share/ati_sensor/package.xml
+[1.111s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ati_sensor/lib/ati_sensor/ati_net_ft_driver_ros
+[1.111s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ati_sensor/lib/ati_sensor/test_rpi_ati_net_ft
+[1.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ati_sensor': PYTHONPATH=/home/zzy/ur_real/build/ati_sensor/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ati_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ati_sensor/build --no-deps symlink_data --force
+[1.113s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/camera/share/ament_index/resource_index/packages/camera
+[1.113s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/camera/share/camera/package.xml
+[1.114s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/camera/lib/camera/realsense_ArUco_reader
+[1.114s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/camera/lib/camera/realsense_calibrate
+[1.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/camera': PYTHONPATH=/home/zzy/ur_real/build/camera/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/camera/build --no-deps symlink_data --force
+[1.115s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index/packages/ur10_vel
+[1.115s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ur10_vel/share/ur10_vel/package.xml
+[1.116s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel/Joint_Velocity_Transfer
+[1.116s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel/check_collision
+[1.116s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel/check_keyboard
+[1.116s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel/joint_velocity_IK
+[1.116s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel/publisher_forward_velocity_controller
+[1.118s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur10_vel': PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ur10_vel/build --no-deps symlink_data --force
+[1.125s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur10_moveit_config)
+[1.125s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur10_moveit_config
+[1.127s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config' for CMake module files
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config' for CMake config files
+[1.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur10_moveit_config', 'cmake_prefix_path')
+[1.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.ps1'
+[1.128s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.dsv'
+[1.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.sh'
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/bin'
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/lib/pkgconfig/ur10_moveit_config.pc'
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/lib/python3.10/site-packages'
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/bin'
+[1.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.ps1'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.dsv'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.sh'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.bash'
+[1.131s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.zsh'
+[1.131s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ur10_moveit_config/share/colcon-core/packages/ur10_moveit_config)
+[1.144s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur10_moveit_config)
+[1.144s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config' for CMake module files
+[1.145s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config' for CMake config files
+[1.145s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur10_moveit_config', 'cmake_prefix_path')
+[1.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.ps1'
+[1.145s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.dsv'
+[1.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.sh'
+[1.146s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/bin'
+[1.146s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/lib/pkgconfig/ur10_moveit_config.pc'
+[1.146s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/lib/python3.10/site-packages'
+[1.146s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/bin'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.ps1'
+[1.147s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.dsv'
+[1.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.sh'
+[1.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.bash'
+[1.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.zsh'
+[1.147s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ur10_moveit_config/share/colcon-core/packages/ur10_moveit_config)
+[1.501s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics_acf', 'pythonpath_develop')
+[1.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath_develop.ps1'
+[1.502s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ferrobotics_acf' returned '0': PYTHONPATH=/home/zzy/ur_real/build/ferrobotics_acf/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ferrobotics_acf/build --no-deps symlink_data --force
+[1.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/build/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath_develop.dsv'
+[1.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath_develop.sh'
+[1.503s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf' for CMake module files
+[1.503s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf' for CMake config files
+[1.503s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf/lib'
+[1.503s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf/bin'
+[1.504s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf/lib/pkgconfig/ferrobotics_acf.pc'
+[1.504s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages'
+[1.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics_acf', 'pythonpath')
+[1.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath.ps1'
+[1.504s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath.dsv'
+[1.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath.sh'
+[1.505s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf/bin'
+[1.505s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ferrobotics_acf)
+[1.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/package.ps1'
+[1.505s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/package.dsv'
+[1.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/package.sh'
+[1.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/package.bash'
+[1.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/package.zsh'
+[1.506s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ferrobotics_acf/share/colcon-core/packages/ferrobotics_acf)
+[1.507s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'pythonpath_develop')
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/camera/share/camera/hook/pythonpath_develop.ps1'
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/build/camera/share/camera/hook/pythonpath_develop.dsv'
+[1.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/camera' returned '0': PYTHONPATH=/home/zzy/ur_real/build/camera/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/camera/build --no-deps symlink_data --force
+[1.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/camera/share/camera/hook/pythonpath_develop.sh'
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera' for CMake module files
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera' for CMake config files
+[1.509s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera/lib'
+[1.509s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera/bin'
+[1.509s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera/lib/pkgconfig/camera.pc'
+[1.509s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera/lib/python3.10/site-packages'
+[1.509s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'pythonpath')
+[1.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/camera/share/camera/hook/pythonpath.ps1'
+[1.509s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/camera/share/camera/hook/pythonpath.dsv'
+[1.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/camera/share/camera/hook/pythonpath.sh'
+[1.509s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera/bin'
+[1.510s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera)
+[1.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/camera/share/camera/package.ps1'
+[1.510s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/camera/share/camera/package.dsv'
+[1.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/camera/share/camera/package.sh'
+[1.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/camera/share/camera/package.bash'
+[1.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/camera/share/camera/package.zsh'
+[1.511s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/camera/share/colcon-core/packages/camera)
+[1.511s] Level 1:colcon.colcon_core.shell:create_environment_hook('ati_sensor', 'pythonpath_develop')
+[1.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ati_sensor/share/ati_sensor/hook/pythonpath_develop.ps1'
+[1.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ati_sensor' returned '0': PYTHONPATH=/home/zzy/ur_real/build/ati_sensor/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ati_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ati_sensor/build --no-deps symlink_data --force
+[1.512s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/build/ati_sensor/share/ati_sensor/hook/pythonpath_develop.dsv'
+[1.512s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ati_sensor/share/ati_sensor/hook/pythonpath_develop.sh'
+[1.512s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor' for CMake module files
+[1.512s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor' for CMake config files
+[1.513s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor/lib'
+[1.513s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor/bin'
+[1.513s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor/lib/pkgconfig/ati_sensor.pc'
+[1.513s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor/lib/python3.10/site-packages'
+[1.513s] Level 1:colcon.colcon_core.shell:create_environment_hook('ati_sensor', 'pythonpath')
+[1.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/pythonpath.ps1'
+[1.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/pythonpath.dsv'
+[1.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/pythonpath.sh'
+[1.514s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor/bin'
+[1.514s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ati_sensor)
+[1.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/package.ps1'
+[1.514s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/package.dsv'
+[1.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/package.sh'
+[1.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/package.bash'
+[1.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/package.zsh'
+[1.515s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ati_sensor/share/colcon-core/packages/ati_sensor)
+[1.517s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur10_vel', 'pythonpath_develop')
+[1.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ur10_vel/share/ur10_vel/hook/pythonpath_develop.ps1'
+[1.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur10_vel' returned '0': PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ur10_vel/build --no-deps symlink_data --force
+[1.517s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/build/ur10_vel/share/ur10_vel/hook/pythonpath_develop.dsv'
+[1.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ur10_vel/share/ur10_vel/hook/pythonpath_develop.sh'
+[1.518s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel' for CMake module files
+[1.518s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel' for CMake config files
+[1.519s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel/lib'
+[1.519s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel/bin'
+[1.519s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel/lib/pkgconfig/ur10_vel.pc'
+[1.519s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages'
+[1.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur10_vel', 'pythonpath')
+[1.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/pythonpath.ps1'
+[1.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/pythonpath.dsv'
+[1.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/pythonpath.sh'
+[1.520s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel/bin'
+[1.520s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur10_vel)
+[1.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/package.ps1'
+[1.520s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/package.dsv'
+[1.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/package.sh'
+[1.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/package.bash'
+[1.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/package.zsh'
+[1.521s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ur10_vel/share/colcon-core/packages/ur10_vel)
+[1.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics
+[1.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24
+[2.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24
+[2.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ferrobotics
+[2.228s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ferrobotics)
+[2.228s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics' for CMake module files
+[2.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ferrobotics
+[2.229s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics' for CMake config files
+[2.229s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics', 'cmake_prefix_path')
+[2.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.ps1'
+[2.229s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.dsv'
+[2.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.sh'
+[2.230s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib'
+[2.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics', 'ld_library_path_lib')
+[2.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.ps1'
+[2.230s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.dsv'
+[2.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.sh'
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/bin'
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib/pkgconfig/ferrobotics.pc'
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib/python3.10/site-packages'
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/bin'
+[2.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.ps1'
+[2.231s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.dsv'
+[2.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.sh'
+[2.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.bash'
+[2.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.zsh'
+[2.232s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ferrobotics/share/colcon-core/packages/ferrobotics)
+[2.291s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ferrobotics)
+[2.292s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics' for CMake module files
+[2.292s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics' for CMake config files
+[2.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics', 'cmake_prefix_path')
+[2.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.ps1'
+[2.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.dsv'
+[2.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.sh'
+[2.294s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib'
+[2.294s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics', 'ld_library_path_lib')
+[2.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.ps1'
+[2.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.dsv'
+[2.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.sh'
+[2.295s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/bin'
+[2.295s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib/pkgconfig/ferrobotics.pc'
+[2.295s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib/python3.10/site-packages'
+[2.295s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/bin'
+[2.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.ps1'
+[2.296s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.dsv'
+[2.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.sh'
+[2.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.bash'
+[2.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.zsh'
+[2.297s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ferrobotics/share/colcon-core/packages/ferrobotics)
+[3.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ur_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ur_bringup
+[3.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24
+[3.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24
+[3.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur_bringup
+[3.302s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_bringup)
+[3.303s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup' for CMake module files
+[3.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur_bringup
+[3.303s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup' for CMake config files
+[3.304s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_bringup', 'cmake_prefix_path')
+[3.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.ps1'
+[3.304s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.dsv'
+[3.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.sh'
+[3.305s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/bin'
+[3.305s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/lib/pkgconfig/ur_bringup.pc'
+[3.305s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/lib/python3.10/site-packages'
+[3.306s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/bin'
+[3.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.ps1'
+[3.306s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.dsv'
+[3.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.sh'
+[3.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.bash'
+[3.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.zsh'
+[3.307s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ur_bringup/share/colcon-core/packages/ur_bringup)
+[3.327s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_bringup)
+[3.327s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup' for CMake module files
+[3.328s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup' for CMake config files
+[3.328s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_bringup', 'cmake_prefix_path')
+[3.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.ps1'
+[3.329s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.dsv'
+[3.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.sh'
+[3.330s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/bin'
+[3.330s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/lib/pkgconfig/ur_bringup.pc'
+[3.330s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/lib/python3.10/site-packages'
+[3.331s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/bin'
+[3.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.ps1'
+[3.332s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.dsv'
+[3.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.sh'
+[3.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.bash'
+[3.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.zsh'
+[3.334s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ur_bringup/share/colcon-core/packages/ur_bringup)
+[3.334s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.334s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.335s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.335s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.343s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.343s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.343s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.370s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.371s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zzy/ur_real/install/local_setup.ps1'
+[3.372s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zzy/ur_real/install/_local_setup_util_ps1.py'
+[3.374s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zzy/ur_real/install/setup.ps1'
+[3.376s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zzy/ur_real/install/local_setup.sh'
+[3.376s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zzy/ur_real/install/_local_setup_util_sh.py'
+[3.377s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zzy/ur_real/install/setup.sh'
+[3.379s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zzy/ur_real/install/local_setup.bash'
+[3.379s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zzy/ur_real/install/setup.bash'
+[3.381s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zzy/ur_real/install/local_setup.zsh'
+[3.381s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zzy/ur_real/install/setup.zsh'

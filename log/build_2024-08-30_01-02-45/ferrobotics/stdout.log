@@ -1,0 +1,15 @@
+[  2%] Built target ferrobotics__cpp
+[ 12%] Built target ferrobotics__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_symlink_ferrobotics
+[ 23%] Built target ferrobotics__rosidl_typesupport_cpp
+[ 34%] Built target ferrobotics__rosidl_typesupport_introspection_c
+[ 44%] Built target ferrobotics__rosidl_typesupport_fastrtps_cpp
+[ 65%] Built target ferrobotics__rosidl_typesupport_introspection_cpp
+[ 65%] Built target ferrobotics__rosidl_typesupport_fastrtps_c
+[ 76%] Built target ferrobotics__rosidl_typesupport_c
+[ 76%] Built target ferrobotics
+[ 78%] Built target ferrobotics__py
+[ 87%] Built target ferrobotics__rosidl_generator_py
+[100%] Built target ferrobotics__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target ferrobotics__rosidl_typesupport_introspection_c__pyext
+[100%] Built target ferrobotics__rosidl_typesupport_c__pyext

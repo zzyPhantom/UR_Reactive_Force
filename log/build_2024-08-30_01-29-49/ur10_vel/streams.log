@@ -1,0 +1,55 @@
+[1.465s] Invoking command in '/home/zzy/ur_real/src/ur10_vel': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/anaconda3/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages:${PYTHONPATH} /home/zzy/anaconda3/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data
+[1.566s] /home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[1.566s]   warnings.warn(msg)
+[1.636s] running egg_info
+[1.648s] writing ../../build/ur10_vel/ur10_vel.egg-info/PKG-INFO
+[1.648s] writing dependency_links to ../../build/ur10_vel/ur10_vel.egg-info/dependency_links.txt
+[1.648s] writing entry points to ../../build/ur10_vel/ur10_vel.egg-info/entry_points.txt
+[1.648s] writing requirements to ../../build/ur10_vel/ur10_vel.egg-info/requires.txt
+[1.648s] writing top-level names to ../../build/ur10_vel/ur10_vel.egg-info/top_level.txt
+[1.671s] reading manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[1.673s] writing manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[1.673s] running build
+[1.673s] running build_py
+[1.673s] copying ur10_vel/publisher_forward_velocity_controller.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.673s] copying ur10_vel/check_keyboard.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.673s] copying ur10_vel/moveit_bringup.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.673s] copying ur10_vel/Joint_Velocity_Transfer.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.673s] copying ur10_vel/joint_velocity_IK.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.673s] copying ur10_vel/check_collision.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.673s] copying ur10_vel/__init__.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.673s] copying ur10_vel/compute_manipulability_J.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.674s] running install
+[1.676s] running install_lib
+[1.687s] creating /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel
+[1.687s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/publisher_forward_velocity_controller.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel
+[1.688s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/check_keyboard.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel
+[1.688s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/moveit_bringup.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel
+[1.688s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/publisher_forward_position_controller.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel
+[1.688s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/Joint_Velocity_Transfer.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel
+[1.688s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/joint_velocity_IK.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel
+[1.688s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/check_collision.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel
+[1.688s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/__init__.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel
+[1.688s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/compute_manipulability_J.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel
+[1.688s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel/publisher_forward_velocity_controller.py to publisher_forward_velocity_controller.cpython-311.pyc
+[1.689s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel/check_keyboard.py to check_keyboard.cpython-311.pyc
+[1.689s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel/moveit_bringup.py to moveit_bringup.cpython-311.pyc
+[1.689s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel/publisher_forward_position_controller.py to publisher_forward_position_controller.cpython-311.pyc
+[1.690s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel/Joint_Velocity_Transfer.py to Joint_Velocity_Transfer.cpython-311.pyc
+[1.690s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel/joint_velocity_IK.py to joint_velocity_IK.cpython-311.pyc
+[1.693s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel/check_collision.py to check_collision.cpython-311.pyc
+[1.693s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel/__init__.py to __init__.cpython-311.pyc
+[1.693s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel/compute_manipulability_J.py to compute_manipulability_J.cpython-311.pyc
+[1.696s] running install_data
+[1.696s] copying resource/ur10_vel -> /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index/packages
+[1.696s] copying package.xml -> /home/zzy/ur_real/install/ur10_vel/share/ur10_vel
+[1.696s] running install_egg_info
+[1.708s] Copying ../../build/ur10_vel/ur10_vel.egg-info to /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel-0.0.0-py3.11.egg-info
+[1.708s] running install_scripts
+[1.790s] Installing Joint_Velocity_Transfer script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.790s] Installing check_collision script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.791s] Installing check_keyboard script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.791s] Installing joint_velocity_IK script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.791s] Installing publisher_forward_velocity_controller script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.791s] writing list of installed files to '/home/zzy/ur_real/build/ur10_vel/install.log'
+[1.810s] Invoked command in '/home/zzy/ur_real/src/ur10_vel' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/anaconda3/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages:${PYTHONPATH} /home/zzy/anaconda3/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data

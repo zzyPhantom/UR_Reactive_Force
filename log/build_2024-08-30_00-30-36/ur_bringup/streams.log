@@ -1,0 +1,1 @@
+[0.173s] Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24

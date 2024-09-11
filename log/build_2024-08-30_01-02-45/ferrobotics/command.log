@@ -1,0 +1,1 @@
+Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24

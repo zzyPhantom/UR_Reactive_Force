@@ -1,0 +1,9 @@
+source;share/ur10_vel/hook/pythonpath.ps1
+source;share/ur10_vel/hook/pythonpath.dsv
+source;share/ur10_vel/hook/pythonpath.sh
+source;share/ur10_vel/hook/ament_prefix_path.ps1
+source;share/ur10_vel/hook/ament_prefix_path.dsv
+source;share/ur10_vel/hook/ament_prefix_path.sh
+source;../../build/ur10_vel/share/ur10_vel/hook/pythonpath_develop.ps1
+source;../../build/ur10_vel/share/ur10_vel/hook/pythonpath_develop.dsv
+source;../../build/ur10_vel/share/ur10_vel/hook/pythonpath_develop.sh

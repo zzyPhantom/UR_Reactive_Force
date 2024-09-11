@@ -1,0 +1,11 @@
+[0.008s] Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24
+[0.101s] [35m[1mConsolidate compiler generated dependencies of target ur_bringup[0m
+[0.148s] [ 50%] [32mBuilding CXX object CMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o[0m
+[0.603s] [01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Kmoveit/planning_interface/planning_scene_interface.hpp: 没有那个文件或目录
+[0.603s]    12 | #include [01;31m[K<moveit/planning_interface/planning_scene_interface.hpp>[m[K
+[0.603s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.603s] compilation terminated.
+[0.606s] gmake[2]: *** [CMakeFiles/ur_bringup.dir/build.make:76：CMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o] 错误 1
+[0.606s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ur_bringup.dir/all] 错误 2
+[0.606s] gmake: *** [Makefile:146：all] 错误 2
+[0.608s] Invoked command in '/home/zzy/ur_real/build/ur_bringup' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24

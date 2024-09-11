@@ -1,0 +1,32 @@
+[0.005s] Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ur10_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ur10_moveit_config
+[0.014s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.240s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.244s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.263s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.264s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.268s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.275s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.285s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.322s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.322s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.341s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.441s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.515s] Traceback (most recent call last):
+[0.515s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[0.515s]     from catkin_pkg.package import parse_package_string
+[0.515s] ModuleNotFoundError: No module named 'catkin_pkg'
+[0.517s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.518s]   execute_process(/home/zzy/.pyenv/shims/python3
+[0.518s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.518s]   /home/zzy/ur_real/src/ur10_moveit_config/package.xml
+[0.518s]   /home/zzy/ur_real/build/ur10_moveit_config/ament_cmake_core/package.cmake)
+[0.518s]   returned error code 1
+[0.518s] Call Stack (most recent call first):
+[0.518s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.518s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.518s]   CMakeLists.txt:43 (ament_lint_auto_find_test_dependencies)
+[0.518s] 
+[0.518s] [0m
+[0.518s] -- Configuring incomplete, errors occurred!
+[0.518s] See also "/home/zzy/ur_real/build/ur10_moveit_config/CMakeFiles/CMakeOutput.log".
+[0.522s] Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ur10_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ur10_moveit_config

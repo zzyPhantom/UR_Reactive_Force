@@ -1,0 +1,237 @@
+[0.000000] (-) TimerEvent: {}
+[0.000175] (ur10_moveit_config) JobQueued: {'identifier': 'ur10_moveit_config', 'dependencies': OrderedDict()}
+[0.000204] (ur10_vel) JobQueued: {'identifier': 'ur10_vel', 'dependencies': OrderedDict()}
+[0.000216] (ur_bringup) JobQueued: {'identifier': 'ur_bringup', 'dependencies': OrderedDict()}
+[0.000225] (ur10_moveit_config) JobStarted: {'identifier': 'ur10_moveit_config'}
+[0.003495] (ur10_vel) JobStarted: {'identifier': 'ur10_vel'}
+[0.006411] (ur_bringup) JobStarted: {'identifier': 'ur_bringup'}
+[0.008713] (ur10_moveit_config) JobProgress: {'identifier': 'ur10_moveit_config', 'progress': 'cmake'}
+[0.009496] (ur10_moveit_config) JobProgress: {'identifier': 'ur10_moveit_config', 'progress': 'build'}
+[0.009529] (ur10_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zzy/ur_real/build/ur10_moveit_config', '--', '-j24', '-l24'], 'cwd': '/home/zzy/ur_real/build/ur10_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zzy'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin'), ('HOME', '/home/zzy'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6273'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zzy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zzy/anaconda3/bin:/home/zzy/anaconda3/condabin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zzy-ROG:@/tmp/.ICE-unix/2581,unix/zzy-ROG:/tmp/.ICE-unix/2581'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3752d082_745c_42e7_96ce_5692f287742b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/zzy/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/zzy/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zzy/ur_real/build/ur10_moveit_config'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zzy/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/zzy/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099580] (-) TimerEvent: {}
+[0.178296] (ur_bringup) JobProgress: {'identifier': 'ur_bringup', 'progress': 'cmake'}
+[0.178665] (ur_bringup) JobProgress: {'identifier': 'ur_bringup', 'progress': 'build'}
+[0.178911] (ur_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zzy/ur_real/build/ur_bringup', '--', '-j24', '-l24'], 'cwd': '/home/zzy/ur_real/build/ur_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zzy'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin'), ('HOME', '/home/zzy'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6273'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zzy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zzy/anaconda3/bin:/home/zzy/anaconda3/condabin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zzy-ROG:@/tmp/.ICE-unix/2581,unix/zzy-ROG:/tmp/.ICE-unix/2581'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3752d082_745c_42e7_96ce_5692f287742b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/zzy/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/zzy/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zzy/ur_real/build/ur_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zzy/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/zzy/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.179960] (ur10_moveit_config) CommandEnded: {'returncode': 0}
+[0.191934] (ur10_moveit_config) JobProgress: {'identifier': 'ur10_moveit_config', 'progress': 'install'}
+[0.195619] (ur_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.196656] (ur10_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zzy/ur_real/build/ur10_moveit_config'], 'cwd': '/home/zzy/ur_real/build/ur10_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zzy'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin'), ('HOME', '/home/zzy'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '6273'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zzy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zzy/anaconda3/bin:/home/zzy/anaconda3/condabin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zzy-ROG:@/tmp/.ICE-unix/2581,unix/zzy-ROG:/tmp/.ICE-unix/2581'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3752d082_745c_42e7_96ce_5692f287742b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/zzy/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/zzy/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zzy/ur_real/build/ur10_moveit_config'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/zzy/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/zzy/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.199661] (-) TimerEvent: {}
+[0.201276] (ur10_moveit_config) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.201382] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config//launch\n'}
+[0.201422] (ur10_moveit_config) StdoutLine: {'line': b'-- Installing: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config//launch/ur_moveit.launch.py\n'}
+[0.201455] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config\n'}
+[0.201485] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/ompl_planning.yaml\n'}
+[0.201515] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/kinematics.yaml\n'}
+[0.201545] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/ur_servo.yaml\n'}
+[0.201576] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/joint_limits.yaml\n'}
+[0.201605] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/controllers.yaml\n'}
+[0.201634] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/srdf\n'}
+[0.201682] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/srdf/ur_macro.srdf.xacro\n'}
+[0.201742] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/srdf/ur.srdf.xacro\n'}
+[0.201771] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/rviz\n'}
+[0.201800] (ur10_moveit_config) StdoutLine: {'line': b'-- Installing: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/rviz/view_robot.rviz\n'}
+[0.201829] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ament_index/resource_index/package_run_dependencies/ur10_moveit_config\n'}
+[0.201859] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ament_index/resource_index/parent_prefix_path/ur10_moveit_config\n'}
+[0.201888] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/ament_prefix_path.sh\n'}
+[0.201915] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/ament_prefix_path.dsv\n'}
+[0.201943] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/path.sh\n'}
+[0.201971] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/path.dsv\n'}
+[0.201999] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.bash\n'}
+[0.202027] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.sh\n'}
+[0.202055] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.zsh\n'}
+[0.202083] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.dsv\n'}
+[0.202111] (ur10_moveit_config) StdoutLine: {'line': b'-- Installing: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.dsv\n'}
+[0.202138] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ament_index/resource_index/packages/ur10_moveit_config\n'}
+[0.202165] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/cmake/ur10_moveit_configConfig.cmake\n'}
+[0.202211] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/cmake/ur10_moveit_configConfig-version.cmake\n'}
+[0.202240] (ur10_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.xml\n'}
+[0.202620] (ur10_moveit_config) CommandEnded: {'returncode': 0}
+[0.224557] (ur10_moveit_config) JobEnded: {'identifier': 'ur10_moveit_config', 'rc': 0}
+[0.274741] (ur_bringup) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.278918] (ur_bringup) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.297978] (ur_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.299473] (ur_bringup) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.299712] (-) TimerEvent: {}
+[0.303195] (ur_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.310182] (ur_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.320043] (ur_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.357023] (ur_bringup) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.357780] (ur_bringup) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.376282] (ur_bringup) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.399904] (-) TimerEvent: {}
+[0.454706] (ur10_vel) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ur10_vel', 'build', '--build-base', '/home/zzy/ur_real/build/ur10_vel/build', 'install', '--record', '/home/zzy/ur_real/build/ur10_vel/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/zzy/ur_real/src/ur10_vel', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'LANGUAGE': 'zh_CN:zh', 'USER': 'zzy', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin', 'HOME': '/home/zzy', 'CONDA_SHLVL': '1', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '6273', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'zzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'zzy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/zzy/anaconda3/bin:/home/zzy/anaconda3/condabin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/zzy-ROG:@/tmp/.ICE-unix/2581,unix/zzy-ROG:/tmp/.ICE-unix/2581', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3752d082_745c_42e7_96ce_5692f287742b', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/zzy/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/zzy/anaconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/zzy/ur_real/build/ur10_vel', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/zzy/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/zzy/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.476628] (ur_bringup) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.500050] (-) TimerEvent: {}
+[0.556941] (ur_bringup) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[0.564324] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: date_time filesystem program_options system thread \n'}
+[0.600200] (-) TimerEvent: {}
+[0.601241] (ur10_vel) StdoutLine: {'line': b'running egg_info\n'}
+[0.601720] (ur10_vel) StdoutLine: {'line': b'writing ../../build/ur10_vel/ur10_vel.egg-info/PKG-INFO\n'}
+[0.601910] (ur10_vel) StdoutLine: {'line': b'writing dependency_links to ../../build/ur10_vel/ur10_vel.egg-info/dependency_links.txt\n'}
+[0.601951] (ur10_vel) StdoutLine: {'line': b'writing entry points to ../../build/ur10_vel/ur10_vel.egg-info/entry_points.txt\n'}
+[0.601982] (ur10_vel) StdoutLine: {'line': b'writing requirements to ../../build/ur10_vel/ur10_vel.egg-info/requires.txt\n'}
+[0.602121] (ur10_vel) StdoutLine: {'line': b'writing top-level names to ../../build/ur10_vel/ur10_vel.egg-info/top_level.txt\n'}
+[0.602925] (ur10_vel) StdoutLine: {'line': b"reading manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'\n"}
+[0.609903] (ur10_vel) StdoutLine: {'line': b"writing manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'\n"}
+[0.609977] (ur10_vel) StdoutLine: {'line': b'running build\n'}
+[0.610013] (ur10_vel) StdoutLine: {'line': b'running build_py\n'}
+[0.610225] (ur10_vel) StdoutLine: {'line': b'running install\n'}
+[0.610392] (ur10_vel) StdoutLine: {'line': b'running install_lib\n'}
+[0.611258] (ur10_vel) StdoutLine: {'line': b'running install_data\n'}
+[0.611333] (ur10_vel) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.612320] (ur10_vel) StdoutLine: {'line': b"removing '/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.612394] (ur10_vel) StdoutLine: {'line': b'Copying ../../build/ur10_vel/ur10_vel.egg-info to /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info\n'}
+[0.612990] (ur10_vel) StdoutLine: {'line': b'running install_scripts\n'}
+[0.625591] (ur10_vel) StdoutLine: {'line': b'Installing check_collision script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[0.625666] (ur10_vel) StdoutLine: {'line': b'Installing joint_velocity_IK script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[0.625703] (ur10_vel) StdoutLine: {'line': b'Installing publisher_forward_velocity_controller script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel\n'}
+[0.625851] (ur10_vel) StdoutLine: {'line': b"writing list of installed files to '/home/zzy/ur_real/build/ur10_vel/install.log'\n"}
+[0.638813] (ur10_vel) CommandEnded: {'returncode': 0}
+[0.642357] (ur10_vel) JobEnded: {'identifier': 'ur10_vel', 'rc': 0}
+[0.700350] (-) TimerEvent: {}
+[0.800595] (-) TimerEvent: {}
+[0.900856] (-) TimerEvent: {}
+[1.001090] (-) TimerEvent: {}
+[1.025962] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.030779] (ur_bringup) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.038912] (ur_bringup) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.9 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[1.067701] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: filesystem \n'}
+[1.093391] (ur_bringup) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.101239] (-) TimerEvent: {}
+[1.195702] (ur_bringup) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.201383] (-) TimerEvent: {}
+[1.301602] (-) TimerEvent: {}
+[1.401744] (-) TimerEvent: {}
+[1.501976] (-) TimerEvent: {}
+[1.533315] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: system filesystem date_time program_options thread chrono \n'}
+[1.602121] (-) TimerEvent: {}
+[1.702350] (-) TimerEvent: {}
+[1.802585] (-) TimerEvent: {}
+[1.894222] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: thread system filesystem regex date_time program_options \n'}
+[1.902681] (-) TimerEvent: {}
+[2.002910] (-) TimerEvent: {}
+[2.060907] (ur_bringup) StdoutLine: {'line': b'-- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: system filesystem date_time program_options thread \n'}
+[2.103095] (-) TimerEvent: {}
+[2.203316] (-) TimerEvent: {}
+[2.303537] (-) TimerEvent: {}
+[2.344673] (ur_bringup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.403651] (-) TimerEvent: {}
+[2.404877] (ur_bringup) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.404971] (ur_bringup) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.405007] (ur_bringup) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.405511] (ur_bringup) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.406267] (ur_bringup) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.406733] (ur_bringup) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.409423] (ur_bringup) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.409495] (ur_bringup) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.409915] (ur_bringup) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.410364] (ur_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.426039] (ur_bringup) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:18 (add_executable):\n'}
+[2.426122] (ur_bringup) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target ur_bringup because\n'}
+[2.426159] (ur_bringup) StderrLine: {'line': b'  files in some directories may conflict with libraries in implicit\n'}
+[2.426190] (ur_bringup) StderrLine: {'line': b'  directories:\n'}
+[2.426219] (ur_bringup) StderrLine: {'line': b'\n'}
+[2.426247] (ur_bringup) StderrLine: {'line': b'    runtime library [libcurl.so.4] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[2.426279] (ur_bringup) StderrLine: {'line': b'      /home/zzy/anaconda3/lib\n'}
+[2.426305] (ur_bringup) StderrLine: {'line': b'    runtime library [libcrypto.so.3] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[2.426332] (ur_bringup) StderrLine: {'line': b'      /home/zzy/anaconda3/lib\n'}
+[2.426358] (ur_bringup) StderrLine: {'line': b'\n'}
+[2.426383] (ur_bringup) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[2.426409] (ur_bringup) StderrLine: {'line': b'\n'}
+[2.426434] (ur_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[2.426706] (ur_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[2.428084] (ur_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/zzy/ur_real/build/ur_bringup\n'}
+[2.455592] (ur_bringup) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ur_bringup.dir/src/check_collision.cpp.o\x1b[0m\n'}
+[2.503804] (-) TimerEvent: {}
+[2.604064] (-) TimerEvent: {}
+[2.704365] (-) TimerEvent: {}
+[2.804664] (-) TimerEvent: {}
+[2.904970] (-) TimerEvent: {}
+[3.005268] (-) TimerEvent: {}
+[3.105562] (-) TimerEvent: {}
+[3.205863] (-) TimerEvent: {}
+[3.306163] (-) TimerEvent: {}
+[3.406470] (-) TimerEvent: {}
+[3.506768] (-) TimerEvent: {}
+[3.607116] (-) TimerEvent: {}
+[3.707437] (-) TimerEvent: {}
+[3.807765] (-) TimerEvent: {}
+[3.908071] (-) TimerEvent: {}
+[4.008383] (-) TimerEvent: {}
+[4.108695] (-) TimerEvent: {}
+[4.209008] (-) TimerEvent: {}
+[4.309310] (-) TimerEvent: {}
+[4.409605] (-) TimerEvent: {}
+[4.509915] (-) TimerEvent: {}
+[4.610228] (-) TimerEvent: {}
+[4.710536] (-) TimerEvent: {}
+[4.810849] (-) TimerEvent: {}
+[4.911167] (-) TimerEvent: {}
+[5.011479] (-) TimerEvent: {}
+[5.111792] (-) TimerEvent: {}
+[5.212092] (-) TimerEvent: {}
+[5.312394] (-) TimerEvent: {}
+[5.412699] (-) TimerEvent: {}
+[5.513005] (-) TimerEvent: {}
+[5.613307] (-) TimerEvent: {}
+[5.713612] (-) TimerEvent: {}
+[5.813914] (-) TimerEvent: {}
+[5.914210] (-) TimerEvent: {}
+[6.014516] (-) TimerEvent: {}
+[6.075021] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.075152] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:18:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmoveit::planning_scene_monitor\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.075202] (ur_bringup) StderrLine: {'line': b'   18 |   moveit::\x1b[01;31m\x1b[Kplanning_scene_monitor\x1b[m\x1b[K::PlanningSceneMonitor planning_scene_monitor(robot_description, robot_model_loader);\n'}
+[6.075235] (ur_bringup) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.075266] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:21:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmoveit::planning_scene\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.075298] (ur_bringup) StderrLine: {'line': b'   21 |   moveit::\x1b[01;31m\x1b[Kplanning_scene\x1b[m\x1b[K::PlanningScenePtr planning_scene = planning_scene_monitor.getPlanningScene();\n'}
+[6.075326] (ur_bringup) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.076129] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:25:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kplanning_scene\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmoveit\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kplanning_scene\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.076207] (ur_bringup) StderrLine: {'line': b'   25 |   auto planning_scene = std::make_shared<moveit::\x1b[01;31m\x1b[Kplanning_scene\x1b[m\x1b[K::PlanningScene>(/* your existing PlanningScene */);\n'}
+[6.076245] (ur_bringup) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.076282] (ur_bringup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:6\x1b[m\x1b[K:\n'}
+[6.076314] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/moveit/planning_scene/planning_scene.h:63:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kplanning_scene\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.076345] (ur_bringup) StderrLine: {'line': b'   63 | namespace \x1b[01;36m\x1b[Kplanning_scene\x1b[m\x1b[K\n'}
+[6.076375] (ur_bringup) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.076402] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:25:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[6.076431] (ur_bringup) StderrLine: {'line': b'   25 |   auto planning_scene = std::\x1b[01;31m\x1b[Kmake_shared<moveit::planning_scene::PlanningScene>\x1b[m\x1b[K(/* your existing PlanningScene */);\n'}
+[6.076459] (ur_bringup) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.076486] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:25:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.076513] (ur_bringup) StderrLine: {'line': b'   25 | ne = \x1b[01;31m\x1b[Kstd::make_shared<moveit::planning_scene::PlanningScene>(/* your existing PlanningScene */)\x1b[m\x1b[K;\n'}
+[6.076539] (ur_bringup) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.076566] (ur_bringup) StderrLine: {'line': b'\n'}
+[6.076592] (ur_bringup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[6.076617] (ur_bringup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[6.076644] (ur_bringup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:1\x1b[m\x1b[K:\n'}
+[6.076670] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.076697] (ur_bringup) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[6.076723] (ur_bringup) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.076749] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.076775] (ur_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:25:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.076801] (ur_bringup) StderrLine: {'line': b'   25 | ne = \x1b[01;31m\x1b[Kstd::make_shared<moveit::planning_scene::PlanningScene>(/* your existing PlanningScene */)\x1b[m\x1b[K;\n'}
+[6.076826] (ur_bringup) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.076855] (ur_bringup) StderrLine: {'line': b'\n'}
+[6.114690] (-) TimerEvent: {}
+[6.215019] (-) TimerEvent: {}
+[6.315338] (-) TimerEvent: {}
+[6.415595] (-) TimerEvent: {}
+[6.515906] (-) TimerEvent: {}
+[6.616210] (-) TimerEvent: {}
+[6.716511] (-) TimerEvent: {}
+[6.816832] (-) TimerEvent: {}
+[6.917134] (-) TimerEvent: {}
+[7.017447] (-) TimerEvent: {}
+[7.117757] (-) TimerEvent: {}
+[7.218067] (-) TimerEvent: {}
+[7.318365] (-) TimerEvent: {}
+[7.418664] (-) TimerEvent: {}
+[7.518969] (-) TimerEvent: {}
+[7.619196] (-) TimerEvent: {}
+[7.719506] (-) TimerEvent: {}
+[7.819754] (-) TimerEvent: {}
+[7.871526] (ur_bringup) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ur_bringup.dir/build.make:76\xef\xbc\x9aCMakeFiles/ur_bringup.dir/src/check_collision.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[7.871788] (ur_bringup) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/ur_bringup.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[7.871978] (ur_bringup) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[7.873439] (ur_bringup) CommandEnded: {'returncode': 2}
+[7.894093] (ur_bringup) JobEnded: {'identifier': 'ur_bringup', 'rc': 2}
+[7.904899] (-) EventReactorShutdown: {}

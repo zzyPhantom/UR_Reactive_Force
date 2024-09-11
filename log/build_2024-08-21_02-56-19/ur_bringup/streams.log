@@ -1,0 +1,65 @@
+[0.170s] Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24
+[0.187s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.272s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.278s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.317s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.321s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.329s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.341s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.358s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.417s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.419s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.448s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.459s] -- Looking for pthread.h
+[0.642s] -- Looking for pthread.h - found
+[0.643s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.704s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.705s] -- Found Threads: TRUE  
+[0.840s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.934s] -- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.954s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: date_time filesystem program_options system thread 
+[1.503s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.515s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.534s] -- Found rclcpp_lifecycle: 16.0.9 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.572s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: filesystem 
+[1.642s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.766s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.766s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.179s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: system filesystem date_time program_options thread chrono 
+[2.585s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: thread system filesystem regex date_time program_options 
+[2.811s] -- Found Boost: /home/zzy/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: system filesystem date_time program_options thread 
+[3.129s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.197s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.197s] -- Configured cppcheck include dirs: 
+[3.197s] -- Configured cppcheck exclude dirs and/or files: 
+[3.197s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.197s] -- Added test 'lint_cmake' to check CMake code style
+[3.197s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.198s] -- Added test 'uncrustify' to check C / C++ code style
+[3.198s] -- Configured uncrustify additional arguments: 
+[3.198s] -- Added test 'xmllint' to check XML markup files
+[3.199s] -- Configuring done
+[3.221s] [33mCMake Warning at CMakeLists.txt:21 (add_executable):
+[3.221s]   Cannot generate a safe runtime search path for target ur_bringup because
+[3.221s]   files in some directories may conflict with libraries in implicit
+[3.221s]   directories:
+[3.221s] 
+[3.221s]     runtime library [libcurl.so.4] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[3.221s]       /home/zzy/anaconda3/lib
+[3.222s]     runtime library [libcrypto.so.3] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[3.222s]       /home/zzy/anaconda3/lib
+[3.222s] 
+[3.222s]   Some of these libraries may not be found correctly.
+[3.222s] 
+[3.222s] [0m
+[3.222s] -- Generating done
+[3.223s] -- Build files have been written to: /home/zzy/ur_real/build/ur_bringup
+[3.252s] [ 50%] [32mBuilding CXX object CMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o[0m
+[3.509s] [01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kmoveit/planning_interface/planning_interface.hpp: 没有那个文件或目录
+[3.509s]     2 | #include [01;31m[K"moveit/planning_interface/planning_interface.hpp"[m[K
+[3.509s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.509s] compilation terminated.
+[3.511s] gmake[2]: *** [CMakeFiles/ur_bringup.dir/build.make:76：CMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o] 错误 1
+[3.511s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ur_bringup.dir/all] 错误 2
+[3.511s] gmake: *** [Makefile:146：all] 错误 2
+[3.513s] Invoked command in '/home/zzy/ur_real/build/ur_bringup' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24

@@ -1,0 +1,1 @@
+/home/zzy/ur_real/build/ferrobotics/rosidl_generator_py/ferrobotics/__init__.py

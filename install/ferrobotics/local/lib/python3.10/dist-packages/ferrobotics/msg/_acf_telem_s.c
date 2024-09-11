@@ -1,0 +1,1 @@
+/home/zzy/ur_real/build/ferrobotics/rosidl_generator_py/ferrobotics/msg/_acf_telem_s.c

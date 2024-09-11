@@ -1,0 +1,41 @@
+[0.014s] Invoking command in '/home/zzy/ur_real/build/ferrobotics_acf': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics_acf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics_acf
+[0.178s] [0mCMake Deprecation Warning at CMakeLists.txt:2 (cmake_minimum_required):
+[0.178s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.178s]   CMake.
+[0.178s] 
+[0.178s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.178s]   CMake that the project does not need compatibility with older versions.
+[0.178s] 
+[0.178s] [0m
+[0.183s] -- The C compiler identification is GNU 11.4.0
+[0.252s] -- The CXX compiler identification is GNU 11.4.0
+[0.260s] -- Detecting C compiler ABI info
+[0.309s] -- Detecting C compiler ABI info - done
+[0.315s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.315s] -- Detecting C compile features
+[0.316s] -- Detecting C compile features - done
+[0.318s] -- Detecting CXX compiler ABI info
+[0.370s] -- Detecting CXX compiler ABI info - done
+[0.377s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.377s] -- Detecting CXX compile features
+[0.377s] -- Detecting CXX compile features - done
+[0.387s] [31mCMake Error at CMakeLists.txt:6 (find_package):
+[0.387s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.387s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.387s]   CMake did not find one.
+[0.387s] 
+[0.387s]   Could not find a package configuration file provided by "catkin" with any
+[0.387s]   of the following names:
+[0.387s] 
+[0.387s]     catkinConfig.cmake
+[0.387s]     catkin-config.cmake
+[0.387s] 
+[0.387s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.387s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.387s]   provides a separate development package or SDK, be sure it has been
+[0.387s]   installed.
+[0.387s] 
+[0.387s] [0m
+[0.387s] -- Configuring incomplete, errors occurred!
+[0.387s] See also "/home/zzy/ur_real/build/ferrobotics_acf/CMakeFiles/CMakeOutput.log".
+[0.389s] Invoked command in '/home/zzy/ur_real/build/ferrobotics_acf' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics_acf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics_acf

@@ -1,0 +1,16 @@
+[33mCMake Warning at CMakeLists.txt:18 (add_executable):
+  Cannot generate a safe runtime search path for target ur_bringup because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libcurl.so.4] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/zzy/anaconda3/lib
+    runtime library [libcrypto.so.3] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/zzy/anaconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+gmake[2]: *** [CMakeFiles/ur_bringup.dir/build.make:76: CMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ur_bringup.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

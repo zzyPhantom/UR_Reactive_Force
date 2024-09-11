@@ -1,0 +1,2 @@
+Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24
+Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24

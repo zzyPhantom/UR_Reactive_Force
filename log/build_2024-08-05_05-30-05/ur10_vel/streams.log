@@ -1,0 +1,32 @@
+[0.390s] Invoking command in '/home/zzy/ur_real/src/ur10_vel': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data
+[0.529s] running egg_info
+[0.530s] creating ../../build/ur10_vel/ur10_vel.egg-info
+[0.530s] writing ../../build/ur10_vel/ur10_vel.egg-info/PKG-INFO
+[0.530s] writing dependency_links to ../../build/ur10_vel/ur10_vel.egg-info/dependency_links.txt
+[0.530s] writing entry points to ../../build/ur10_vel/ur10_vel.egg-info/entry_points.txt
+[0.530s] writing requirements to ../../build/ur10_vel/ur10_vel.egg-info/requires.txt
+[0.530s] writing top-level names to ../../build/ur10_vel/ur10_vel.egg-info/top_level.txt
+[0.530s] writing manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[0.531s] reading manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[0.531s] writing manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[0.531s] running build
+[0.531s] running build_py
+[0.531s] creating /home/zzy/ur_real/build/ur10_vel/build
+[0.531s] creating /home/zzy/ur_real/build/ur10_vel/build/lib
+[0.531s] creating /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.531s] copying ur10_vel/__init__.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.531s] running install
+[0.532s] running install_lib
+[0.532s] creating /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel
+[0.532s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/__init__.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel
+[0.532s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel/__init__.py to __init__.cpython-310.pyc
+[0.532s] running install_data
+[0.532s] creating /home/zzy/ur_real/install/ur10_vel/share/ament_index
+[0.533s] creating /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index
+[0.533s] creating /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index/packages
+[0.533s] copying resource/ur10_vel -> /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index/packages
+[0.533s] copying package.xml -> /home/zzy/ur_real/install/ur10_vel/share/ur10_vel
+[0.533s] running install_egg_info
+[0.534s] Copying ../../build/ur10_vel/ur10_vel.egg-info to /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info
+[0.534s] running install_scripts
+[0.547s] writing list of installed files to '/home/zzy/ur_real/build/ur10_vel/install.log'

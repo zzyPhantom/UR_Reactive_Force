@@ -1,0 +1,4 @@
+source;share/ferrobotics/environment/ament_prefix_path.sh
+source;share/ferrobotics/environment/library_path.sh
+source;share/ferrobotics/environment/path.sh
+source;share/ferrobotics/environment/pythonpath.sh

@@ -1,0 +1,50 @@
+[0.270s] Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ur10_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ur10_moveit_config
+[0.404s] -- The C compiler identification is GNU 11.4.0
+[0.405s] -- The CXX compiler identification is GNU 11.4.0
+[0.405s] -- Detecting C compiler ABI info
+[0.405s] -- Detecting C compiler ABI info - done
+[0.406s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.406s] -- Detecting C compile features
+[0.406s] -- Detecting C compile features - done
+[0.406s] -- Detecting CXX compiler ABI info
+[0.443s] -- Detecting CXX compiler ABI info - done
+[0.448s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.448s] -- Detecting CXX compile features
+[0.448s] -- Detecting CXX compile features - done
+[0.450s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.919s] -- Found Python3: /home/zzy/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter 
+[1.005s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.026s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.055s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.058s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.064s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.073s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.086s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.134s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.136s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.158s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.165s] -- Looking for pthread.h
+[1.207s] -- Looking for pthread.h - found
+[1.207s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.255s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.256s] -- Found Threads: TRUE  
+[1.365s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.417s] Traceback (most recent call last):
+[1.417s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[1.417s]     from catkin_pkg.package import parse_package_string
+[1.417s] ModuleNotFoundError: No module named 'catkin_pkg'
+[1.419s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[1.419s]   execute_process(/home/zzy/.pyenv/shims/python3
+[1.419s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.419s]   /home/zzy/ur_real/src/ur10_moveit_config/package.xml
+[1.420s]   /home/zzy/ur_real/build/ur10_moveit_config/ament_cmake_core/package.cmake)
+[1.420s]   returned error code 1
+[1.420s] Call Stack (most recent call first):
+[1.420s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.420s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[1.420s]   CMakeLists.txt:43 (ament_lint_auto_find_test_dependencies)
+[1.420s] 
+[1.420s] [0m
+[1.420s] -- Configuring incomplete, errors occurred!
+[1.420s] See also "/home/zzy/ur_real/build/ur10_moveit_config/CMakeFiles/CMakeOutput.log".
+[1.425s] Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/camera:/opt/ros/humble /usr/bin/cmake /home/zzy/ur_real/src/ur10_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ur10_moveit_config

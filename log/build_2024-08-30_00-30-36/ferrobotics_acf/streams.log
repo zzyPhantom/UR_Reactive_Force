@@ -1,0 +1,29 @@
+[0.011s] Invoking command in '/home/zzy/ur_real/build/ferrobotics_acf': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics_acf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics_acf
+[0.176s] -- Configuring incomplete, errors occurred!
+[0.177s] See also "/home/zzy/ur_real/build/ferrobotics_acf/CMakeFiles/CMakeOutput.log".
+[0.177s] [0mCMake Deprecation Warning at CMakeLists.txt:2 (cmake_minimum_required):
+[0.177s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.177s]   CMake.
+[0.177s] 
+[0.178s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.178s]   CMake that the project does not need compatibility with older versions.
+[0.178s] 
+[0.178s] [0m
+[0.178s] [31mCMake Error at CMakeLists.txt:6 (find_package):
+[0.178s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.178s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.178s]   CMake did not find one.
+[0.178s] 
+[0.178s]   Could not find a package configuration file provided by "catkin" with any
+[0.178s]   of the following names:
+[0.178s] 
+[0.178s]     catkinConfig.cmake
+[0.178s]     catkin-config.cmake
+[0.178s] 
+[0.178s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.178s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.178s]   provides a separate development package or SDK, be sure it has been
+[0.178s]   installed.
+[0.178s] 
+[0.178s] [0m
+[0.179s] Invoked command in '/home/zzy/ur_real/build/ferrobotics_acf' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/zzy/ur_real/src/ferrobotics_acf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/ferrobotics_acf

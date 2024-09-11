@@ -1,0 +1,29 @@
+[0.288s] Invoking command in '/home/zzy/ur_real/build/netft_description': /usr/bin/cmake /home/zzy/ur_real/src/netft/netft_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/netft_description
+[0.433s] -- Configuring incomplete, errors occurred!
+[0.433s] See also "/home/zzy/ur_real/build/netft_description/CMakeFiles/CMakeOutput.log".
+[0.434s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.434s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.434s]   CMake.
+[0.434s] 
+[0.434s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.434s]   CMake that the project does not need compatibility with older versions.
+[0.434s] 
+[0.434s] [0m
+[0.434s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[0.434s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.434s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.434s]   CMake did not find one.
+[0.434s] 
+[0.434s]   Could not find a package configuration file provided by "catkin" with any
+[0.434s]   of the following names:
+[0.434s] 
+[0.434s]     catkinConfig.cmake
+[0.434s]     catkin-config.cmake
+[0.434s] 
+[0.434s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.434s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.434s]   provides a separate development package or SDK, be sure it has been
+[0.434s]   installed.
+[0.434s] 
+[0.434s] [0m
+[0.437s] Invoked command in '/home/zzy/ur_real/build/netft_description' returned '1': /usr/bin/cmake /home/zzy/ur_real/src/netft/netft_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/netft_description

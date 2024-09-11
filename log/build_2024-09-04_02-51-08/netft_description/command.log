@@ -1,0 +1,2 @@
+Invoking command in '/home/zzy/ur_real/build/netft_description': /usr/bin/cmake /home/zzy/ur_real/src/netft/netft_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/netft_description
+Invoked command in '/home/zzy/ur_real/build/netft_description' returned '1': /usr/bin/cmake /home/zzy/ur_real/src/netft/netft_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/netft_description

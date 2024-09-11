@@ -1,0 +1,20 @@
+[33mCMake Warning at CMakeLists.txt:18 (add_executable):
+  Cannot generate a safe runtime search path for target ur_bringup because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libcurl.so.4] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/zzy/anaconda3/lib
+    runtime library [libcrypto.so.3] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/zzy/anaconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kmoveit/planning_interface/planning_interface.hpp: 没有那个文件或目录
+    2 | #include [01;31m[K"moveit/planning_interface/planning_interface.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ur_bringup.dir/build.make:76：CMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ur_bringup.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

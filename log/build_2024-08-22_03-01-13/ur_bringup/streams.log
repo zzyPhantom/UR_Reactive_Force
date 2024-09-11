@@ -1,0 +1,32 @@
+[0.166s] Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24
+[0.192s] [35m[1mConsolidate compiler generated dependencies of target ur_bringup[0m
+[0.211s] [ 50%] [32mBuilding CXX object CMakeFiles/ur_bringup.dir/src/check_collision.cpp.o[0m
+[2.908s] [01m[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:[m[K In constructor ‘[01m[KStateValidityChecker::StateValidityChecker()[m[K’:
+[2.908s] [01m[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:26:74:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(StateValidityChecker*, const char [4])[m[K’
+[2.908s]    26 | moveit::planning_interface::MoveGroupInterface move_group(this, "arm"[01;31m[K)[m[K;
+[2.908s]       |                                                                      [01;31m[K^[m[K
+[2.908s] 
+[2.908s] In file included from [01m[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:4[m[K:
+[2.908s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+[2.908s]   159 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+[2.908s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.910s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[2.910s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[2.910s]   145 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const std::string& group,
+[2.910s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.910s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:145:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KStateValidityChecker*[m[K’ to ‘[01m[Kconst SharedPtr&[m[K’ {aka ‘[01m[Kconst std::shared_ptr<rclcpp::Node>&[m[K’}
+[2.910s]   145 |   MoveGroupInterface([01;36m[Kconst rclcpp::Node::SharedPtr& node[m[K, const std::string& group,
+[2.910s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.910s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[2.910s]   134 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const Options& opt,
+[2.910s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.910s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:134:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KStateValidityChecker*[m[K’ to ‘[01m[Kconst SharedPtr&[m[K’ {aka ‘[01m[Kconst std::shared_ptr<rclcpp::Node>&[m[K’}
+[2.910s]   134 |   MoveGroupInterface([01;36m[Kconst rclcpp::Node::SharedPtr& node[m[K, const Options& opt,
+[2.910s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.912s] [01m[K/home/zzy/ur_real/src/ur_bringup/src/check_collision.cpp:38:19:[m[K [01;31m[Kerror: [m[K‘[01m[KrobotStateToRobotStateMsg[m[K’ is not a member of ‘[01m[Kmoveit::core[m[K’
+[2.912s]    38 |     moveit::core::[01;31m[KrobotStateToRobotStateMsg[m[K(*current_state, state_msg);
+[2.912s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.170s] gmake[2]: *** [CMakeFiles/ur_bringup.dir/build.make:76：CMakeFiles/ur_bringup.dir/src/check_collision.cpp.o] 错误 1
+[4.170s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ur_bringup.dir/all] 错误 2
+[4.171s] gmake: *** [Makefile:146：all] 错误 2
+[4.173s] Invoked command in '/home/zzy/ur_real/build/ur_bringup' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24

@@ -1,0 +1,3 @@
+/home/zzy/ur_real/build/ferrobotics/rosidl_adapter/ferrobotics:msg/ACFTelem.idl
+/home/zzy/ur_real/build/ferrobotics/rosidl_adapter/ferrobotics:srv/SetFloat.idl
+/home/zzy/ur_real/build/ferrobotics/rosidl_adapter/ferrobotics:srv/SetDuration.idl

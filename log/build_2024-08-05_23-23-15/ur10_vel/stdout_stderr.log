@@ -1,0 +1,19 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+writing ur10_vel.egg-info/PKG-INFO
+writing dependency_links to ur10_vel.egg-info/dependency_links.txt
+writing entry points to ur10_vel.egg-info/entry_points.txt
+writing requirements to ur10_vel.egg-info/requires.txt
+writing top-level names to ur10_vel.egg-info/top_level.txt
+reading manifest file 'ur10_vel.egg-info/SOURCES.txt'
+writing manifest file 'ur10_vel.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10-vel.egg-link (link to .)
+Installing publisher_forward_velocity_controller script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+
+Installed /home/zzy/ur_real/build/ur10_vel
+running symlink_data
+symbolically linking /home/zzy/ur_real/build/ur10_vel/resource/ur10_vel -> /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index/packages
+symbolically linking /home/zzy/ur_real/build/ur10_vel/package.xml -> /home/zzy/ur_real/install/ur10_vel/share/ur10_vel

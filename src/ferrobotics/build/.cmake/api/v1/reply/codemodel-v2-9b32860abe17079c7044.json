@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-8db3a644f79c0cfc7b27.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "ferrobotics__py",
+					"jsonFile" : "directory-ferrobotics__py-Debug-ca9c3281a050acea3b8f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "build/ferrobotics__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ferrobotics",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ferrobotics_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ferrobotics_egg-Debug-d9099f2391342263ca5e.json",
+					"name" : "ament_cmake_python_build_ferrobotics_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ferrobotics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ferrobotics-Debug-e21b78bbfb213cec9007.json",
+					"name" : "ament_cmake_python_copy_ferrobotics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics-Debug-75d76ebf2f02ccedf182.json",
+					"name" : "ferrobotics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__cpp-Debug-51f47a36b14f35d3e497.json",
+					"name" : "ferrobotics__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ferrobotics__py::@ae58a2419b2ac6d1f734",
+					"jsonFile" : "target-ferrobotics__py-Debug-61351ffb624c65ff117b.json",
+					"name" : "ferrobotics__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__rosidl_generator_c-Debug-5155361639120a14264f.json",
+					"name" : "ferrobotics__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__rosidl_generator_py-Debug-3b30b673c7eb0d737b4d.json",
+					"name" : "ferrobotics__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__rosidl_typesupport_c-Debug-04cc6bed64e6f9d43db1.json",
+					"name" : "ferrobotics__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__rosidl_typesupport_c__pyext-Debug-0c503385bb69d470e1aa.json",
+					"name" : "ferrobotics__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__rosidl_typesupport_cpp-Debug-a2e8124c002be474834a.json",
+					"name" : "ferrobotics__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__rosidl_typesupport_fastrtps_c-Debug-f90039ed6a290799486a.json",
+					"name" : "ferrobotics__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__rosidl_typesupport_fastrtps_c__pyext-Debug-756c9f28dfaef94b6a8a.json",
+					"name" : "ferrobotics__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__rosidl_typesupport_fastrtps_cpp-Debug-28067b0e6b106c5a0488.json",
+					"name" : "ferrobotics__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__rosidl_typesupport_introspection_c-Debug-97a8dde333259832171d.json",
+					"name" : "ferrobotics__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__rosidl_typesupport_introspection_c__pyext-Debug-83eea10a72af72c54131.json",
+					"name" : "ferrobotics__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics__rosidl_typesupport_introspection_cpp-Debug-ce7f1cdcfd4813623d5e.json",
+					"name" : "ferrobotics__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ferrobotics_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ferrobotics_uninstall-Debug-2cff1f1bf3d650627bab.json",
+					"name" : "ferrobotics_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-d7c07994f2c7c27d2110.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zzy/ur_real/src/ferrobotics/build",
+		"source" : "/home/zzy/ur_real/src/ferrobotics"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

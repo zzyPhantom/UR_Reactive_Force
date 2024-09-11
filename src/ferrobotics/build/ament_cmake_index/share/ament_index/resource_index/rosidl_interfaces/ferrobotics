@@ -1,0 +1,10 @@
+msg/ACFTelem.idl
+msg/ACFTelem.msg
+srv/SetDuration.idl
+srv/SetDuration.srv
+srv/SetDuration_Request.msg
+srv/SetDuration_Response.msg
+srv/SetFloat.idl
+srv/SetFloat.srv
+srv/SetFloat_Request.msg
+srv/SetFloat_Response.msg

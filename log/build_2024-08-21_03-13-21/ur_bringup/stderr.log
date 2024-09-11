@@ -1,0 +1,51 @@
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:64:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_interface[m[K’ is not a member of ‘[01m[Kmoveit[m[K’
+   64 |   std::shared_ptr<moveit::[01;31m[Kplanning_interface[m[K::PlanningSceneInterface> planning_scene_interface_;
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:64:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   64 |  std::shared_ptr<moveit::planning_interface::PlanningSceneInterface[01;31m[K>[m[K planning_scene_interface_;
+      |                                                                    [01;31m[K^[m[K
+
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:[m[K In constructor ‘[01m[KMoveIt2Node::MoveIt2Node()[m[K’:
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:16:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_interface[m[K’ is not a member of ‘[01m[Kmoveit[m[K’
+   16 |     planning_scene_interface_ = std::make_shared<moveit::[01;31m[Kplanning_interface[m[K::PlanningSceneInterface>();
+      |                                                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:16:38:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   16 |     planning_scene_interface_ = std::[01;31m[Kmake_shared<moveit::planning_interface::PlanningSceneInterface>[m[K();
+      |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:16:101:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+   16 | ace_ = [01;31m[Kstd::make_shared<moveit::planning_interface::PlanningSceneInterface>()[m[K;
+      |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:16:101:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   16 | ace_ = [01;31m[Kstd::make_shared<moveit::planning_interface::PlanningSceneInterface>()[m[K;
+      |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:[m[K In member function ‘[01m[Kvoid MoveIt2Node::jointStatesCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:43:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::core::RobotState::RobotState()[m[K’
+   43 |     moveit::core::RobotState [01;31m[Krobot_state[m[K;
+      |                              [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/moveit/robot_state/robot_state.h:98:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::core::RobotState::RobotState(const moveit::core::RobotState&)[m[K’
+   98 |   [01;36m[KRobotState[m[K(const RobotState& other);
+      |   [01;36m[K^~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/moveit/robot_state/robot_state.h:98:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/humble/include/moveit/robot_state/robot_state.h:94:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::core::RobotState::RobotState(const RobotModelConstPtr&)[m[K’
+   94 |   [01;36m[KRobotState[m[K(const RobotModelConstPtr& robot_model);
+      |   [01;36m[K^~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/moveit/robot_state/robot_state.h:94:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:48:30:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+   48 |     planning_scene_interface_[01;31m[K->[m[KsetCurrentState(robot_state);
+      |                              [01;31m[K^~[m[K
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:39:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   39 |   void jointStatesCallback([01;35m[Kconst sensor_msgs::msg::JointState::SharedPtr msg[m[K)
+      |                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/ur_bringup.dir/build.make:76：CMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ur_bringup.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

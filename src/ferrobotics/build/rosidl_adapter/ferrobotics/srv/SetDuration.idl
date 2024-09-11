@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ferrobotics/srv/SetDuration.srv
+// generated code does not contain a copyright notice
+
+
+module ferrobotics {
+  module srv {
+    struct SetDuration_Request {
+      double duration;
+    };
+    struct SetDuration_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

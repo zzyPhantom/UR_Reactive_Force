@@ -1,0 +1,37 @@
+[1.006s] Invoking command in '/home/zzy/ur_real/src/ur10_vel': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/anaconda3/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages:${PYTHONPATH} /home/zzy/anaconda3/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data
+[1.108s] /home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[1.108s]   warnings.warn(msg)
+[1.180s] running egg_info
+[1.191s] writing ../../build/ur10_vel/ur10_vel.egg-info/PKG-INFO
+[1.191s] writing dependency_links to ../../build/ur10_vel/ur10_vel.egg-info/dependency_links.txt
+[1.191s] writing entry points to ../../build/ur10_vel/ur10_vel.egg-info/entry_points.txt
+[1.191s] writing requirements to ../../build/ur10_vel/ur10_vel.egg-info/requires.txt
+[1.191s] writing top-level names to ../../build/ur10_vel/ur10_vel.egg-info/top_level.txt
+[1.215s] reading manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[1.216s] writing manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[1.216s] running build
+[1.216s] running build_py
+[1.216s] copying ur10_vel/publisher_forward_velocity_controller.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.216s] copying ur10_vel/check_keyboard.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.216s] copying ur10_vel/moveit_bringup.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.216s] copying ur10_vel/Joint_Velocity_Transfer.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.216s] copying ur10_vel/joint_velocity_IK.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.216s] copying ur10_vel/check_collision.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.216s] copying ur10_vel/__init__.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.216s] copying ur10_vel/compute_manipulability_J.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[1.216s] running install
+[1.219s] running install_lib
+[1.232s] running install_data
+[1.232s] copying resource/ur10_vel -> /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index/packages
+[1.232s] copying package.xml -> /home/zzy/ur_real/install/ur10_vel/share/ur10_vel
+[1.232s] running install_egg_info
+[1.244s] removing '/home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel-0.0.0-py3.11.egg-info' (and everything under it)
+[1.244s] Copying ../../build/ur10_vel/ur10_vel.egg-info to /home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages/ur10_vel-0.0.0-py3.11.egg-info
+[1.244s] running install_scripts
+[1.324s] Installing Joint_Velocity_Transfer script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.324s] Installing check_collision script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.324s] Installing check_keyboard script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.324s] Installing joint_velocity_IK script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.324s] Installing publisher_forward_velocity_controller script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.324s] writing list of installed files to '/home/zzy/ur_real/build/ur10_vel/install.log'
+[1.346s] Invoked command in '/home/zzy/ur_real/src/ur10_vel' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/anaconda3/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.11/site-packages:${PYTHONPATH} /home/zzy/anaconda3/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data

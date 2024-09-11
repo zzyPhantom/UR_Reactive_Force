@@ -1,0 +1,1 @@
+Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24

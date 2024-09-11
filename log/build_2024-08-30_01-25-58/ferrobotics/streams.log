@@ -1,0 +1,66 @@
+[0.015s] Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24
+[0.306s] Traceback (most recent call last):
+[0.306s]   File "/home/zzy/ur_real/build/ferrobotics/ament_cmake_python/ferrobotics/setup.py", line 1, in <module>
+[0.306s]     from setuptools import find_packages
+[0.306s]   File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/__init__.py", line 27, in <module>
+[0.307s]     from .dist import Distribution
+[0.307s]   File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/dist.py", line 18, in <module>
+[0.307s]     from . import (
+[0.307s]   File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_entry_points.py", line 6, in <module>
+[0.307s]     from jaraco.text import yield_lines
+[0.307s]   File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_vendor/jaraco/text/__init__.py", line 12, in <module>
+[0.307s]     from jaraco.context import ExceptionTrap
+[0.307s]   File "/home/zzy/anaconda3/lib/python3.11/site-packages/setuptools/_vendor/jaraco/context.py", line 17, in <module>
+[0.307s]     from backports import tarfile
+[0.307s] ImportError: cannot import name 'tarfile' from 'backports' (/home/zzy/anaconda3/lib/python3.11/site-packages/backports/__init__.py)
+[0.307s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_ferrobotics_egg.dir/build.make:70：CMakeFiles/ament_cmake_python_build_ferrobotics_egg] 错误 1
+[0.307s] gmake[1]: *** [CMakeFiles/Makefile2:447：CMakeFiles/ament_cmake_python_build_ferrobotics_egg.dir/all] 错误 2
+[0.308s] gmake[1]: *** 正在等待未完成的任务....
+[0.308s] [35m[1mConsolidate compiler generated dependencies of target ferrobotics__rosidl_generator_c[0m
+[0.308s] [  2%] Built target ferrobotics__cpp
+[0.308s] [ 12%] Built target ferrobotics__rosidl_generator_c
+[0.310s] [ 12%] Built target ament_cmake_python_symlink_ferrobotics
+[0.310s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.310s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.310s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.310s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.310s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.310s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.310s] [35m[1mConsolidate compiler generated dependencies of target ferrobotics__rosidl_typesupport_cpp[0m
+[0.310s] [35m[1mConsolidate compiler generated dependencies of target ferrobotics__rosidl_typesupport_c[0m
+[0.310s] [ 27%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ferrobotics/msg/acf_telem__type_support.cpp.o[0m
+[0.310s] [ 29%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_c.dir/rosidl_typesupport_c/ferrobotics/msg/acf_telem__type_support.cpp.o[0m
+[0.310s] [ 31%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ferrobotics/srv/set_float__type_support.cpp.o[0m
+[0.310s] [ 38%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ferrobotics/srv/set_duration__type_support.cpp.o[0m
+[0.311s] [ 38%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_c.dir/rosidl_typesupport_c/ferrobotics/srv/set_float__type_support.cpp.o[0m
+[0.311s] [ 38%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_c.dir/rosidl_typesupport_c/ferrobotics/srv/set_duration__type_support.cpp.o[0m
+[0.311s] [35m[1mConsolidate compiler generated dependencies of target ferrobotics__rosidl_typesupport_introspection_cpp[0m
+[0.311s] [35m[1mConsolidate compiler generated dependencies of target ferrobotics__rosidl_typesupport_fastrtps_c[0m
+[0.311s] [35m[1mConsolidate compiler generated dependencies of target ferrobotics__rosidl_typesupport_fastrtps_cpp[0m
+[0.311s] [ 40%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ferrobotics/srv/detail/set_float__type_support.cpp.o[0m
+[0.311s] [ 44%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ferrobotics/srv/detail/set_duration__type_support.cpp.o[0m
+[0.311s] [ 44%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ferrobotics/msg/detail/acf_telem__type_support.cpp.o[0m
+[0.311s] [ 46%] [32m[1mLinking CXX shared library libferrobotics__rosidl_typesupport_c.so[0m
+[0.311s] [ 48%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ferrobotics/msg/detail/acf_telem__type_support_c.cpp.o[0m
+[0.311s] [ 53%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ferrobotics/srv/detail/set_duration__type_support_c.cpp.o[0m
+[0.311s] [ 51%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ferrobotics/srv/detail/set_float__type_support_c.cpp.o[0m
+[0.311s] [ 55%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ferrobotics/msg/detail/dds_fastrtps/acf_telem__type_support.cpp.o[0m
+[0.311s] [ 57%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ferrobotics/srv/detail/dds_fastrtps/set_float__type_support.cpp.o[0m
+[0.311s] [ 59%] [32mBuilding CXX object CMakeFiles/ferrobotics__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ferrobotics/srv/detail/dds_fastrtps/set_duration__type_support.cpp.o[0m
+[0.311s] [35m[1mConsolidate compiler generated dependencies of target ferrobotics__rosidl_typesupport_introspection_c[0m
+[0.311s] [ 61%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ferrobotics/srv/detail/set_float__type_support.c.o[0m
+[0.312s] [ 65%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ferrobotics/srv/detail/set_duration__type_support.c.o[0m
+[0.312s] [ 65%] [32mBuilding C object CMakeFiles/ferrobotics__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ferrobotics/msg/detail/acf_telem__type_support.c.o[0m
+[0.312s] [ 65%] Built target ferrobotics__rosidl_typesupport_c
+[0.320s] [ 68%] [32m[1mLinking C shared library libferrobotics__rosidl_typesupport_introspection_c.so[0m
+[0.349s] [ 68%] Built target ferrobotics__rosidl_typesupport_introspection_c
+[0.522s] [ 70%] [32m[1mLinking CXX shared library libferrobotics__rosidl_typesupport_cpp.so[0m
+[0.549s] [ 70%] Built target ferrobotics__rosidl_typesupport_cpp
+[0.581s] [ 74%] [32m[1mLinking CXX shared library libferrobotics__rosidl_typesupport_fastrtps_c.so[0m
+[0.581s] [ 74%] [32m[1mLinking CXX shared library libferrobotics__rosidl_typesupport_introspection_cpp.so[0m
+[0.628s] [ 74%] Built target ferrobotics__rosidl_typesupport_introspection_cpp
+[0.628s] [ 74%] Built target ferrobotics__rosidl_typesupport_fastrtps_c
+[0.634s] [ 76%] [32m[1mLinking CXX shared library libferrobotics__rosidl_typesupport_fastrtps_cpp.so[0m
+[0.682s] [ 76%] Built target ferrobotics__rosidl_typesupport_fastrtps_cpp
+[0.683s] gmake: *** [Makefile:146：all] 错误 2
+[0.685s] Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24

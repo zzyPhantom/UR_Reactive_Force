@@ -1,0 +1,58 @@
+[0.000000] (-) TimerEvent: {}
+[0.000193] (-) JobUnselected: {'identifier': 'camera'}
+[0.000210] (-) JobUnselected: {'identifier': 'ferrobotics'}
+[0.000315] (-) JobUnselected: {'identifier': 'ferrobotics_acf'}
+[0.000325] (-) JobUnselected: {'identifier': 'ur10_moveit_config'}
+[0.000333] (-) JobUnselected: {'identifier': 'ur10_vel'}
+[0.000341] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.000350] (rpi_ati_net_ft) JobQueued: {'identifier': 'rpi_ati_net_ft', 'dependencies': OrderedDict()}
+[0.000361] (rpi_ati_net_ft) JobStarted: {'identifier': 'rpi_ati_net_ft'}
+[0.005021] (rpi_ati_net_ft) JobProgress: {'identifier': 'rpi_ati_net_ft', 'progress': 'cmake'}
+[0.005206] (rpi_ati_net_ft) Command: {'cmd': ['/usr/bin/cmake', '/home/zzy/ur_real/src/rpi_ati_net_ft', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/rpi_ati_net_ft'], 'cwd': '/home/zzy/ur_real/build/rpi_ati_net_ft', 'env': OrderedDict([('PYENV_VIRTUALENV_INIT', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zzy'), ('XDG_SESSION_TYPE', 'x11'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zzy/ur_real/install/ferrobotics/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin'), ('HOME', '/home/zzy'), ('OLDPWD', '/home/zzy/ur_real/src'), ('DESKTOP_SESSION', 'ubuntu'), ('PYENV_SHELL', 'bash'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2844'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/zzy/ur_real/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'zzy'), ('_', '/home/zzy/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zzy/.pyenv/plugins/pyenv-virtualenv/shims:/home/zzy/.pyenv/shims:~/.pyenv/bin:/opt/ros/humble/bin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zzy-ROG:@/tmp/.ICE-unix/2815,unix/zzy-ROG:/tmp/.ICE-unix/2815'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/40ae14a0_36df_4a7d_a961_1240b32d4684'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/camera:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/zzy/ur_real/build/rpi_ati_net_ft'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zzy/ur_real/build/ur10_vel:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/home/zzy/ur_real/build/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:/home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages:/home/zzy/ur_real/build/camera:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/ferrobotics')]), 'shell': False}
+[0.011047] (rpi_ati_net_ft) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.011126] (rpi_ati_net_ft) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[0.011163] (rpi_ati_net_ft) StderrLine: {'line': b'  CMake.\n'}
+[0.011194] (rpi_ati_net_ft) StderrLine: {'line': b'\n'}
+[0.011222] (rpi_ati_net_ft) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.011250] (rpi_ati_net_ft) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.011279] (rpi_ati_net_ft) StderrLine: {'line': b'\n'}
+[0.011307] (rpi_ati_net_ft) StderrLine: {'line': b'\x1b[0m\n'}
+[0.099824] (-) TimerEvent: {}
+[0.200201] (-) TimerEvent: {}
+[0.267994] (rpi_ati_net_ft) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300335] (-) TimerEvent: {}
+[0.343024] (rpi_ati_net_ft) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.350508] (rpi_ati_net_ft) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400513] (-) TimerEvent: {}
+[0.431831] (rpi_ati_net_ft) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.438868] (rpi_ati_net_ft) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.440812] (rpi_ati_net_ft) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.441632] (rpi_ati_net_ft) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.446263] (rpi_ati_net_ft) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500682] (-) TimerEvent: {}
+[0.523522] (rpi_ati_net_ft) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.534807] (rpi_ati_net_ft) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.535047] (rpi_ati_net_ft) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.535748] (rpi_ati_net_ft) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.543970] (rpi_ati_net_ft) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:10 (find_package):\n'}
+[0.544134] (rpi_ati_net_ft) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.544181] (rpi_ati_net_ft) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.544211] (rpi_ati_net_ft) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.544240] (rpi_ati_net_ft) StderrLine: {'line': b'\n'}
+[0.544268] (rpi_ati_net_ft) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.544295] (rpi_ati_net_ft) StderrLine: {'line': b'  of the following names:\n'}
+[0.544322] (rpi_ati_net_ft) StderrLine: {'line': b'\n'}
+[0.544348] (rpi_ati_net_ft) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.544375] (rpi_ati_net_ft) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.544401] (rpi_ati_net_ft) StderrLine: {'line': b'\n'}
+[0.544427] (rpi_ati_net_ft) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.544455] (rpi_ati_net_ft) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.544482] (rpi_ati_net_ft) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.544508] (rpi_ati_net_ft) StderrLine: {'line': b'  installed.\n'}
+[0.544534] (rpi_ati_net_ft) StderrLine: {'line': b'\n'}
+[0.544561] (rpi_ati_net_ft) StderrLine: {'line': b'\x1b[0m\n'}
+[0.544587] (rpi_ati_net_ft) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.544616] (rpi_ati_net_ft) StdoutLine: {'line': b'See also "/home/zzy/ur_real/build/rpi_ati_net_ft/CMakeFiles/CMakeOutput.log".\n'}
+[0.546190] (rpi_ati_net_ft) CommandEnded: {'returncode': 1}
+[0.561567] (rpi_ati_net_ft) JobEnded: {'identifier': 'rpi_ati_net_ft', 'rc': 1}
+[0.572560] (-) EventReactorShutdown: {}

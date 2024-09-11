@@ -1,0 +1,3 @@
+[console_scripts]
+ati_net_ft_driver_ros = ati_sensor.ati_net_ft_driver_ros:main
+test_rpi_ati_net_ft = ati_sensor.test_rpi_ati_net_ft:main

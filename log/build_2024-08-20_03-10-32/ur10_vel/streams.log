@@ -1,0 +1,43 @@
+[0.468s] Invoking command in '/home/zzy/ur_real/build/ur10_vel': CONDA_PROMPT_MODIFIER=(mujoco_env) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/zzy/ur_real/build/ur10_vel/build
+[0.629s] running develop
+[0.637s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.637s]   warnings.warn(
+[0.746s] Removing /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10-vel.egg-link (link to .)
+[0.762s] Invoked command in '/home/zzy/ur_real/build/ur10_vel' returned '0': CONDA_PROMPT_MODIFIER=(mujoco_env) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/zzy/ur_real/build/ur10_vel/build
+[0.763s] Invoking command in '/home/zzy/ur_real/src/ur10_vel': CONDA_PROMPT_MODIFIER=(mujoco_env) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data --force
+[0.911s] running egg_info
+[0.912s] writing ../../build/ur10_vel/ur10_vel.egg-info/PKG-INFO
+[0.912s] writing dependency_links to ../../build/ur10_vel/ur10_vel.egg-info/dependency_links.txt
+[0.912s] writing entry points to ../../build/ur10_vel/ur10_vel.egg-info/entry_points.txt
+[0.912s] writing requirements to ../../build/ur10_vel/ur10_vel.egg-info/requires.txt
+[0.912s] writing top-level names to ../../build/ur10_vel/ur10_vel.egg-info/top_level.txt
+[0.913s] reading manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[0.920s] writing manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[0.920s] running build
+[0.920s] running build_py
+[0.920s] copying ur10_vel/publisher_forward_velocity_controller.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.920s] copying ur10_vel/joint_velocity_IK.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.920s] copying ur10_vel/check_collision.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.921s] running install
+[0.921s] running install_lib
+[0.921s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/publisher_forward_velocity_controller.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel
+[0.921s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/joint_velocity_IK.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel
+[0.921s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/check_collision.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel
+[0.921s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/__init__.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel
+[0.921s] copying /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel/compute_manipulability_J.py -> /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel
+[0.922s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel/publisher_forward_velocity_controller.py to publisher_forward_velocity_controller.cpython-310.pyc
+[0.922s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel/joint_velocity_IK.py to joint_velocity_IK.cpython-310.pyc
+[0.925s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel/check_collision.py to check_collision.cpython-310.pyc
+[0.925s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel/__init__.py to __init__.cpython-310.pyc
+[0.925s] byte-compiling /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel/compute_manipulability_J.py to compute_manipulability_J.cpython-310.pyc
+[0.927s] running install_data
+[0.927s] copying resource/ur10_vel -> /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index/packages
+[0.927s] copying package.xml -> /home/zzy/ur_real/install/ur10_vel/share/ur10_vel
+[0.927s] running install_egg_info
+[0.928s] Copying ../../build/ur10_vel/ur10_vel.egg-info to /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info
+[0.929s] running install_scripts
+[0.942s] Installing check_collision script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[0.942s] Installing joint_velocity_IK script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[0.942s] Installing publisher_forward_velocity_controller script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[0.942s] writing list of installed files to '/home/zzy/ur_real/build/ur10_vel/install.log'
+[0.956s] Invoked command in '/home/zzy/ur_real/src/ur10_vel' returned '0': CONDA_PROMPT_MODIFIER=(mujoco_env) PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data --force

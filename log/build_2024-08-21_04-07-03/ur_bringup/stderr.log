@@ -1,0 +1,33 @@
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   13 |     [01;31m[Kros[m[K::init(argc, argv, "panda_arm_kinematics");
+      |     [01;31m[K^~~[m[K
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   14 |     [01;31m[Kros[m[K::AsyncSpinner spinner(1);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:15:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kspinner[m[K’ was not declared in this scope
+   15 |     [01;31m[Kspinner[m[K.start();
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_model_loader[m[K’ has not been declared
+   17 |     [01;31m[Krobot_model_loader[m[K::RobotModelLoader robot_model_loader("robot_description");
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:18:58:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_model_loader[m[K’ was not declared in this scope
+   18 |     const moveit::core::RobotModelPtr& kinematic_model = [01;31m[Krobot_model_loader[m[K.getModel();
+      |                                                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:24:49:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kconst char [26][m[K’ and ‘[01m[Kconst char*[m[K’ to binary ‘[01m[Koperator<<[m[K’
+   24 |     ROS_INFO_STREAM([32m[K"Test 1: Current state is "[m[K [01;31m[K<<[m[K [34m[K(collision_result.collision ? "in" : "not in")[m[K << " self collision");//输出collision_result中的检测结果
+      |                     [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                     [32m[K|[m[K                                                          [34m[K|[m[K
+      |                     [32m[Kconst char [26][m[K                                            [34m[Kconst char*[m[K
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:24:5:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_INFO_STREAM[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO_STREAM[m[K’?
+   24 |     [01;31m[KROS_INFO_STREAM[m[K("Test 1: Current state is " << (collision_result.collision ? "in" : "not in") << " self collision");//输出collision_result中的检测结果
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |     [32m[KRCLCPP_INFO_STREAM[m[K
+[01m[K/home/zzy/ur_real/src/ur_bringup/src/moveit_bringup.cpp:31:49:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kconst char [26][m[K’ and ‘[01m[Kconst char*[m[K’ to binary ‘[01m[Koperator<<[m[K’
+   31 |     ROS_INFO_STREAM([32m[K"Test 2: Current state is "[m[K [01;31m[K<<[m[K [34m[K(collision_result.collision ? "in" : "not in")[m[K << " self collision");//输出检测结果
+      |                     [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                     [32m[K|[m[K                                                          [34m[K|[m[K
+      |                     [32m[Kconst char [26][m[K                                            [34m[Kconst char*[m[K
+gmake[2]: *** [CMakeFiles/ur_bringup.dir/build.make:76：CMakeFiles/ur_bringup.dir/src/moveit_bringup.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ur_bringup.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

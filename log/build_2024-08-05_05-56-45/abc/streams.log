@@ -1,0 +1,31 @@
+[0.008s] Invoking command in '/home/zzy/ur_real/build/abc': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/zzy/ur_real/src/abc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/abc
+[0.018s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.098s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.103s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.216s] -- Added test 'lint_cmake' to check CMake code style
+[0.216s] -- Added test 'xmllint' to check XML markup files
+[0.217s] -- Configuring done
+[0.218s] -- Generating done
+[0.219s] -- Build files have been written to: /home/zzy/ur_real/build/abc
+[0.220s] Invoked command in '/home/zzy/ur_real/build/abc' returned '0': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/zzy/ur_real/src/abc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/abc
+[0.222s] Invoking command in '/home/zzy/ur_real/build/abc': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/abc -- -j24 -l24
+[0.244s] Invoked command in '/home/zzy/ur_real/build/abc' returned '0': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/zzy/ur_real/build/abc -- -j24 -l24
+[0.263s] Invoking command in '/home/zzy/ur_real/build/abc': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/zzy/ur_real/build/abc
+[0.267s] -- Install configuration: ""
+[0.267s] -- Execute custom install script
+[0.267s] -- Symlinking: /home/zzy/ur_real/install/abc/share/ament_index/resource_index/package_run_dependencies/abc
+[0.272s] -- Symlinking: /home/zzy/ur_real/install/abc/share/ament_index/resource_index/parent_prefix_path/abc
+[0.277s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/environment/ament_prefix_path.sh
+[0.282s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/environment/ament_prefix_path.dsv
+[0.287s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/environment/path.sh
+[0.292s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/environment/path.dsv
+[0.297s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/local_setup.bash
+[0.302s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/local_setup.sh
+[0.307s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/local_setup.zsh
+[0.311s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/local_setup.dsv
+[0.316s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/package.dsv
+[0.322s] -- Symlinking: /home/zzy/ur_real/install/abc/share/ament_index/resource_index/packages/abc
+[0.327s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/cmake/abcConfig.cmake
+[0.332s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/cmake/abcConfig-version.cmake
+[0.337s] -- Symlinking: /home/zzy/ur_real/install/abc/share/abc/package.xml
+[0.343s] Invoked command in '/home/zzy/ur_real/build/abc' returned '0': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/zzy/ur_real/build/abc

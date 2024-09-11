@@ -1,0 +1,2 @@
+Invoking command in '/home/zzy/ur_real/build/abc': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(mujoco_env) /usr/bin/cmake /home/zzy/ur_real/src/abc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/abc
+Invoked command in '/home/zzy/ur_real/build/abc' returned '1': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/ur10_vel:/opt/ros/humble CONDA_PROMPT_MODIFIER=(mujoco_env) /usr/bin/cmake /home/zzy/ur_real/src/abc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zzy/ur_real/install/abc

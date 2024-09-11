@@ -1,0 +1,22 @@
+[  2%] Built target ferrobotics__cpp
+[  2%] Built target ament_cmake_python_symlink_ferrobotics
+[ 12%] Built target ferrobotics__rosidl_generator_c
+[ 34%] Built target ferrobotics__rosidl_typesupport_introspection_cpp
+[ 34%] Built target ferrobotics__rosidl_typesupport_cpp
+[ 44%] Built target ferrobotics__rosidl_typesupport_fastrtps_cpp
+[ 55%] Built target ferrobotics__rosidl_typesupport_c
+[ 65%] Built target ferrobotics__rosidl_typesupport_introspection_c
+[ 76%] Built target ferrobotics__rosidl_typesupport_fastrtps_c
+[ 76%] Built target ferrobotics
+[ 78%] Built target ferrobotics__py
+[ 87%] Built target ferrobotics__rosidl_generator_py
+[ 93%] Built target ferrobotics__rosidl_typesupport_fastrtps_c__pyext
+[ 95%] Built target ferrobotics__rosidl_typesupport_introspection_c__pyext
+[100%] Built target ferrobotics__rosidl_typesupport_c__pyext
+running egg_info
+writing ferrobotics.egg-info/PKG-INFO
+writing dependency_links to ferrobotics.egg-info/dependency_links.txt
+writing top-level names to ferrobotics.egg-info/top_level.txt
+reading manifest file 'ferrobotics.egg-info/SOURCES.txt'
+writing manifest file 'ferrobotics.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_ferrobotics_egg

@@ -1,0 +1,9 @@
+source;share/ati_sensor/hook/pythonpath.ps1
+source;share/ati_sensor/hook/pythonpath.dsv
+source;share/ati_sensor/hook/pythonpath.sh
+source;share/ati_sensor/hook/ament_prefix_path.ps1
+source;share/ati_sensor/hook/ament_prefix_path.dsv
+source;share/ati_sensor/hook/ament_prefix_path.sh
+source;../../build/ati_sensor/share/ati_sensor/hook/pythonpath_develop.ps1
+source;../../build/ati_sensor/share/ati_sensor/hook/pythonpath_develop.dsv
+source;../../build/ati_sensor/share/ati_sensor/hook/pythonpath_develop.sh

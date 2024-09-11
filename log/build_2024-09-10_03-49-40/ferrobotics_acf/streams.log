@@ -1,0 +1,33 @@
+[0.960s] Invoking command in '/home/zzy/ur_real/build/ferrobotics_acf': PYTHONPATH=/home/zzy/ur_real/build/ferrobotics_acf/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ferrobotics_acf/build --no-deps symlink_data
+[1.064s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[1.064s]   warnings.warn(msg)
+[1.171s] running develop
+[1.172s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.172s] !!
+[1.172s] 
+[1.172s]         ********************************************************************************
+[1.172s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.172s]         Instead, use pypa/build, pypa/installer or other
+[1.172s]         standards-based tools.
+[1.172s] 
+[1.172s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.172s]         ********************************************************************************
+[1.172s] 
+[1.172s] !!
+[1.172s]   easy_install.initialize_options(self)
+[1.308s] running egg_info
+[1.317s] writing ferrobotics_acf.egg-info/PKG-INFO
+[1.317s] writing dependency_links to ferrobotics_acf.egg-info/dependency_links.txt
+[1.318s] writing entry points to ferrobotics_acf.egg-info/entry_points.txt
+[1.318s] writing requirements to ferrobotics_acf.egg-info/requires.txt
+[1.318s] writing top-level names to ferrobotics_acf.egg-info/top_level.txt
+[1.337s] reading manifest file 'ferrobotics_acf.egg-info/SOURCES.txt'
+[1.338s] writing manifest file 'ferrobotics_acf.egg-info/SOURCES.txt'
+[1.349s] running build_ext
+[1.349s] Creating /home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages/ferrobotics-acf.egg-link (link to .)
+[1.349s] Installing acf script to /home/zzy/ur_real/install/ferrobotics_acf/lib/ferrobotics_acf
+[1.349s] Installing force_publisher script to /home/zzy/ur_real/install/ferrobotics_acf/lib/ferrobotics_acf
+[1.349s] 
+[1.350s] Installed /home/zzy/ur_real/build/ferrobotics_acf
+[1.350s] running symlink_data
+[1.373s] Invoked command in '/home/zzy/ur_real/build/ferrobotics_acf' returned '0': PYTHONPATH=/home/zzy/ur_real/build/ferrobotics_acf/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ferrobotics_acf/build --no-deps symlink_data

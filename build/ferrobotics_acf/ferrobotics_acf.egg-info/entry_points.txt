@@ -1,0 +1,3 @@
+[console_scripts]
+acf = ferrobotics_acf.acf:main
+force_publisher = ferrobotics_acf.force_publisher:main

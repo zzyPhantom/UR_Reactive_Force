@@ -1,0 +1,34 @@
+[0.764s] Invoking command in '/home/zzy/ur_real/build/camera': PYTHONPATH=/home/zzy/ur_real/build/camera/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/camera/build --no-deps symlink_data --force
+[0.863s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[0.863s]   warnings.warn(msg)
+[0.963s] running develop
+[0.963s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[0.963s] !!
+[0.964s] 
+[0.964s]         ********************************************************************************
+[0.964s]         Please avoid running ``setup.py`` and ``easy_install``.
+[0.964s]         Instead, use pypa/build, pypa/installer or other
+[0.964s]         standards-based tools.
+[0.964s] 
+[0.964s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[0.964s]         ********************************************************************************
+[0.964s] 
+[0.964s] !!
+[0.964s]   easy_install.initialize_options(self)
+[1.093s] running egg_info
+[1.102s] writing camera.egg-info/PKG-INFO
+[1.103s] writing dependency_links to camera.egg-info/dependency_links.txt
+[1.103s] writing entry points to camera.egg-info/entry_points.txt
+[1.103s] writing requirements to camera.egg-info/requires.txt
+[1.103s] writing top-level names to camera.egg-info/top_level.txt
+[1.121s] reading manifest file 'camera.egg-info/SOURCES.txt'
+[1.122s] writing manifest file 'camera.egg-info/SOURCES.txt'
+[1.132s] running build_ext
+[1.132s] Creating /home/zzy/ur_real/install/camera/lib/python3.10/site-packages/camera.egg-link (link to .)
+[1.133s] Installing realsense_ArUco_reader script to /home/zzy/ur_real/install/camera/lib/camera
+[1.133s] 
+[1.133s] Installed /home/zzy/ur_real/build/camera
+[1.133s] running symlink_data
+[1.133s] symbolically linking /home/zzy/ur_real/build/camera/resource/camera -> /home/zzy/ur_real/install/camera/share/ament_index/resource_index/packages
+[1.133s] symbolically linking /home/zzy/ur_real/build/camera/package.xml -> /home/zzy/ur_real/install/camera/share/camera
+[1.157s] Invoked command in '/home/zzy/ur_real/build/camera' returned '0': PYTHONPATH=/home/zzy/ur_real/build/camera/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/camera/build --no-deps symlink_data --force

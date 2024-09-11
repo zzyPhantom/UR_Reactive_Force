@@ -1,0 +1,36 @@
+[0.688s] Invoking command in '/home/zzy/ur_real/src/ur10_vel': PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ur10_vel build --build-base /home/zzy/ur_real/build/ur10_vel/build install --record /home/zzy/ur_real/build/ur10_vel/install.log --single-version-externally-managed install_data
+[0.785s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[0.786s]   warnings.warn(msg)
+[0.842s] running egg_info
+[0.851s] writing ../../build/ur10_vel/ur10_vel.egg-info/PKG-INFO
+[0.852s] writing dependency_links to ../../build/ur10_vel/ur10_vel.egg-info/dependency_links.txt
+[0.852s] writing entry points to ../../build/ur10_vel/ur10_vel.egg-info/entry_points.txt
+[0.852s] writing requirements to ../../build/ur10_vel/ur10_vel.egg-info/requires.txt
+[0.852s] writing top-level names to ../../build/ur10_vel/ur10_vel.egg-info/top_level.txt
+[0.871s] reading manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[0.872s] writing manifest file '../../build/ur10_vel/ur10_vel.egg-info/SOURCES.txt'
+[0.872s] running build
+[0.872s] running build_py
+[0.872s] copying ur10_vel/publisher_forward_velocity_controller.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.872s] copying ur10_vel/check_keyboard.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.872s] copying ur10_vel/moveit_bringup.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.872s] copying ur10_vel/Joint_Velocity_Transfer.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.872s] copying ur10_vel/joint_velocity_IK.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.872s] copying ur10_vel/check_collision.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.872s] copying ur10_vel/__init__.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.872s] copying ur10_vel/compute_manipulability_J.py -> /home/zzy/ur_real/build/ur10_vel/build/lib/ur10_vel
+[0.873s] running install
+[0.875s] running install_lib
+[0.885s] running install_data
+[0.885s] copying resource/ur10_vel -> /home/zzy/ur_real/install/ur10_vel/share/ament_index/resource_index/packages
+[0.885s] copying package.xml -> /home/zzy/ur_real/install/ur10_vel/share/ur10_vel
+[0.885s] running install_egg_info
+[0.895s] removing '/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info' (and everything under it)
+[0.895s] Copying ../../build/ur10_vel/ur10_vel.egg-info to /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10_vel-0.0.0-py3.10.egg-info
+[0.895s] running install_scripts
+[0.977s] Installing Joint_Velocity_Transfer script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[0.977s] Installing check_collision script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[0.977s] Installing check_keyboard script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[0.977s] Installing joint_velocity_IK script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[0.977s] Installing publisher_forward_velocity_controller script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[0.978s] writing list of installed files to '/home/zzy/ur_real/build/ur10_vel/install.log'

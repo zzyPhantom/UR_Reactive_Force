@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.000097] (-) JobUnselected: {'identifier': 'camera'}
+[0.000126] (-) JobUnselected: {'identifier': 'ferrobotics'}
+[0.000138] (-) JobUnselected: {'identifier': 'ferrobotics_acf'}
+[0.000148] (-) JobUnselected: {'identifier': 'netft_control'}
+[0.000156] (-) JobUnselected: {'identifier': 'netft_description'}
+[0.000164] (-) JobUnselected: {'identifier': 'ur10_moveit_config'}
+[0.000171] (-) JobUnselected: {'identifier': 'ur10_vel'}
+[0.000179] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.000187] (-) EventReactorShutdown: {}

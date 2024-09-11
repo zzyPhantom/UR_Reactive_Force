@@ -1,0 +1,2 @@
+Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(mujoco_env) /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24
+Invoked command in '/home/zzy/ur_real/build/ur_bringup' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(mujoco_env) /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24

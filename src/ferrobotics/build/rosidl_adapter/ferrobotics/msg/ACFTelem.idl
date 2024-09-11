@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ferrobotics/msg/ACFTelem.msg
+// generated code does not contain a copyright notice
+
+
+module ferrobotics {
+  module msg {
+    typedef boolean boolean__8[8];
+    struct ACFTelem {
+      int32 id;
+
+      float force;
+
+      float position;
+
+      boolean in_contact;
+
+      boolean in_error;
+
+      boolean__8 errors;
+
+      sequence<string> error_messages;
+    };
+  };
+};
