@@ -1,0 +1,1 @@
+/home/zzy/ur_real/build/easy_handeye2_msgs/rosidl_generator_c/easy_handeye2_msgs/srv/take_sample.h

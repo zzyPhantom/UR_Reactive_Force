@@ -34,11 +34,11 @@ def generate_launch_description():
     return LaunchDescription(
         [
             ExecuteProcess(
-                cmd=['bash', script_path, '-m', 'ur10'],
+                cmd=['bash', script_path, '-m', 'ur5'],
                 output='screen'
             ),
 
-            DeclareLaunchArgument('ur_type', default_value='ur10'),
+            DeclareLaunchArgument('ur_type', default_value='ur5'),
             DeclareLaunchArgument('robot_ip', default_value='192.168.56.1'),
             DeclareLaunchArgument('launch_rviz', default_value='true'),
             DeclareLaunchArgument('initial_joint_controller', default_value='forward_velocity_controller'),

@@ -1,0 +1,56 @@
+Built target ament_cmake_python_symlink_pymoveit2
+running egg_info
+writing pymoveit2.egg-info/PKG-INFO
+writing dependency_links to pymoveit2.egg-info/dependency_links.txt
+writing top-level names to pymoveit2.egg-info/top_level.txt
+reading manifest file 'pymoveit2.egg-info/SOURCES.txt'
+writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_pymoveit2_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/pythonpath.sh
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-4.0.0-py3.10.egg-info/PKG-INFO
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-4.0.0-py3.10.egg-info/SOURCES.txt
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-4.0.0-py3.10.egg-info/dependency_links.txt
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-4.0.0-py3.10.egg-info/top_level.txt
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/__init__.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/gripper_command.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/gripper_interface.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2_gripper.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2_servo.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/__init__.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/crane_x7.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/kinova.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/lbr.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/panda.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/phantomx_pincher.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_allow_collisions.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_clear_planning_scene.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_collision_mesh.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_collision_primitive.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_fk.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_gripper.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_ik.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_joint_goal.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_orientation_path_constraint.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_pose_goal.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_servo.py
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/ament_index/resource_index/package_run_dependencies/pymoveit2
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/ament_index/resource_index/parent_prefix_path/pymoveit2
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/path.sh
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/path.dsv
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/local_setup.bash
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/local_setup.sh
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/local_setup.zsh
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/local_setup.dsv
+-- Symlinking: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.dsv
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/ament_index/resource_index/packages/pymoveit2
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config.cmake
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config-version.cmake
+-- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.xml
+Listing '/home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2'...
+Listing '/home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots'...

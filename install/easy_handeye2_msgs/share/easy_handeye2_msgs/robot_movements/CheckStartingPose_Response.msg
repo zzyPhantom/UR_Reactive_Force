@@ -1,0 +1,1 @@
+/home/zzy/ur_real/build/easy_handeye2_msgs/rosidl_cmake/srv/robot_movements/CheckStartingPose_Response.msg

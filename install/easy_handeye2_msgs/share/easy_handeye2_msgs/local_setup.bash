@@ -1,0 +1,1 @@
+/home/zzy/ur_real/build/easy_handeye2_msgs/ament_cmake_environment_hooks/local_setup.bash

@@ -75,7 +75,8 @@ class StateValidity(Node):
 
     def jointvelCB(self, msg):
         # 更新机器人速度
-        self.joint_vel = msg.data
+        if len(msg.data) == 6:
+            self.joint_vel = msg.data
 
 def main(args=None):
     rclpy.init(args=args)

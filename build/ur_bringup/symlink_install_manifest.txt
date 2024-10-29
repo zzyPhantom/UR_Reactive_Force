@@ -1,11 +1,11 @@
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/acf.launch.py
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/calibration.launch.py
-/home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/calibration_pub.launch.py
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/fake_ur_driver.launch.py
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/ft_senser.launch.py
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/joint_velocity_controller.launch.py
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/ur10_driver.launch.py
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/ur5_driver.launch.py
+/home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/废弃calibration_pub.launch.py
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/config/test_goal_publishers_config.yaml
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/config/test_velocity_goal_publishers_config.yaml
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup/config/ur10_update_rate.yaml

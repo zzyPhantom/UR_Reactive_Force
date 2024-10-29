@@ -1,0 +1,1 @@
+/home/zzy/ur_real/build/easy_handeye2_msgs/rosidl_generator_cpp/easy_handeye2_msgs/srv/detail/save_samples__traits.hpp

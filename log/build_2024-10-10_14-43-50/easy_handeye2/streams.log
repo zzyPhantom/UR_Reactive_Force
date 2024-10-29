@@ -1,0 +1,54 @@
+[0.499s] Invoking command in '/home/zzy/ur_real/build/easy_handeye2': AMENT_PREFIX_PATH=/home/zzy/ur_real/install/easy_handeye2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/easy_handeye2_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/zzy/ur_real/install/easy_handeye2_msgs/lib:/home/zzy/ur_real/install/ferrobotics/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/zzy/mujoco-3.1.6/bin PYTHONPATH=/home/zzy/ur_real/build/easy_handeye2/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/easy_handeye2/lib/python3.10/site-packages:/home/zzy/ur_real/install/easy_handeye2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/easy_handeye2/build --no-deps symlink_data
+[0.603s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[0.603s]   warnings.warn(msg)
+[0.709s] running develop
+[0.709s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[0.709s] !!
+[0.709s] 
+[0.709s]         ********************************************************************************
+[0.709s]         Please avoid running ``setup.py`` and ``easy_install``.
+[0.709s]         Instead, use pypa/build, pypa/installer or other
+[0.709s]         standards-based tools.
+[0.709s] 
+[0.709s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[0.709s]         ********************************************************************************
+[0.709s] 
+[0.709s] !!
+[0.709s]   easy_install.initialize_options(self)
+[0.843s] running egg_info
+[0.843s] creating easy_handeye2.egg-info
+[0.852s] writing easy_handeye2.egg-info/PKG-INFO
+[0.852s] writing dependency_links to easy_handeye2.egg-info/dependency_links.txt
+[0.852s] writing entry points to easy_handeye2.egg-info/entry_points.txt
+[0.853s] writing requirements to easy_handeye2.egg-info/requires.txt
+[0.853s] writing top-level names to easy_handeye2.egg-info/top_level.txt
+[0.853s] writing manifest file 'easy_handeye2.egg-info/SOURCES.txt'
+[0.881s] reading manifest file 'easy_handeye2.egg-info/SOURCES.txt'
+[0.881s] writing manifest file 'easy_handeye2.egg-info/SOURCES.txt'
+[0.891s] running build_ext
+[0.891s] Creating /home/zzy/ur_real/install/easy_handeye2/lib/python3.10/site-packages/easy-handeye2.egg-link (link to .)
+[0.892s] Installing handeye_calibration_commander script to /home/zzy/ur_real/install/easy_handeye2/lib/easy_handeye2
+[0.892s] Installing handeye_publisher script to /home/zzy/ur_real/install/easy_handeye2/lib/easy_handeye2
+[0.892s] Installing handeye_server script to /home/zzy/ur_real/install/easy_handeye2/lib/easy_handeye2
+[0.892s] Installing handeye_server_robot script to /home/zzy/ur_real/install/easy_handeye2/lib/easy_handeye2
+[0.893s] Installing rqt_calibrator.py script to /home/zzy/ur_real/install/easy_handeye2/lib/easy_handeye2
+[0.893s] Installing rqt_evaluator.py script to /home/zzy/ur_real/install/easy_handeye2/lib/easy_handeye2
+[0.893s] 
+[0.893s] Installed /home/zzy/ur_real/build/easy_handeye2
+[0.893s] running symlink_data
+[0.893s] creating /home/zzy/ur_real/install/easy_handeye2/share/ament_index
+[0.893s] creating /home/zzy/ur_real/install/easy_handeye2/share/ament_index/resource_index
+[0.893s] creating /home/zzy/ur_real/install/easy_handeye2/share/ament_index/resource_index/packages
+[0.893s] symbolically linking /home/zzy/ur_real/build/easy_handeye2/resource/easy_handeye2 -> /home/zzy/ur_real/install/easy_handeye2/share/ament_index/resource_index/packages
+[0.893s] creating /home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/resource
+[0.893s] symbolically linking /home/zzy/ur_real/build/easy_handeye2/resource/rqt_handeye.ui -> /home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/resource
+[0.893s] symbolically linking /home/zzy/ur_real/build/easy_handeye2/resource/rqt_handeye_info.ui -> /home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/resource
+[0.893s] symbolically linking /home/zzy/ur_real/build/easy_handeye2/resource/rqt_handeye_evaluator.ui -> /home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/resource
+[0.893s] symbolically linking /home/zzy/ur_real/build/easy_handeye2/package.xml -> /home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2
+[0.893s] symbolically linking /home/zzy/ur_real/build/easy_handeye2/plugin_evaluator.xml -> /home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2
+[0.893s] symbolically linking /home/zzy/ur_real/build/easy_handeye2/plugin_calibrator.xml -> /home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2
+[0.893s] creating /home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/launch
+[0.894s] symbolically linking /home/zzy/ur_real/build/easy_handeye2/launch/evaluate.launch.py -> /home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/launch
+[0.894s] symbolically linking /home/zzy/ur_real/build/easy_handeye2/launch/calibrate.launch.py -> /home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/launch
+[0.894s] symbolically linking /home/zzy/ur_real/build/easy_handeye2/launch/publish.launch.py -> /home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/launch
+[0.913s] Invoked command in '/home/zzy/ur_real/build/easy_handeye2' returned '0': AMENT_PREFIX_PATH=/home/zzy/ur_real/install/easy_handeye2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/easy_handeye2_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/zzy/ur_real/install/easy_handeye2_msgs/lib:/home/zzy/ur_real/install/ferrobotics/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/zzy/mujoco-3.1.6/bin PYTHONPATH=/home/zzy/ur_real/build/easy_handeye2/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/easy_handeye2/lib/python3.10/site-packages:/home/zzy/ur_real/install/easy_handeye2_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/easy_handeye2/build --no-deps symlink_data

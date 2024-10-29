@@ -1,0 +1,27 @@
+[0.460s] Invoking command in '/home/zzy/ur_real/src/gravity_compensation': PYTHONPATH=/home/zzy/ur_real/build/gravity_compensation/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/gravity_compensation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gravity_compensation build --build-base /home/zzy/ur_real/build/gravity_compensation/build install --record /home/zzy/ur_real/build/gravity_compensation/install.log --single-version-externally-managed install_data
+[0.556s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[0.556s]   warnings.warn(msg)
+[0.611s] running egg_info
+[0.619s] writing ../../build/gravity_compensation/gravity_compensation.egg-info/PKG-INFO
+[0.619s] writing dependency_links to ../../build/gravity_compensation/gravity_compensation.egg-info/dependency_links.txt
+[0.620s] writing entry points to ../../build/gravity_compensation/gravity_compensation.egg-info/entry_points.txt
+[0.620s] writing requirements to ../../build/gravity_compensation/gravity_compensation.egg-info/requires.txt
+[0.620s] writing top-level names to ../../build/gravity_compensation/gravity_compensation.egg-info/top_level.txt
+[0.639s] reading manifest file '../../build/gravity_compensation/gravity_compensation.egg-info/SOURCES.txt'
+[0.639s] writing manifest file '../../build/gravity_compensation/gravity_compensation.egg-info/SOURCES.txt'
+[0.639s] running build
+[0.639s] running build_py
+[0.640s] copying gravity_compensation/ft_calib.py -> /home/zzy/ur_real/build/gravity_compensation/build/lib/gravity_compensation
+[0.640s] copying gravity_compensation/__init__.py -> /home/zzy/ur_real/build/gravity_compensation/build/lib/gravity_compensation
+[0.640s] running install
+[0.643s] running install_lib
+[0.652s] running install_data
+[0.652s] copying resource/gravity_compensation -> /home/zzy/ur_real/install/gravity_compensation/share/ament_index/resource_index/packages
+[0.652s] copying package.xml -> /home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation
+[0.652s] running install_egg_info
+[0.662s] removing '/home/zzy/ur_real/install/gravity_compensation/lib/python3.10/site-packages/gravity_compensation-0.0.0-py3.10.egg-info' (and everything under it)
+[0.662s] Copying ../../build/gravity_compensation/gravity_compensation.egg-info to /home/zzy/ur_real/install/gravity_compensation/lib/python3.10/site-packages/gravity_compensation-0.0.0-py3.10.egg-info
+[0.662s] running install_scripts
+[0.742s] Installing ft_calib script to /home/zzy/ur_real/install/gravity_compensation/lib/gravity_compensation
+[0.742s] writing list of installed files to '/home/zzy/ur_real/build/gravity_compensation/install.log'
+[0.757s] Invoked command in '/home/zzy/ur_real/src/gravity_compensation' returned '0': PYTHONPATH=/home/zzy/ur_real/build/gravity_compensation/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/gravity_compensation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gravity_compensation build --build-base /home/zzy/ur_real/build/gravity_compensation/build install --record /home/zzy/ur_real/build/gravity_compensation/install.log --single-version-externally-managed install_data

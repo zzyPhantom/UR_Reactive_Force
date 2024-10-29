@@ -1,0 +1,23 @@
+{
+  "package_name": "easy_handeye2_msgs",
+  "non_idl_tuples": [
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:msg/HandeyeCalibration.msg",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:msg/HandeyeCalibrationParameters.msg",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:msg/Sample.msg",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:msg/SampleList.msg",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:msg/TargetPoseList.msg",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/calibration/ListAlgorithms.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/calibration/SetAlgorithm.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/calibration/ComputeCalibration.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/calibration/SaveCalibration.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/calibration/RemoveSample.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/calibration/TakeSample.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/calibration/SaveSamples.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/calibration/LoadSamples.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/robot_movements/CheckStartingPose.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/robot_movements/EnumerateTargetPoses.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/robot_movements/SelectTargetPose.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/robot_movements/PlanToSelectedTargetPose.srv",
+    "/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs:srv/robot_movements/ExecutePlan.srv"
+  ]
+}

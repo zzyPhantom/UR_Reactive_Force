@@ -1,4 +1,4 @@
-#todo: 可操作雅各比矩阵由于环境冲突使用不了机器人工具箱所以被注释掉； 传感器部分未移植
+#todo: 可操作雅各比矩阵由于环境冲突使用不了机器人工具箱所以被注释掉
 
 import rclpy
 from rclpy.node import Node
@@ -8,11 +8,13 @@ from geometry_msgs.msg import WrenchStamped
 from sensor_msgs.msg import JointState
 
 import time
+import pickle
 import numpy as np
 from scipy.spatial.transform import Rotation
 from scipy.optimize import minimize
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
+from matplotlib.animation import FuncAnimation
 # import roboticstoolbox as rtb
 
 # 节点参数
@@ -27,23 +29,30 @@ k_err = 1    # 位置误差到期望末端速度的变换
 k_wheel = 0.1   # 轮子速度增益
 Pi = 0.6   # influence distance in which to activate the damper
 Ps = 0.1  # stopping distance
+force_gain = 0.01  # 力控制增益
+max_step = 0.02   # 路径规划中的最大步长
+kalman_des_vel_gain = 1.5  # 卡尔曼滤波器中期望速度对预测加速度的影响
+plot_axis = 2  # 绘制轴朝向（基坐标系）
 
 # 一些初始化数据
 vel_old = np.zeros(6)  # 用来存储上一步的速度
-trolley_position = [0.0, 0.0, 1.0, 3.14, 0.0, 0.0]  # 用来存储视觉读取的目标位姿
-force_history = []   # 用来存储历史力数据
-FORCE_HISTORY_SIZE = 2   # 用来计算平均力的历史记录长度
-force_data = np.zeros(3)
-eef_pos = np.zeros(3)
-qpos = np.zeros(6)
-iniT = time.time()
+last_eef_vel = np.zeros(6)  # 用来存储上一步的末端速度
+# trolley_position = [0.5, 0.0, 0.8, 0.0, 0.0, 0.0]  # 用来存储视觉读取的目标位姿(ur5)
+trolley_position = [0.5, 0.0, 0.5, 0.0, 0.0, 0.0]  # 用来存储视觉读取的目标位姿(ur10)
+force_predict = []   # 用来存储历史加速度力数据
+eef_pos = np.eye(4)          # 用来存储目前的末端位姿
+qpos = np.zeros(6)           # 用来存储目前的关节位置
+qvel = np.zeros(6)           # 用来存储目前的关节速度
+eef_vel = np.zeros(6)        # 用来存储目前的末端速度
+des_eef_vel = np.zeros(6)    # 用来存储目标末端速度
+p_control_target = np.zeros(3) # 用来存储目标位置的暂时位置
+force_control_sign = False  # 用来记录是否开启力控制
 
 #定义机器人模型
 # link_lengths = [0.1807, 0.6127, 0.5716, 0.1742, 0.1199, 0.1166] # UR10e链长
-# link_lengths = [0.1273, 0.6120, 0.5723, 0.1640, 0.1157, 0.0922] # UR10e链长
-link_lengths = [0.0892, 0.4250, 0.3923, 0.1092, 0.0947, 0.0823] # UR5链长
+link_lengths = [0.1273, 0.6120, 0.5723, 0.1640, 0.1157, 0.0922] # UR10链长
+# link_lengths = [0.0892, 0.4250, 0.3923, 0.1092, 0.0947, 0.0823] # UR5链长
 car_params = [0.1, 0.1, 1] # 小车参数（左轮半径，右轮半径，轴距）
-eef_params = [1.5] # 末端工具参数（重量）
 
 # E1 = rtb.ET.tx(-0.4)
 # E2 = rtb.ET.tx()
@@ -67,6 +76,74 @@ Tbase = np.eye(4)
 Tbase[0:3, 3] = [0, 0, 0]
 Ttool = np.eye(4)
 Ttool[0:3, 3] = [0.0, 0, 0]
+
+# 读取末端工具和末端传感器的矫正数据
+mass_file_path = '/home/zzy/ur_real/src/gravity_compensation/gravity_compensation/data.pkl'
+try:
+    with open(mass_file_path, 'rb') as f:
+        filedata = pickle.load(f)
+    if isinstance(filedata, dict):
+        mass_params = filedata.get('mass')
+except (FileNotFoundError, EOFError, pickle.UnpicklingError) as e:
+    mass_params = np.zeros(6)
+    print(f"加载矫正数据时发生错误: {e}, 默认矫正数据为None")
+
+mass_square_sum = mass_params[0]**2 + mass_params[1]**2 + mass_params[2]**2
+eef_mass = [np.sqrt(mass_square_sum)] # 末端工具参数（重量）
+
+force_init = np.zeros(3) # 用来存储传感器零点力数据
+force_init[0] = -mass_params[3] # 传感器x方向零点力
+force_init[1] = mass_params[5] # 传感器y方向零点力
+force_init[2] = -mass_params[4]  # 传感器z方向零点力
+# force_init[0] = 0 # 传感器x方向零点力
+# force_init[1] = 0 # 传感器y方向零点力
+# force_init[2] = 0 # 传感器z方向零点力
+
+# 定义卡尔曼滤波器
+
+# 初始化预测的状态和协方差矩阵
+state_matrix_pred = np.zeros((6, 1))  # [v_x, v_y, v_z, a_x, a_y, a_z]
+covariance_matrix_pred = np.eye(6)
+
+# 卡尔曼滤波器预测阶段
+def kalman_predict(x, P, v_desired, v_current, dt):
+    # 状态转移矩阵 A
+    A = np.array([[1, 0, 0, dt, 0, 0],
+                [0, 1, 0, 0, dt, 0],
+                [0, 0, 1, 0, 0, dt],
+                [0, 0, 0, 1, 0, 0],
+                [0, 0, 0, 0, 1, 0],
+                [0, 0, 0, 0, 0, 1]])
+    # 控制矩阵 B
+    B = np.array([[0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [kalman_des_vel_gain, 0, 0],
+                [0, kalman_des_vel_gain, 0],
+                [0, 0, kalman_des_vel_gain]])
+    Q = np.eye(6) * 1e-4  # 示例噪声
+
+    # 状态预测，加入速度期望的影A
+    v_error = v_desired - v_current
+    x_pred = A @ x + B @ v_error.reshape(-1, 1)
+    P_pred = A @ P @ A.T + Q
+    return x_pred, P_pred
+
+# 卡尔曼滤波器更新阶段
+def kalman_update(x_pred, P_pred, z):
+    # 观测矩阵 H
+    H = np.array([[1, 0, 0, 0, 0, 0],
+                [0, 1, 0, 0, 0, 0],
+                [0, 0, 1, 0, 0, 0]])
+    # 测量噪声协方差矩阵
+    R = np.eye(3) * 0.01  # 示例观测噪声
+
+    y = z.reshape(-1, 1) - H @ x_pred  # 创新
+    S = H @ P_pred @ H.T + R  # 创新协方差
+    K = P_pred @ H.T @ np.linalg.inv(S)  # 卡尔曼增益
+    x_new = x_pred + K @ y  # 状态更新
+    P_new = (np.eye(6) - K @ H) @ P_pred  # 协方差更新
+    return x_new, P_new
 
 def transform_to_xyzrpy(T):
     # 提取平移部分
@@ -93,30 +170,99 @@ def transform_to_xyzrpy(T):
 
 def get_target_position(force, p_change = np.zeros(6)):
     # 更新目标位姿
-    global force_history
+    global force_predict, last_time, state_matrix_pred, covariance_matrix_pred, last_eef_vel, p_control_target
     p_target = np.zeros(6)  # 用来存储目标位姿
 
-    # force = d.sensor('eef_force').data.copy()
+    dt = time.time() - last_time
 
-    # 如果力历史记录还没满，直接添加新数据
-    if len(force_history) < FORCE_HISTORY_SIZE:
-        force_history.append(force)
+    # 更新卡尔曼滤波器状态并预测下一状态
+    state_matrix, convariance_matrix = kalman_update(state_matrix_pred, covariance_matrix_pred, eef_vel[:3])
+    state_matrix_pred, covariance_matrix_pred = kalman_predict(state_matrix, convariance_matrix, des_eef_vel[:3], eef_vel[:3], dt)
+
+    # 计算加速度
+    # eef_acc_force = ((des_eef_vel[:3] - eef_vel[:3]) / dt) * (eef_mass[0] / 9.8)  # 使用计算出的加速度(根据目标速度)
+    # force_predict_SIZE = 4
+
+    # eef_acc_force = ((eef_vel[:3] - last_eef_vel[:3]) / dt) * (eef_mass[0] / 9.8) * 0.7 # 使用计算出的加速度（根据真实速度变化量）
+    # force_predict_SIZE = 3
+
+    eef_acc_force = state_matrix_pred[3:].flatten() * (eef_mass[0] / 9.8) # 使用卡尔曼预测的加速度
+    force_predict_SIZE = 1
+    
+    last_time = time.time()
+    last_eef_vel = eef_vel
+
+    # 将力数据存入列表，如果力历史记录已满，删除最早的力数据
+    force_predict.append(eef_acc_force)
+    if len(force_predict) > force_predict_SIZE:
+        force_predict.pop(0)
+
+    # # 将速度数据存入列表，如果力历史记录已满，删除最早的力数据(测使用)
+    # force_predict.append(des_eef_vel[:3])
+    # if len(force_predict) > force_predict_SIZE:
+    #     force_predict.pop(0)
+
+    # # 计算平均力
+    # avg_force = np.mean(force_predict, axis=0)
+
+    #计算位置变化是否过大过大则减缓变化(渐进距离法)
+    target_pos = np.array(p_change[0:3])
+
+    # 计算两点之间的距离
+    distance = np.linalg.norm(target_pos - p_control_target)
+
+    # 如果距离超过最大移动距离，则按比例缩小
+    if distance > max_step:
+        direction = (target_pos - p_control_target) / distance  # 单位方向向量
+        p_control_target = p_control_target + direction * max_step    # 按比例缩小移动
     else:
-    # 如果力历史记录已满，删除最早的力数据，然后添加新数据
-        force_history.pop(0)
-        force_history.append(force)
+        p_control_target = target_pos  # 距离在允许范围内，直接移动到目标点
 
-    # 计算平均力
-    avg_force = np.mean(force_history, axis=0)
+    # 测试用直接使用给定速度
+    # p_control_target = p_change[0:3]
 
-    p_target[0] = -0.5 + p_change[0] #+ 0.05 * (force[2]+29.0) -0.2
-    p_target[1] = 0.0 + p_change[1] #- 0.05 * (force[1]-21.5)
-    p_target[2] = 1.0 + p_change[2] #+ 0.05 * (force[0]) +0.1
+    if force_control_sign == False:
+        p_target[0] = p_control_target[0]
+        p_target[1] = p_control_target[1]
+        p_target[2] = p_control_target[2]
 
+    if force_control_sign == True:
+        p_target[0] = p_control_target[0] - force_gain * (force[0] - force_predict[0][0])
+        p_target[1] = p_control_target[1] - force_gain * (force[1] - force_predict[0][1])
+        p_target[2] = p_control_target[2] - force_gain * (force[2] - force_predict[0][2])
+    
     p_target[3:] = [0.0 + p_change[3], 0.0 + p_change[4], np.pi/2 + p_change[5]]
     # p_target[3:] = [0.0, 0.0, np.pi/2]
 
-    return p_target
+    # #计算位置变化是否过大过大则减缓变化(渐进距离法)
+    # target_pos = np.array(p_target[0:3])
+
+    # # 计算两点之间的距离
+    # distance = np.linalg.norm(target_pos - p_control_target)
+
+    # # 如果距离超过最大移动距离，则按比例缩小
+    # if distance > max_step:
+    #     direction = (target_pos - p_control_target) / distance  # 单位方向向量
+    #     p_control_target = p_control_target + direction * max_step    # 按比例缩小移动
+    # else:
+    #     p_control_target = target_pos  # 距离在允许范围内，直接移动到目标点
+
+    # p_target[0:3] = p_control_target[:]
+
+    # 回传力数据到F/T显示部分
+    force_data = [force[0] - force_predict[0][0], force[1] - force_predict[0][1], force[2] - force_predict[0][2]]
+    # force_data = [force[0], force[1], force[2]]
+    # force_data = [force_predict[0][0], force_predict[0][1], force_predict[0][2]]
+    # force_data = eef_acc_force[:3]
+    # force_data = des_eef_vel
+    # force_data = p_change
+    # vel_error = (eef_vel[:3] - force_predict[0][:3])
+    # force_data = des_eef_vel[:3]
+    # force_data = vel_error
+    force_data = [p_control_target[0], p_change[0], force[2] - force_predict[0][2]]
+    force_data = [force_predict[0][0], force_predict[0][1], force_predict[0][2]]
+
+    return p_target, force_data
 
 def homogeneous_matrix_to_array(H):
     """Convert a homogeneous matrix to an array"""
@@ -314,37 +460,6 @@ def homogeneous_matrix(xyz, quaternion):
     T[:3, 3] = [x, y, z]
     return T
 
-# def force_sensor_data(H_eef, ddT):
-    
-#     data = d.sensor('eef_force').data.copy()
-
-#     # 定义重力加速度
-#     g = 9.81  # m/s^2
-
-#     # 计算工具重力在基座标系下的力
-#     tool_gravity_base = np.array([0, 0, eef_params[0] * g])
-#     #先不计算加速度产生的力（此方法需要验证）
-#     # tool_extForce_base = tool_gravity_base - np.array([ddT[0], ddT[1], ddT[2]]) * eef_params[0]
-
-#     # 将工具重力转换到末端坐标系
-#     R_eef = H_eef[:3, :3]  # 从齐次变换矩阵中提取旋转矩阵
-#     tool_gravity_eef = np.zeros(3)
-#     tool_gravity_eef = np.dot(tool_gravity_base, np.dot(R_eef, np.dot(Rz(-np.pi/2)[:3, :3], Ry(np.pi)[:3, :3])))
-
-#     # 计算工具重心产生的力矩
-#     # tool_gravity_eef[3:] = np.cross(tool_com, tool_gravity_eef[:3])
-
-#     # 减去工具重力的影响
-#     corrected_data = data - tool_gravity_eef
-
-#     # print ('m',tool_gravity_eef)
-#     # print('r',d.sensor('eef_tool_acc').data)
-
-#     #转回基座标系
-#     corrected_data_base = np.dot(R_eef.T, corrected_data)
-
-#     return corrected_data_base
-
 def FK(q):
     # Forward Kinematics calculation
     L = link_lengths
@@ -450,7 +565,8 @@ def compute_inverse_kinematics(p_goal):
     q_updated = q_current[:6]  
 
     p_curr_H = FK(q_current[:6])
-    p_curr = homogeneous_matrix_to_array(p_curr_H)  # 获取当前末端位置
+    # p_curr = homogeneous_matrix_to_array(p_curr_H)  # 获取当前末端位置
+    p_curr = p_curr_H
     
     err = np.zeros(6)
     err[:3] = p_goal[:3] - p_curr_H[:3, 3]  # 计算位置误差
@@ -484,9 +600,18 @@ def compute_inverse_kinematics(p_goal):
 
     q_updated[:6] = q_vel.x[:6]  # 更新关节角速度（速度控制）
 
-    ddT = 0.0
+    eef_vel_updated = np.dot(jacob, q_updated[:6])  # 计算期望末端速度
+    eef_vel_now = np.dot(jacob, qvel[:6])  # 计算末端速度
 
-    return q_updated, p_curr
+    return q_updated, p_curr, eef_vel_updated, eef_vel_now
+
+def calculate_eef_pos():
+    global p_control_target
+    q_current = np.array(qpos) # 更新末端状态
+    q_current[1] += np.pi/2
+    q_current[3] += np.pi/2 
+    eef_pos = FK(q_current[:6])
+    p_control_target = eef_pos[:3, 3]
 
 class JointVelocityIK(Node):
     def __init__(self):
@@ -495,7 +620,26 @@ class JointVelocityIK(Node):
         self.declare_parameter("FPS", FPS)
         # self.stop = False
         # self.collision_stop = True
-        self.run_sign = True
+        self.force_data = np.zeros(3) # 用来存储当前力数据
+        self.run_sign = True  # 用来通知其他节点IK是否在运行
+        self.received_first_message = False  # 是否初始化了关节姿态
+
+        global last_time
+        last_time = time.time()
+        self.iniT = time.time()    # 用来记录开始运行的时间
+
+        self.data_list = []  # 用于显示最近几秒的数据
+        self.save_data = []  # 用于存储数据
+        self.plot_duration = 15
+        # 初始化图像
+        self.fig, self.ax = plt.subplots()
+        self.line, = self.ax.plot([], [], 'b-')  # 初始化折线
+        self.ax.set_xlim(0, self.plot_duration)  # x轴范围
+        # 启动动画
+        self.ani = FuncAnimation(self.fig, self.update_plot, interval=500)  # 每秒更新一次
+
+        # 每一秒存储一次保存的数据
+        self.timer = self.create_timer(1, self.save_data_callback)
 
         # Read parameters
         wait_sec_between_publish = 1 / self.get_parameter("FPS").value
@@ -545,6 +689,25 @@ class JointVelocityIK(Node):
         self.stop_subscription  
         self.get_logger().info('stop signal subscriber created')
 
+        self.get_logger().info('使用的末端公具重力参数为:{}'.format(eef_mass))
+
+    def save_data_callback(self):
+        data_file_path = '/home/zzy/ur_real/save_data_1.pkl'
+        with open(data_file_path, "wb") as file:
+            pickle.dump(self.save_data, file)
+
+    def update_plot(self, frame):
+        # 更新折线图
+        if self.data_list:
+            times, values = zip(*self.data_list)
+            times = [t - times[0] for t in times]  # 调整时间以显示最近5秒
+            self.line.set_data(times, values)
+            self.ax.set_xlim(0, self.plot_duration)
+            # 自动调整y轴范围
+            self.ax.relim()  # 重新计算数据范围
+            self.ax.autoscale_view()  # 自动缩放视图
+        return self.line,
+
     def stop_callback(self, msg):
         self.stop = bool(msg.data)
 
@@ -553,52 +716,103 @@ class JointVelocityIK(Node):
         trolley_position = msg.data
 
     def ft_sensor_callback(self, msg):
-        global force_data
         # 从 WrenchStamped 消息中提取力
         force = msg.wrench.force
 
         # 提取 x, y, z 方向的力值
-        force_x = force.x
-        force_y = force.y
-        force_z = force.z
-        force_data = [force_x, force_y, force_z]
+        force_x = force.x - force_init[0]
+        force_y = force.y - force_init[1]
+        force_z = force.z - force_init[2]
+        data = np.array([-force_x, -force_z, force_y]).reshape(3, 1)
+        # print('none_d',force)
+        # 定义重力加速度
+        g = 9.81  # m/s^2, eef_mass[0]是工具重力，若输入质量则需要乘g
+
+        # 计算工具重力在基座标系下的力
+        tool_gravity_base = np.array([0.0, 0.0, eef_mass[0]]).reshape(3, 1)
+
+        # 将工具重力转换到末端坐标系
+        R_eef = eef_pos[:3, :3]  # 从齐次变换矩阵中提取旋转矩阵
+        tool_gravity_eef = np.zeros(3)
+        tool_gravity_eef = np.dot(R_eef.T, tool_gravity_base)# np.dot(R_eef, np.dot(Rz(-np.pi/2)[:3, :3], Ry(np.pi)[:3, :3])))
+
+        # 计算工具重心产生的力矩
+        # tool_gravity_eef[3:] = np.cross(tool_com, tool_gravity_eef[:3])
+
+        # 减去工具重力的影响
+        corrected_data = data - tool_gravity_eef.reshape(3, 1)
+        print("data",data)
+        print("gravity_predict",tool_gravity_eef)
+
+        #转回基座标系
+        self.force_data = np.dot(R_eef, corrected_data)
 
     def listener_callback(self, msg):
-        global qpos
+        global qpos, qvel
+
+        if not self.received_first_message:
+            self.received_first_message = True  # 设置标志为 True
+            calculate_eef_pos()
+            self.get_logger().info('Received first joint state message!')
+        
         qpos[1:] = msg.position[:5]
         qpos[0] = msg.position[5]
+
+        qvel[1:] = msg.velocity[:5]
+        qvel[0] = msg.velocity[5]
 
     def collision_stop_callback(self, msg):
         self.collision_stop = bool(msg.data)
 
     def timer_callback(self):
-        global force_data, eef_pos
+        global eef_pos, des_eef_vel, eef_vel, force_control_sign
 
         msg = Float64MultiArray()
+        msg.data = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+        force_data_display = [0.0, 0.0, 0.0]
 
-        if time.time() - iniT <= 2:
-            msg.data = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]   # 速度控制用
+        if time.time() - self.iniT <= 0.5:
+            calculate_eef_pos()
+            _, force_data_display = get_target_position(self.force_data, [p_control_target[0], p_control_target[1], p_control_target[2], 0.0-1.57, 0.0, 0.0])
 
-        if time.time() - iniT > 2 and time.time() - iniT <= 8:
-            p_target = get_target_position(force_data, [0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
-            IK, eef_pos = compute_inverse_kinematics(p_target)
+        if time.time() - self.iniT > 0.5 and time.time() - self.iniT <= 5:
+            p_target, force_data_display = get_target_position(self.force_data, [-trolley_position[0]-0.5, -trolley_position[1], trolley_position[2], 0.0-1.57, 0.0, 0.0])
+            IK, eef_pos, des_eef_vel, eef_vel = compute_inverse_kinematics(p_target)
 
             # 设置小数点精度
             precision = 6
             data_list = [round(value, precision) for value in IK]
             msg.data = data_list
 
-        if time.time() - iniT > 8:
+        if time.time() - self.iniT > 5 and time.time() - self.iniT <= 10:
+
+            p_target, force_data_display = get_target_position(self.force_data, [-trolley_position[0]+0.5, -trolley_position[1], trolley_position[2]+0.3, -trolley_position[4]-1.57, trolley_position[3], trolley_position[5]])
+            IK, eef_pos, des_eef_vel, eef_vel = compute_inverse_kinematics(p_target)
+
+            # 设置小数点精度
+            precision = 6
+            data_list = [round(value, precision) for value in IK]
+            msg.data = data_list
+
+        if time.time() - self.iniT > 10:# and time.time() - self.iniT <= 15:
+            force_control_sign = True
             # p_target = get_target_position(force_data, [np.sin(time.time()), 0, 0])
             # p_target = get_target_position(force_data, [0.2, 0.0, 0.0, 0.0, 0.0, 0.0])
-            p_target = get_target_position(force_data, [-trolley_position[0]+0.5, -trolley_position[1], trolley_position[2]-0.9, -trolley_position[3]+1.57, trolley_position[5]-1.57, trolley_position[4]-1.57])
-            IK, eef_pos = compute_inverse_kinematics(p_target)
-            print(trolley_position[3:6])
+            p_target, force_data_display = get_target_position(self.force_data, [-trolley_position[0]-0.2*np.sin(time.time()), -trolley_position[1], trolley_position[2]-0.3, -trolley_position[4]-1.57, trolley_position[3], trolley_position[5]])
+            IK, eef_pos, des_eef_vel, eef_vel = compute_inverse_kinematics(p_target)
 
             # 设置小数点精度
             precision = 6
             data_list = [round(value, precision) for value in IK]
             msg.data = data_list
+
+        # F/T传感器数据显示部分
+        # 存储时间戳和数据
+        current_time = time.time()
+        self.data_list.append((current_time, force_data_display[plot_axis]))  
+        self.save_data.append((current_time - self.iniT, force_data_display[0]))#, force_data_display[1]))  
+        # 清除超过5秒的数据
+        self.data_list = [(t, data) for t, data in self.data_list if current_time - t <= self.plot_duration]
 
         self.publisher_.publish(msg)
         self.run_publisher.publish(Bool(data=self.run_sign))
@@ -609,9 +823,12 @@ def main(args=None):
 
     joint_velocity_IK = JointVelocityIK()
 
-    rclpy.spin(joint_velocity_IK)
+    while rclpy.ok():
+        rclpy.spin_once(joint_velocity_IK)
+        plt.pause(0.01)  # 绘图刷新
+    # rclpy.spin(joint_velocity_IK)
 
-    # 发送停止信号
+    # 发送静止关节速度
     msg = Float64MultiArray()
     msg.data = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     joint_velocity_IK.publisher_.publish(msg)

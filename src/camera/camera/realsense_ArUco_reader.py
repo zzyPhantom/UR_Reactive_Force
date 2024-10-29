@@ -9,16 +9,15 @@ from tf2_ros import Buffer, TransformListener
 from tf2_ros import TransformException
 from scipy.spatial.transform import Rotation
 from tf2_ros import TransformBroadcaster
-from geometry_msgs.msg import TransformStamped
-
+from geometry_msgs.msg import TransformStamped, WrenchStamped
 
 # 相机的参数
-cam_interval = 1/60.0  # 相机显示间隔时间，30FPS
+cam_interval = 1/60.0  # 相机显示间隔时间，60FPS
 image_width = 640  # 图像的宽度ii
 image_height = 480  # 图像的高度
 # 棋盘格尺寸
 pattern_size = (4, 4)
-square_size = 0.05  # 每个格子的边长，例如25毫米
+square_size = 0.06  # 每个格子的边长，例如25毫米
 
 # The different ArUco dictionaries built into the OpenCV library. 
 ARUCO_DICT = {
@@ -43,15 +42,18 @@ ARUCO_DICT = {
 desired_aruco_dictionary = "DICT_7X7_1000"
 this_aruco_dictionary = cv2.aruco.Dictionary_get(ARUCO_DICT[desired_aruco_dictionary])
 this_aruco_parameters = cv2.aruco.DetectorParameters_create()
-tag_size = 0.043  # tag的边长
+tag_size = 0.06  # tag的边长
 
 class Aruco_reader(Node):
     def __init__(self):
         super().__init__("ArUco_reader")
         self.pos_publisher = self.create_publisher(Float64MultiArray, 'ArUco_pos', 10)
         self.tf_broadcaster = TransformBroadcaster(self)
-        self.trolley_position = [0.0, 0.0, 0.3, 1.57, 1.57, 1.57]
+        self.trolley_position = [0.5, 0.0, 0.8, 0.0, 0.0, 0.0]
         self.mark_index = 0
+        self.t = [0.5, 0.0, 0.8]
+        self.quat = [0.0, 0.0, 0.0, 1.0]
+        self.force_data = np.zeros(3)
 
         # 初始化图像
         self.base_img = np.zeros((image_height, image_width, 3), dtype=np.uint8)
@@ -62,6 +64,15 @@ class Aruco_reader(Node):
         self.tf_listener = TransformListener(self.tf_buffer, self)
         # 以固定频率查询相机变换
         self.camera_pose_timer = self.create_timer(1.0, self.camera_pose_callback)  # 每1秒查询一次
+
+        # 创建 F/T 传感器订阅者
+        self.ft_sensor_subscription = self.create_subscription(
+            WrenchStamped,
+            '/ft_wrench',
+            self.ft_sensor_callback,
+            10)
+        self.ft_sensor_subscription
+        self.get_logger().info('F/T sensor subscriber created') 
 
         try:
             self.pipe = rs.pipeline()
@@ -94,6 +105,16 @@ class Aruco_reader(Node):
         
         # 构造相机外参矩阵
         self.camera_pose = np.eye(4)
+
+    def ft_sensor_callback(self, msg):
+        # 从 WrenchStamped 消息中提取力
+        force = msg.wrench.force
+
+        # 提取 x, y, z 方向的力值
+        force_x = force.x
+        force_y = force.y
+        force_z = force.z
+        self. force_data = [force_x, force_y, force_z]
 
     def timer_callback(self):
         frames = self.pipe.wait_for_frames()
@@ -156,21 +177,37 @@ class Aruco_reader(Node):
                 # ArUco标记到接触点的齐次变换矩阵
                 T_aruco_to_contact = np.eye(4)
 
+                # 用于矫正真实基坐标系和程序中的基坐标系:绕 T_z_-90 @ T_y_-90
+                T_base_to_rbase = np.array([
+                    [0, 1, 0, 0],
+                    [0, 0, 1, 0],
+                    [1, 0, 0, 0],
+                    [0, 0, 0, 1]
+                ])
+                                
+                # 转换F/T传感器到位置变化
+                T_force = np.array([
+                    [1, 0, 0, 0.10 * (self.force_data[2] + 37.35)],
+                    [0, 1, 0, 0.05 * (self.force_data[1] - 3.7)],
+                    [0, 0, 1, 0.05 * (self.force_data[0] - 0)],
+                    [0, 0, 0, 1]
+                ])
+
                 # 计算箱子在机器人基坐标系下的位置
-                T_base_to_contact = T_base_to_camera @ T_camera_to_aruco @ T_aruco_to_contact
+                T_base_to_contact = T_base_to_camera @ T_camera_to_aruco  @ T_base_to_rbase @ T_aruco_to_contact
 
                 # 计算变换后的位姿
                 # 提取旋转矩阵 (3x3)
                 R = T_base_to_contact[:3, :3]
 
                 # 提取位移向量 (3x1)
-                t = T_base_to_contact[:3, 3]
+                self.t = T_base_to_contact[:3, 3]
 
                 # 将旋转矩阵转换为旋转向量
                 r, _ = cv2.Rodrigues(R)
 
                 # 构建六维数组 (旋转向量 + 位移向量)
-                self.trolley_position = np.hstack((t.flatten(), r.flatten()))
+                self.trolley_position = np.hstack((self.t.flatten(), r.flatten()))
                 # 保留六位小数
                 self.trolley_position = np.round(self.trolley_position, decimals=6)
                 self.trolley_position = self.trolley_position.astype(float).tolist()
@@ -179,20 +216,20 @@ class Aruco_reader(Node):
 
                 # 将旋转矩阵转换为四元数
                 r = Rotation.from_matrix(R)
-                quat = r.as_quat()  # [x, y, z, w]
+                self.quat = r.as_quat()  # [x, y, z, w]
 
                 # 创建 TransformStamped 消息
                 transform = TransformStamped()
                 transform.header.stamp = self.get_clock().now().to_msg()
                 transform.header.frame_id = 'base'
-                transform.child_frame_id = 'child_frame'
-                transform.transform.translation.x = t[0]
-                transform.transform.translation.y = t[1]
-                transform.transform.translation.z = t[2]
-                transform.transform.rotation.x = quat[0]
-                transform.transform.rotation.y = quat[1]
-                transform.transform.rotation.z = quat[2]
-                transform.transform.rotation.w = quat[3]
+                transform.child_frame_id = 'aruco_frame'
+                transform.transform.translation.x = self.t[0]
+                transform.transform.translation.y = self.t[1]
+                transform.transform.translation.z = self.t[2]
+                transform.transform.rotation.x = self.quat[0]
+                transform.transform.rotation.y = self.quat[1]
+                transform.transform.rotation.z = self.quat[2]
+                transform.transform.rotation.w = self.quat[3]
 
                 # 发布变换
                 self.tf_broadcaster.sendTransform(transform)
@@ -204,15 +241,15 @@ class Aruco_reader(Node):
                 # Broadcast TF
                 transform = TransformStamped()
                 transform.header.stamp = self.get_clock().now().to_msg()
-                transform.header.frame_id = 'base_frame'
-                transform.child_frame_id = f'aruco_frame'
-                transform.transform.translation.x = float(0.5)
-                transform.transform.translation.y = float(0.0)
-                transform.transform.translation.z = float(1.0)
-                transform.transform.rotation.x = float(0.0)
-                transform.transform.rotation.y = float(0.0)
-                transform.transform.rotation.z = float(0.0)
-                transform.transform.rotation.w = float(1.0)
+                transform.header.frame_id = 'base'
+                transform.child_frame_id = 'aruco_frame'
+                transform.transform.translation.x = self.t[0]
+                transform.transform.translation.y = self.t[1]
+                transform.transform.translation.z = self.t[2]
+                transform.transform.rotation.x = self.quat[0]
+                transform.transform.rotation.y = self.quat[1]
+                transform.transform.rotation.z = self.quat[2]
+                transform.transform.rotation.w = self.quat[3]
                 
                 self.tf_broadcaster.sendTransform(transform)
 

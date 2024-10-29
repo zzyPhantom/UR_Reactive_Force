@@ -1,0 +1,1 @@
+/home/zzy/ur_real/src/pymoveit2/examples/ex_joint_goal.py

@@ -32,7 +32,7 @@ def generate_launch_description():
     return LaunchDescription(
         [
             DeclareLaunchArgument('ur_type', default_value='ur10'),
-            DeclareLaunchArgument('robot_ip', default_value='192.168.125.100'),
+            DeclareLaunchArgument('robot_ip', default_value='192.168.3.121'),
             DeclareLaunchArgument('launch_rviz', default_value='true'),
             DeclareLaunchArgument('initial_joint_controller', default_value='forward_velocity_controller'),
             

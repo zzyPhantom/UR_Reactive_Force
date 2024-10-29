@@ -41,7 +41,7 @@ ARUCO_DICT = {
 desired_aruco_dictionary = "DICT_7X7_1000"
 this_aruco_dictionary = cv2.aruco.Dictionary_get(ARUCO_DICT[desired_aruco_dictionary])
 this_aruco_parameters = cv2.aruco.DetectorParameters_create()
-tag_size = 0.043  # tag的边长
+tag_size = 0.06  # tag的边长
 
 class Aruco_reader(Node):
     def __init__(self):

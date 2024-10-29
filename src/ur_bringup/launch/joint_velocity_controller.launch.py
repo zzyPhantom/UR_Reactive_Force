@@ -42,7 +42,7 @@ def generate_launch_description():
             #     name="publisher_forward_velocity_controller",
             #     output="screen",
             # ),
-                    # 包含另一个 launch 文件
+            # 包含另一个 launch 文件
             IncludeLaunchDescription(
                 PythonLaunchDescriptionSource(easy_handeye2_launch_path),
                 launch_arguments={
@@ -55,9 +55,9 @@ def generate_launch_description():
                 name="realsense_ArUco_reader",
                 output="screen",
             ),
-            # netft_host_arg,
-            # publish_frequency_arg,
-            # ati_net_ft_driver_node,
+            netft_host_arg,
+            publish_frequency_arg,
+            ati_net_ft_driver_node,
             Node(
                 package="ur10_vel",
                 executable="joint_velocity_IK",

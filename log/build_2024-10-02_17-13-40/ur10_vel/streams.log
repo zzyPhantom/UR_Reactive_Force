@@ -1,0 +1,36 @@
+[1.098s] Invoking command in '/home/zzy/ur_real/build/ur10_vel': PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ur10_vel/build --no-deps symlink_data
+[1.203s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[1.203s]   warnings.warn(msg)
+[1.314s] running develop
+[1.314s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.314s] !!
+[1.314s] 
+[1.314s]         ********************************************************************************
+[1.314s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.314s]         Instead, use pypa/build, pypa/installer or other
+[1.314s]         standards-based tools.
+[1.314s] 
+[1.315s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.315s]         ********************************************************************************
+[1.315s] 
+[1.315s] !!
+[1.315s]   easy_install.initialize_options(self)
+[1.456s] running egg_info
+[1.466s] writing ur10_vel.egg-info/PKG-INFO
+[1.466s] writing dependency_links to ur10_vel.egg-info/dependency_links.txt
+[1.466s] writing entry points to ur10_vel.egg-info/entry_points.txt
+[1.466s] writing requirements to ur10_vel.egg-info/requires.txt
+[1.466s] writing top-level names to ur10_vel.egg-info/top_level.txt
+[1.485s] reading manifest file 'ur10_vel.egg-info/SOURCES.txt'
+[1.486s] writing manifest file 'ur10_vel.egg-info/SOURCES.txt'
+[1.497s] running build_ext
+[1.497s] Creating /home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages/ur10-vel.egg-link (link to .)
+[1.498s] Installing Joint_Velocity_Transfer script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.498s] Installing check_collision script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.498s] Installing check_keyboard script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.498s] Installing joint_velocity_IK script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.498s] Installing publisher_forward_velocity_controller script to /home/zzy/ur_real/install/ur10_vel/lib/ur10_vel
+[1.498s] 
+[1.498s] Installed /home/zzy/ur_real/build/ur10_vel
+[1.498s] running symlink_data
+[1.528s] Invoked command in '/home/zzy/ur_real/build/ur10_vel' returned '0': PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ur10_vel/build --no-deps symlink_data
