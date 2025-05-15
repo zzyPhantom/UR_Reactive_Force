@@ -49,7 +49,7 @@ class Aruco_reader(Node):
         super().__init__("ArUco_reader")
         self.pos_publisher = self.create_publisher(Float64MultiArray, 'ArUco_pos', 10)
         self.tf_broadcaster = TransformBroadcaster(self)
-        self.trolley_position = [0.5, 0.0, 0.8, 0.0, 0.0, 0.0]
+        self.trolley_position = [-0.5, -0.1, 0.5, 0.0, 0.0, 0.0]
         self.mark_index = 0
         self.t = [0.5, 0.0, 0.8]
         self.quat = [0.0, 0.0, 0.0, 1.0]

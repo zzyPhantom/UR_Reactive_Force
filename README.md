@@ -22,3 +22,10 @@ ros2 launch ur_bringup fake_ur_driver.launch.py
 
 ros2 launch ur_bringup joint_velocity_controller.launch.py 
 
+# 启动真实机械臂和实时力控
+
+打开ati供电和urscript
+source install/setup.bash 
+ros2 launch ur_bringup ur5_driver.launch.py
+ros2 launch ur_bringup joint_velocity_controller.launch.py 
+

@@ -9,6 +9,7 @@ setup.py
 ../../build/camera/camera.egg-info/top_level.txt
 ../../build/camera/camera.egg-info/zip-safe
 camera/__init__.py
+camera/deep_camera_test.py
 camera/realsense_ArUco_reader.py
 camera/realsense_calibrate.py
 camera.egg-info/PKG-INFO

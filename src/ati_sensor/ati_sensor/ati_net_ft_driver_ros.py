@@ -16,6 +16,7 @@ class ATINetFTDriver(Node):
         
         self.ft_sensor = NET_FT(netft_host)
         self.ft_sensor.set_tare_from_ft()
+        self.ft_sensor.clear_tare()
         self.ft_sensor.start_streaming()
         
         self.ft_wrench_pub = self.create_publisher(WrenchStamped, "ft_wrench", 10)

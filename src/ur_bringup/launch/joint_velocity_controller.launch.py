@@ -6,6 +6,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
 from launch.actions import IncludeLaunchDescription
+from launch.actions import ExecuteProcess
 
 
 def generate_launch_description():
@@ -62,6 +63,11 @@ def generate_launch_description():
                 package="ur10_vel",
                 executable="joint_velocity_IK",
                 name="joint_velocity_IK",
+                output="screen",
+            ),
+            # 执行 Python 脚本
+            ExecuteProcess(
+                cmd=["python3", "/home/zzy/IMU/IMU_python/examples/acceleration_saver.py"],
                 output="screen",
             )
         ]

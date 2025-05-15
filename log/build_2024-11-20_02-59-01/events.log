@@ -1,0 +1,60 @@
+[0.000000] (-) TimerEvent: {}
+[0.000254] (-) JobUnselected: {'identifier': 'ati_sensor'}
+[0.000272] (-) JobUnselected: {'identifier': 'easy_handeye2'}
+[0.000283] (-) JobUnselected: {'identifier': 'easy_handeye2_msgs'}
+[0.000293] (-) JobUnselected: {'identifier': 'ferrobotics'}
+[0.000301] (-) JobUnselected: {'identifier': 'ferrobotics_acf'}
+[0.000310] (-) JobUnselected: {'identifier': 'gravity_compensation'}
+[0.000318] (-) JobUnselected: {'identifier': 'pymoveit2'}
+[0.000327] (-) JobUnselected: {'identifier': 'ur10_moveit_config'}
+[0.000335] (-) JobUnselected: {'identifier': 'ur10_vel'}
+[0.000343] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.000354] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.000744] (camera) JobStarted: {'identifier': 'camera'}
+[0.100150] (-) TimerEvent: {}
+[0.200498] (-) TimerEvent: {}
+[0.300742] (-) TimerEvent: {}
+[0.400979] (-) TimerEvent: {}
+[0.501296] (-) TimerEvent: {}
+[0.601536] (-) TimerEvent: {}
+[0.701898] (-) TimerEvent: {}
+[0.702377] (camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/zzy/ur_real/build/camera/build', '--no-deps', 'symlink_data'], 'cwd': '/home/zzy/ur_real/build/camera', 'env': {'PYENV_VIRTUALENV_INIT': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:zh', 'USER': 'zzy', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/zzy/ur_real/install/ferrobotics/lib:/home/zzy/ur_real/install/easy_handeye2_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/zzy/mujoco-3.1.6/bin', 'HOME': '/home/zzy', 'OLDPWD': '/home/zzy', 'DESKTOP_SESSION': 'ubuntu', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '12446', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'VISP_WS': '/home/zzy/visp-ws', 'COLCON_PREFIX_PATH': '/home/zzy/ur_real/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'zzy', '_': '/home/zzy/.local/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'zzy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/zzy/.pyenv/plugins/pyenv-virtualenv/shims:/home/zzy/.pyenv/shims:~/.pyenv/bin:/opt/ros/humble/bin:/home/zzy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/zzy-ROG:@/tmp/.ICE-unix/2908,unix/zzy-ROG:/tmp/.ICE-unix/2908', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e3dee725_b3b5_4a96_bd0a_43bb2bb58126', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/pymoveit2:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/easy_handeye2_msgs:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble', 'SHELL': '/bin/bash', 'VISP_DIR': '/home/zzy/visp-ws/visp-build', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/zzy/ur_real/build/camera', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/zzy/ur_real/build/camera/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:/home/zzy/ur_real/build/ur10_vel:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:/home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages:/home/zzy/ur_real/build/gravity_compensation:/home/zzy/ur_real/install/gravity_compensation/lib/python3.10/site-packages:/home/zzy/ur_real/build/ferrobotics_acf:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:/home/zzy/ur_real/install/ferrobotics/local/lib/python3.10/dist-packages:/home/zzy/ur_real/build/easy_handeye2:/home/zzy/ur_real/install/easy_handeye2/lib/python3.10/site-packages:/home/zzy/ur_real/install/easy_handeye2_msgs/local/lib/python3.10/dist-packages:/home/zzy/ur_real/build/camera:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:/home/zzy/ur_real/build/ati_sensor:/home/zzy/ur_real/install/ati_sensor/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/pymoveit2:/home/zzy/ur_real/install/ferrobotics:/home/zzy/ur_real/install/easy_handeye2_msgs'}, 'shell': False}
+[0.802051] (-) TimerEvent: {}
+[0.816697] (camera) StderrLine: {'line': b"/home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[0.816843] (camera) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[0.902157] (-) TimerEvent: {}
+[0.924028] (camera) StdoutLine: {'line': b'running develop\n'}
+[0.931815] (camera) StderrLine: {'line': b'/home/zzy/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[0.931904] (camera) StderrLine: {'line': b'!!\n'}
+[0.931939] (camera) StderrLine: {'line': b'\n'}
+[0.931970] (camera) StderrLine: {'line': b'        ********************************************************************************\n'}
+[0.932001] (camera) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[0.932029] (camera) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[0.932057] (camera) StderrLine: {'line': b'        standards-based tools.\n'}
+[0.932090] (camera) StderrLine: {'line': b'\n'}
+[0.932120] (camera) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[0.932148] (camera) StderrLine: {'line': b'        ********************************************************************************\n'}
+[0.932175] (camera) StderrLine: {'line': b'\n'}
+[0.932202] (camera) StderrLine: {'line': b'!!\n'}
+[0.932229] (camera) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[1.002319] (-) TimerEvent: {}
+[1.069691] (camera) StdoutLine: {'line': b'running egg_info\n'}
+[1.078590] (camera) StdoutLine: {'line': b'writing camera.egg-info/PKG-INFO\n'}
+[1.078943] (camera) StdoutLine: {'line': b'writing dependency_links to camera.egg-info/dependency_links.txt\n'}
+[1.079161] (camera) StdoutLine: {'line': b'writing entry points to camera.egg-info/entry_points.txt\n'}
+[1.079258] (camera) StdoutLine: {'line': b'writing requirements to camera.egg-info/requires.txt\n'}
+[1.079313] (camera) StdoutLine: {'line': b'writing top-level names to camera.egg-info/top_level.txt\n'}
+[1.098349] (camera) StdoutLine: {'line': b"reading manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[1.099379] (camera) StdoutLine: {'line': b"writing manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[1.102465] (-) TimerEvent: {}
+[1.109263] (camera) StdoutLine: {'line': b'running build_ext\n'}
+[1.109344] (camera) StdoutLine: {'line': b'Creating /home/zzy/ur_real/install/camera/lib/python3.10/site-packages/camera.egg-link (link to .)\n'}
+[1.109963] (camera) StdoutLine: {'line': b'Installing deep_camera_test script to /home/zzy/ur_real/install/camera/lib/camera\n'}
+[1.110040] (camera) StdoutLine: {'line': b'Installing realsense_ArUco_reader script to /home/zzy/ur_real/install/camera/lib/camera\n'}
+[1.110077] (camera) StdoutLine: {'line': b'Installing realsense_calibrate script to /home/zzy/ur_real/install/camera/lib/camera\n'}
+[1.110209] (camera) StdoutLine: {'line': b'\n'}
+[1.110286] (camera) StdoutLine: {'line': b'Installed /home/zzy/ur_real/build/camera\n'}
+[1.110331] (camera) StdoutLine: {'line': b'running symlink_data\n'}
+[1.128576] (camera) CommandEnded: {'returncode': 0}
+[1.142600] (camera) JobEnded: {'identifier': 'camera', 'rc': 0}
+[1.142945] (-) EventReactorShutdown: {}

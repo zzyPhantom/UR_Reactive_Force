@@ -275,6 +275,7 @@ class getFTsensor(Node):
         torque = msg.wrench.torque
 
         ft_data = np.array([-force.x, -force.z, force.y, torque.x, torque.y, torque.z])
+        # ft_data = np.array([force.x, -force.z, -force.y, torque.x, torque.y, torque.z])
 
         self.sensor_data_sign = True
 

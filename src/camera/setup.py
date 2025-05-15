@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
         'realsense_ArUco_reader = camera.realsense_ArUco_reader:main',
         'realsense_calibrate = camera.realsense_calibrate:main',
+        'deep_camera_test = camera.deep_camera_test:main',
         ],
     },
 )
