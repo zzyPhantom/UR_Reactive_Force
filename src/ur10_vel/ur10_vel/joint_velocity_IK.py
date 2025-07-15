@@ -15,19 +15,40 @@ from scipy.optimize import minimize
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.animation import FuncAnimation
+from scipy.interpolate import CubicSpline
 # import roboticstoolbox as rtb
+
+# 电池单元中心序列
+centers = [
+    [0.0, 0.4, 0.0],
+    [-0.085, 0.4, 0.0],
+    [-0.17, 0.4, 0.0],
+    [-0.255, 0.4, 0.0],
+
+    [-0.255, 0.2, 0.0],
+    [-0.17, 0.2, 0.0],
+    [-0.085, 0.2, 0.0],
+    [0.0, 0.2, 0.0],
+    
+    [0.0, 0.0, 0.0],
+    [-0.085, 0.0, 0.0],
+    [-0.17, 0.0, 0.0],
+    [-0.255, 0.0, 0.0],
+    # [-0.255, 0.0, 0.0],
+    # [-0.0, 0.4, 0.0]
+]
+F_target_preset = 6.0  # 力目标
+trolley_position = [-0.4, -0.0, 0.45, np.pi/2, 0, 0]  # 相对初始坐标
 
 # 节点参数
 FPS = 60
 
 # ur10用的参数
 # # IK的参数
-# err_k = 5  # 阻尼最小二乘法误差系数
 # k_positioncon = 100  # 位置约束增益
 # k_vel = 50      # 速度增益
 # k_slack = 1000   # 宽容量增益
 # k_err = 1    # 位置误差到期望末端速度的变换
-# k_wheel = 0.1   # 轮子速度增益
 # Pi = 0.6   # influence distance in which to activate the damper
 # Ps = 0.1  # stopping distance
 # force_gain = 0.01  # 力控制增益
@@ -50,23 +71,25 @@ FPS = 60
 # error_threshold = 0.01  # 力误差阈值，误差小于该值时归零积分项
 # disturbance_threshold = 10.0  # 大扰动阈值，当误差大于该值时归零积分项
 # F_target_preset = 100.0  # 力目标
-# link_lengths = [0.1273, 0.6120, 0.5723, 0.1640, 0.1157, 0.0922] # UR10链长
 # trolley_position = [0.75, -0.0, 0.1, 0.0, 0.0, 0.0]  # 用来存储视觉读取的目标位姿(ur10)
+# d_vals =     [0.1273,   0,       0,      0.163941, 0.1157,  0.0922]
+# a_vals =     [0,       -0.612,  -0.5723, 0,        0,       0]
+# alpha_vals = [np.pi/2,  0,       0,      np.pi/2, -np.pi/2, 0]  # DH参数
+# ur10参数结束
 
-# ur5用的参数
+# ur5用参数开始
 # IK的参数
-err_k = 5  # 阻尼最小二乘法误差系数
 k_positioncon = 100  # 位置约束增益
 k_vel = 50      # 速度增益
 k_slack = 1000   # 宽容量增益
-k_err = 1    # 位置误差到期望末端速度的变换
-k_wheel = 0.1   # 轮子速度增益
+# k_err = 1    # 位置误差到期望末端速度的变换
+k_pos = 1.0   # 平移误差增益(区分增益)
+k_rot = 0.5   # 旋转误差增益
 Pi = 0.6   # influence distance in which to activate the damper
 Ps = 0.1  # stopping distance
-force_gain = 0.01  # 力控制增益
+# force_gain = 0.01  # 力控制增益(遗弃，测试后删除)
 max_step = 0.02   # 路径规划中的最大步长
 kalman_des_vel_gain = 1.5  # 卡尔曼滤波器中期望速度对预测加速度的影响
-plot_axis = 0  # 绘制轴朝向（基坐标系）
 
 # 导纳参数
 M_k = 0.05
@@ -77,34 +100,20 @@ D = np.diag([D_k, D_k, D_k, D_k, D_k, D_k])  # 虚拟阻尼矩阵
 K = np.diag([K_k, K_k, K_k, K_k, K_k, K_k])  # 虚拟刚度矩阵
 kp = 0.02  # 力误差比例项
 ki = 0.0  # 力误差积分项
-kd = 0.0005  # 力误差微分项
+kd = 0.001  # 力误差微分项
 beta = 0.005  # 积分项的滤波(chatgpt建议[0.7,0.9])
 I_max = 1.0  # 力误差积分项的最大值
 error_threshold = 0.01  # 力误差阈值，误差小于该值时归零积分项
 disturbance_threshold = 10.0  # 大扰动阈值，当误差大于该值时归零积分项
-F_target_preset = 0.0  # 力目标
-link_lengths = [0.0892, 0.4250, 0.3923, 0.1092, 0.0947, 0.0823] # UR5链长
-trolley_position = [0.2, -0.4, 0.25, 0.0, 0.0, -1.57]  # 用来存储视觉读取的目标位姿(ur5)
 
-# 一些初始化数据
-vel_old = np.zeros(6)  # 用来存储上一步的速度
-last_eef_vel = np.zeros(6)  # 用来存储上一步的末端速度
-
-trolley_position_display = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # 用来存储视觉读取位姿（显示）
-force_predict = []   # 用来存储历史加速度力数据
-eef_pos = np.eye(4)          # 用来存储目前的末端位姿
-qpos = np.zeros(6)           # 用来存储目前的关节位置
-qvel = np.zeros(6)           # 用来存储目前的关节速度
-qtor = np.zeros(6)           # 用来存储目前的关节扭矩
-eef_vel = np.zeros(6)        # 用来存储目前的末端速度
-des_eef_vel = np.zeros(6)    # 用来存储目标末端速度
-p_control_target = np.zeros(3) # 用来存储目标位置的暂时位置
-force_control_sign = False  # 用来记录是否开启力控制
-plot_data_display = np.zeros(3)  # 用来存储绘图数据
+# DH参数
+d_vals =     [0.089159, 0,       0,        0.10915,  0.09465,  0.0823]
+a_vals =     [0,       -0.425,  -0.39225,  0,        0,        0]
+alpha_vals = [np.pi/2,  0,       0,        np.pi/2, -np.pi/2,  0]  
+# ur5参数结束
 
 #定义机器人模型
 # link_lengths = [0.1807, 0.6127, 0.5716, 0.1742, 0.1199, 0.1166] # UR10e链长
-car_params = [0.1, 0.1, 1] # 小车参数（左轮半径，右轮半径，轴距）
 
 # E1 = rtb.ET.tx(-0.4)
 # E2 = rtb.ET.tx()
@@ -129,31 +138,165 @@ Tbase[0:3, 3] = [0, 0, 0]
 Ttool = np.eye(4)
 Ttool[0:3, 3] = [0.0, 0, 0]
 
-# 读取末端工具和末端传感器的矫正数据
-mass_file_path = '/home/zzy/ur_real/src/gravity_compensation/gravity_compensation/data.pkl'
-try:
-    with open(mass_file_path, 'rb') as f:
-        filedata = pickle.load(f)
-    if isinstance(filedata, dict):
-        mass_params = filedata.get('mass')
-except (FileNotFoundError, EOFError, pickle.UnpicklingError) as e:
-    mass_params = np.zeros(6)
-    print(f"加载矫正数据时发生错误: {e}, 默认矫正数据为None")
+# 一些初始化数据
+vel_old = np.zeros(6)  # 用来存储上一步的速度
+last_eef_vel = np.zeros(6)  # 用来存储上一步的末端速度
+trolley_position_display = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # 用来存储视觉读取位姿（显示）
+force_predict = []   # 用来存储历史加速度力数据
+eef_pos = np.eye(4)          # 用来存储目前的末端位姿
+qpos = np.zeros(6)           # 用来存储目前的关节位置
+qvel = np.zeros(6)           # 用来存储目前的关节速度
+qtor = np.zeros(6)           # 用来存储目前的关节扭矩
+eef_vel = np.zeros(6)        # 用来存储目前的末端速度
+des_eef_vel = np.zeros(6)    # 用来存储目标末端速度
+p_control_target = np.zeros(3) # 用来存储目标位置的暂时位置
+force_control_sign = False  # 用来记录是否开启力控制（遗弃，测试后删除）
+plot_data_display = np.zeros(3)  # 用来存储绘图数据
+state_matrix_pred = np.zeros((6, 1))  # 用来存储卡尔曼滤波器预测的状态[v_x, v_y, v_z, a_x, a_y, a_z]
+covariance_matrix_pred = np.eye(6)  # 用来存储卡尔曼滤波器的协方差矩阵
+start_time = 0.5  # 用来存储开始执行动作序列的时间
+plot_axis = 0  # 绘制轴朝向（基坐标系）
 
-mass_square_sum = mass_params[0]**2 + mass_params[1]**2 + mass_params[2]**2
-eef_mass = [np.sqrt(mass_square_sum)] # 末端工具参数（重量）
+def init_params():
+    # 初始化参数
+    global eef_mass, force_init, time_plan
+    # 读取末端工具和末端传感器的矫正数据
+    mass_file_path = '/home/zzy/ur_real/src/gravity_compensation/gravity_compensation/data.pkl'
+    try:
+        with open(mass_file_path, 'rb') as f:
+            filedata = pickle.load(f)
+        if isinstance(filedata, dict):
+            mass_params = filedata.get('mass')
+    except (FileNotFoundError, EOFError, pickle.UnpicklingError) as e:
+        mass_params = np.zeros(6)
+        print(f"加载矫正数据时发生错误: {e}, 默认矫正数据为None")
 
-force_init = np.zeros(3) # 用来存储传感器零点力数据
-force_init[0] = -mass_params[3] # 传感器x方向零点力
-force_init[1] = mass_params[5] # 传感器y方向零点力
-force_init[2] = -mass_params[4]  # 传感器z方向零点力
+    mass_square_sum = mass_params[0]**2 + mass_params[1]**2 + mass_params[2]**2
+    eef_mass = [np.sqrt(mass_square_sum)] # 末端工具参数（重量）
+
+    force_init = np.zeros(3) # 用来存储传感器零点力数据
+    force_init[0] = -mass_params[3] # 传感器x方向零点力
+    force_init[1] = mass_params[5] # 传感器y方向零点力
+    force_init[2] = -mass_params[4]  # 传感器z方向零点力
+
+    # 生成动作序列
+    time_plan = generate_batch_sequence(centers, start_time=start_time)
+
+# 定义动作序列函数
+def smooth_contact_segments(original_plan, resolution=0.02):
+    """
+    搜索给定位置列表中的接触段，并使用样条插值函数
+    """
+    updated_plan = []
+    i = 0
+    while i < len(original_plan):
+        curr = original_plan[i]
+        if curr[3] == True:
+            # 找前一个非接触段，获取起点
+            if i == 0:
+                raise ValueError("接触段不能作为 time_plan 的第一个元素")
+            prev = original_plan[i - 1]
+            t_start = curr[0]
+            t_end = curr[1]
+            p_start = np.array(prev[2])
+            p_end = np.array(curr[2])
+            
+            # 插值时间点
+            t_interp = np.arange(t_start, t_end, resolution)
+            if len(t_interp) < 2 or t_interp[-1] != t_end:
+                t_interp = np.append(t_interp, t_end)
+
+            # 样条插值
+            cs = CubicSpline([t_start, t_end], [p_start, p_end], axis=0)
+            p_interp = cs(t_interp)
+
+            # 构建新插值段
+            for j in range(len(t_interp) - 1):
+                seg = (
+                    float(t_interp[j]),
+                    float(t_interp[j + 1]),
+                    p_interp[j].tolist(),
+                    True,
+                    curr[4]  # 保留当前段的力
+                )
+                updated_plan.append(seg)
+            i += 1  # 当前段已处理
+        else:
+            updated_plan.append(curr)
+            i += 1
+    return updated_plan
+
+def generate_grinding_sequence(center_xyz, start_time=0.5, add_return_home=False, duration_dict=None):
+    """
+    根据单个工件中心生成动作序列。
+    """
+    if duration_dict is None:
+        duration_dict = {
+            'approach': 2,
+            'grind': 4,
+            'lift': 1,
+            'move_next': 2,
+            'retreat': 2
+        }
+
+    x_c, y_c, z_c = center_xyz
+    x_offset = 0.015
+    y_offset = 0.05
+    z_work = z_c + 0.03
+    z_safe = z_c + 0.05
+    z_retreat = z_c + 0.1
+
+    t = start_time
+    plan = []
+
+    # 左侧抬起位置
+    plan.append((t, t + duration_dict['approach'], [x_c - x_offset, y_c + y_offset, z_safe], False, 0))
+    t += duration_dict['approach']
+
+    # 左 → 右 打磨
+    plan.append((t, t + duration_dict['grind'], [x_c + x_offset, y_c + y_offset, z_work], True, F_target_preset))
+    t += duration_dict['grind']
+
+    # 抬起
+    plan.append((t, t + duration_dict['lift'], [x_c + x_offset, y_c + y_offset, z_safe], False, 0))
+    t += duration_dict['lift']
+
+    # 移动到右侧抬起位置
+    plan.append((t, t + duration_dict['move_next'], [x_c - x_offset, y_c - y_offset, z_safe], False, 0))
+    t += duration_dict['move_next']
+
+    # 左 → 右 打磨（Y负）
+    plan.append((t, t + duration_dict['grind'], [x_c + x_offset, y_c - y_offset, z_work], True, F_target_preset))
+    t += duration_dict['grind']
+
+    # 抬起
+    plan.append((t, t + duration_dict['lift'], [x_c + x_offset, y_c - y_offset, z_safe], False, 0))
+    t += duration_dict['lift']
+
+    # 是否回中位
+    if add_return_home:
+        plan.append((t, t + duration_dict['retreat'], [x_c, y_c, z_retreat], False, 0))
+        t += duration_dict['retreat']
+
+    return plan, t
+
+
+def generate_batch_sequence(centers, start_time=0.5):
+    """
+    多个工件中心生成完整动作序列，默认只在最后一个回中位。
+    """
+    full_plan = []
+    t = start_time
+    for i, c in enumerate(centers):
+        is_last = (i == len(centers) - 1)
+        sub_plan, t = generate_grinding_sequence(c, start_time=t, add_return_home=is_last)
+        full_plan.extend(sub_plan)
+
+    time_plan = smooth_contact_segments(full_plan, resolution=0.02)
+    return time_plan
+
 
 # 定义卡尔曼滤波器
-
-# 初始化预测的状态和协方差矩阵
-state_matrix_pred = np.zeros((6, 1))  # [v_x, v_y, v_z, a_x, a_y, a_z]
-covariance_matrix_pred = np.eye(6)
-
 # 卡尔曼滤波器预测阶段
 def kalman_predict(x, P, v_desired, v_current, dt):
     # 状态转移矩阵 A
@@ -193,29 +336,6 @@ def kalman_update(x_pred, P_pred, z):
     x_new = x_pred + K @ y  # 状态更新
     P_new = (np.eye(6) - K @ H) @ P_pred  # 协方差更新
     return x_new, P_new
-
-def transform_to_xyzrpy(T):
-    # 提取平移部分
-    x, y, z = T[0, 3], T[1, 3], T[2, 3]
-    
-    # 提取旋转矩阵部分
-    R = T[:3, :3]
-    
-    # 计算欧拉角
-    sy = np.sqrt(R[0, 0] ** 2 + R[1, 0] ** 2)
-    
-    singular = sy < 1e-6
-    
-    if not singular:
-        roll = np.arctan2(R[2, 1], R[2, 2])
-        pitch = np.arctan2(-R[2, 0], sy)
-        yaw = np.arctan2(R[1, 0], R[0, 0])
-    else:
-        roll = np.arctan2(-R[1, 2], R[1, 1])
-        pitch = np.arctan2(-R[2, 0], sy)
-        yaw = 0
-
-    return np.array([x, y, z, roll, pitch, yaw])
 
 def get_target_position(force, p_change = np.zeros(6)):
     # 更新目标位姿
@@ -275,34 +395,77 @@ def get_target_position(force, p_change = np.zeros(6)):
         p_target[1] = p_control_target[1]
         p_target[2] = p_control_target[2]
 
-    if force_control_sign == True:
-        p_target[0] = p_control_target[0] - force_gain * (force[0] - force_predict[0][0])
-        p_target[1] = p_control_target[1] - force_gain * (force[1] - force_predict[0][1])
-        p_target[2] = p_control_target[2] - force_gain * (force[2] - force_predict[0][2])
+    # if force_control_sign == True:
+    #     p_target[0] = p_control_target[0] - force_gain * (force[0] - force_predict[0][0])
+    #     p_target[1] = p_control_target[1] - force_gain * (force[1] - force_predict[0][1])
+    #     p_target[2] = p_control_target[2] - force_gain * (force[2] - force_predict[0][2])
     
-    p_target[3:] = [0.0 + p_change[3], 0.0 + p_change[4], np.pi/2 + p_change[5]]
+    # 二维码与工件的旋转变换
+    # p_target[3:] = [0.0 + p_change[3], 0.0 + p_change[4], np.pi/2 + p_change[5]]
+    base_rot = Rotation.from_euler('xyz', [0, 0.0, -np.pi/2])
+    delta_rot = Rotation.from_euler('xyz', p_change[3:])
+    target_rot = delta_rot * base_rot
+    p_target[3:] = target_rot.as_euler('xyz')
 
-    # 回传力数据到F/T显示部分
-    # force_data = [force[0] - force_predict[0][0], force[1] - force_predict[0][1], force[2] - force_predict[0][2]]
-    force_data = [force[0], force[1], force[2]]
+    return p_target
 
-    return p_target, force_data
+# def transform_to_xyzrpy(T):
+#     # 提取平移部分
+#     x, y, z = T[0, 3], T[1, 3], T[2, 3]
+    
+#     # 提取旋转矩阵部分
+#     R = T[:3, :3]
+    
+#     # 计算欧拉角
+#     sy = np.sqrt(R[0, 0] ** 2 + R[1, 0] ** 2)
+    
+#     singular = sy < 1e-6
+    
+#     if not singular:
+#         roll = np.arctan2(R[2, 1], R[2, 2])
+#         pitch = np.arctan2(-R[2, 0], sy)
+#         yaw = np.arctan2(R[1, 0], R[0, 0])
+#     else:
+#         roll = np.arctan2(-R[1, 2], R[1, 1])
+#         pitch = np.arctan2(-R[2, 0], sy)
+#         yaw = 0
 
-def homogeneous_matrix_to_array(H):
-    """Convert a homogeneous matrix to an array"""
-    # Extract position (translation part)
-    position = H[:3, 3]
+#     return np.array([x, y, z, roll, pitch, yaw])
 
-    # Extract rotation (rotation matrix part)
-    rotation_matrix = H[:3, :3]
+# def homogeneous_matrix_to_array(H):
+#     """Convert a homogeneous matrix to an array"""
+#     # Extract position (translation part)
+#     position = H[:3, 3]
 
-    # Convert rotation matrix to Euler angles (XYZ convention)
-    euler_angles = Rotation.from_matrix(rotation_matrix).as_euler('xyz')
+#     # Extract rotation (rotation matrix part)
+#     rotation_matrix = H[:3, :3]
 
-    # Combine position and euler angles into a single array
-    p_rpy_array = np.concatenate((position, euler_angles))
+#     # Convert rotation matrix to Euler angles (XYZ convention)
+#     euler_angles = Rotation.from_matrix(rotation_matrix).as_euler('xyz')
 
-    return p_rpy_array
+#     # Combine position and euler angles into a single array
+#     p_rpy_array = np.concatenate((position, euler_angles))
+
+#     return p_rpy_array
+
+# def quaternion_to_rotation_matrix(q):
+
+#     q_w, q_x, q_y, q_z = q
+#     R = np.array([
+#         [1 - 2*(q_y**2 + q_z**2), 2*(q_x*q_y - q_z*q_w), 2*(q_x*q_z + q_y*q_w)],
+#         [2*(q_x*q_y + q_z*q_w), 1 - 2*(q_x**2 + q_z**2), 2*(q_y*q_z - q_x*q_w)],
+#         [2*(q_x*q_z - q_y*q_w), 2*(q_y*q_z + q_x*q_w), 1 - 2*(q_x**2 + q_y**2)]
+#     ])
+#     return R
+
+# def homogeneous_matrix(xyz, quaternion):
+
+#     x, y, z = xyz
+#     R = quaternion_to_rotation_matrix(quaternion)
+#     T = np.eye(4)
+#     T[:3, :3] = R
+#     T[:3, 3] = [x, y, z]
+#     return T
 
 def Rz(q):
     """生成绕 Z 轴旋转的变换矩阵"""
@@ -315,16 +478,16 @@ def Rz(q):
         [0, 0, 0, 1]
     ])
 
-def Ry(q):
-    """生成绕 Y 轴旋转的变换矩阵"""
-    cq = np.cos(q)
-    sq = np.sin(q)
-    return np.array([
-        [cq, 0, sq, 0],
-        [0, 1, 0, 0],
-        [-sq, 0, cq, 0],
-        [0, 0, 0, 1]
-    ])
+# def Ry(q):
+#     """生成绕 Y 轴旋转的变换矩阵"""
+#     cq = np.cos(q)
+#     sq = np.sin(q)
+#     return np.array([
+#         [cq, 0, sq, 0],
+#         [0, 1, 0, 0],
+#         [-sq, 0, cq, 0],
+#         [0, 0, 0, 1]
+#     ])
 
 def Rx(q):
     """生成绕 X 轴旋转的变换矩阵"""
@@ -346,14 +509,14 @@ def Tz(d):
         [0, 0, 0, 1]
     ])
 
-def Ty(d):
-    """生成沿 Y 轴平移的变换矩阵"""
-    return np.array([
-        [1, 0, 0, 0],
-        [0, 1, 0, d],
-        [0, 0, 1, 0],
-        [0, 0, 0, 1]
-    ])
+# def Ty(d):
+#     """生成沿 Y 轴平移的变换矩阵"""
+#     return np.array([
+#         [1, 0, 0, 0],
+#         [0, 1, 0, d],
+#         [0, 0, 1, 0],
+#         [0, 0, 0, 1]
+#     ])
 
 def Tx(d):
     """生成沿 X 轴平移的变换矩阵"""
@@ -364,185 +527,51 @@ def Tx(d):
         [0, 0, 0, 1]
     ])
 
-def Ryd(q):
-    Sq = np.sin(q)
-    Cq = np.cos(q)
-    
-    T = np.array([
-        [-Sq, 0, Cq, 0],
-        [0, 0, 0, 0],
-        [-Cq, 0, -Sq, 0],
-        [0, 0, 0, 0]
-    ])
-    
-    return T
+# def vec(matrix):
 
-def Rydd(q):
-    Sq = np.sin(q)
-    Cq = np.cos(q)
-    
-    T = np.array([
-        [-Cq, 0, -Sq, 0],
-        [0, 0, 0, 0],
-        [Sq, 0, -Cq, 0],
-        [0, 0, 0, 0]
-    ])
-    
-    return T
+#     return matrix.flatten(order='F')
 
-def Rzd(q):
-    Sq = np.sin(q)
-    Cq = np.cos(q)
-    
-    T = np.array([
-        [-Sq, -Cq, 0, 0],
-        [Cq, -Sq, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0]
-    ])
-    
-    return T
+def compute_all_transforms(q):
+    # q[1] -= np.pi/2
+    # q[3] -= np.pi/2
 
-def Rzdd(q):
-    Sq = np.sin(q)
-    Cq = np.cos(q)
-    
-    T = np.array([
-        [-Cq, Sq, 0, 0],
-        [-Sq, -Cq, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0]
-    ])
-    
-    return T
+    T_list = []
+    T = Tbase
+    T_list.append(T)  # T0
 
-def Txd(s):
-    T = np.array([
-        [0, 0, 0, 1],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0]
-    ])
-    
-    return T
+    for i in range(6):
+        T = T @ Rz(q[i]) @ Tz(d_vals[i]) @ Rx(alpha_vals[i]) @ Tx(a_vals[i])
+        T_list.append(T)
 
-def Hwl(dql):
-    Sq = np.sin(dql*car_params[0])
-    Cq = np.cos(dql*car_params[0])
-    Sql = np.sin(-dql*car_params[0]/car_params[2])
-    Cql = np.cos(-dql*car_params[0]/car_params[2])
+    T = T @ Ttool
+    T_list[-1] = T
 
-    T = np.array([
-        [Cql, -Sql, 0, Cq/2],
-        [Sql, Cql, 0, Sq/2],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0]
-    ])
-
-    return T
-
-def Hwr(dqr):
-    Sq = np.sin(dqr*car_params[1])
-    Cq = np.cos(dqr*car_params[1])
-    Sqr = np.sin(dqr*car_params[1]/car_params[2])
-    Cqr = np.cos(dqr*car_params[1]/car_params[2])
-
-    T = np.array([
-        [Cqr, -Sqr, 0, Cq/2],
-        [Sqr, Cqr, 0, Sq/2],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0]
-    ])
-
-    return T
-
-def vec(matrix):
-
-    return matrix.flatten(order='F')
-
-def Jcol(T):
-    # Extract the Jacobian column from the transformation matrix T
-    J = np.array([T[0, 3], T[1, 3], T[2, 3], T[2, 1], T[0, 2], T[1, 0]]).reshape((-1,1))
-    return J
-
-def quaternion_to_rotation_matrix(q):
-
-    q_w, q_x, q_y, q_z = q
-    R = np.array([
-        [1 - 2*(q_y**2 + q_z**2), 2*(q_x*q_y - q_z*q_w), 2*(q_x*q_z + q_y*q_w)],
-        [2*(q_x*q_y + q_z*q_w), 1 - 2*(q_x**2 + q_z**2), 2*(q_y*q_z - q_x*q_w)],
-        [2*(q_x*q_z - q_y*q_w), 2*(q_y*q_z + q_x*q_w), 1 - 2*(q_x**2 + q_y**2)]
-    ])
-    return R
-
-def homogeneous_matrix(xyz, quaternion):
-
-    x, y, z = xyz
-    R = quaternion_to_rotation_matrix(quaternion)
-    T = np.eye(4)
-    T[:3, :3] = R
-    T[:3, 3] = [x, y, z]
-    return T
+    return T_list
 
 def FK(q):
-    # Forward Kinematics calculation
-    L = link_lengths
-    H = np.dot(Tbase, np.dot(Rz(q[0]), np.dot(Tz(L[0]), np.dot(Ry(q[1]), np.dot(Tz(L[1]), 
-            np.dot(Ry(q[2]), np.dot(Tz(L[2]), np.dot(Ry(q[3]), np.dot(Ty(L[3]), 
-            np.dot(Rz(q[4]), np.dot(Tz(L[4]), np.dot(Ry(q[5]), np.dot(Ty(L[5]), Ttool)))))))))))))
-
-    return H
+    T_list = compute_all_transforms(q)
+    return T_list[-1]  # 末端执行器的齐次变换矩阵
 
 def Jacobian(q):
-    # Calculate forward kinematics
-    H = FK(q[:6])
-    R = H[:3, :3]  # Rotation matrix part
-    L = link_lengths
+    T_list = compute_all_transforms(q)
+    J = np.zeros((6, 6))
 
-    # 1st column of Jacobian
-    J1p = np.dot(Tbase, np.dot(Rzd(q[0]), np.dot(Tz(L[0]), np.dot(Ry(q[1]), np.dot(Tz(L[1]),
-           np.dot(Ry(q[2]), np.dot(Tz(L[2]), np.dot(Ry(q[3]), np.dot(Ty(L[3]), np.dot(Rz(q[4]),
-           np.dot(Tz(L[4]), np.dot(Ry(q[5]), np.dot(Ty(L[5]), Ttool)))))))))))))
-    J1r = np.dot(J1p, np.vstack((np.hstack((np.linalg.inv(R), np.zeros((3, 1)))), np.array([[0, 0, 0, 1]]))))
-    J1 = Jcol(J1r)
+    # 末端位置
+    Te = T_list[-1]
+    pe = Te[:3, 3]
 
-    # 2nd column of Jacobian
-    J2p = np.dot(Tbase, np.dot(Rz(q[0]), np.dot(Tz(L[0]), np.dot(Ryd(q[1]), np.dot(Tz(L[1]),
-           np.dot(Ry(q[2]), np.dot(Tz(L[2]), np.dot(Ry(q[3]), np.dot(Ty(L[3]), np.dot(Rz(q[4]),
-           np.dot(Tz(L[4]), np.dot(Ry(q[5]), np.dot(Ty(L[5]), Ttool)))))))))))))
-    J2r = np.dot(J2p, np.vstack((np.hstack((np.linalg.inv(R), np.zeros((3, 1)))), np.array([[0, 0, 0, 1]]))))
-    J2 = Jcol(J2r)
+    for i in range(6):
+        Ti = T_list[i]
+        pi = Ti[:3, 3]  # 当前关节的位置
+        Ri = Ti[:3, :3]
+        zi = Ri @ np.array([0, 0, 1])   # 当前关节的 z 轴
 
-    # 3rd column of Jacobian
-    J3p = np.dot(Tbase, np.dot(Rz(q[0]), np.dot(Tz(L[0]), np.dot(Ry(q[1]), np.dot(Tz(L[1]),
-           np.dot(Ryd(q[2]), np.dot(Tz(L[2]), np.dot(Ry(q[3]), np.dot(Ty(L[3]), np.dot(Rz(q[4]),
-           np.dot(Tz(L[4]), np.dot(Ry(q[5]), np.dot(Ty(L[5]), Ttool)))))))))))))
-    J3r = np.dot(J3p, np.vstack((np.hstack((np.linalg.inv(R), np.zeros((3, 1)))), np.array([[0, 0, 0, 1]]))))
-    J3 = Jcol(J3r)
+        # 对应列的线速度部分和角速度部分
+        Jp = np.cross(zi, pe - pi)
+        Jo = zi
 
-    # 4th column of Jacobian
-    J4p = np.dot(Tbase, np.dot(Rz(q[0]), np.dot(Tz(L[0]), np.dot(Ry(q[1]), np.dot(Tz(L[1]),
-           np.dot(Ry(q[2]), np.dot(Tz(L[2]), np.dot(Ryd(q[3]), np.dot(Ty(L[3]), np.dot(Rz(q[4]),
-           np.dot(Tz(L[4]), np.dot(Ry(q[5]), np.dot(Ty(L[5]), Ttool)))))))))))))
-    J4r = np.dot(J4p, np.vstack((np.hstack((np.linalg.inv(R), np.zeros((3, 1)))), np.array([[0, 0, 0, 1]]))))
-    J4 = Jcol(J4r)
-
-    # 5th column of Jacobian
-    J5p = np.dot(Tbase, np.dot(Rz(q[0]), np.dot(Tz(L[0]), np.dot(Ry(q[1]), np.dot(Tz(L[1]),
-           np.dot(Ry(q[2]), np.dot(Tz(L[2]), np.dot(Ry(q[3]), np.dot(Ty(L[3]), np.dot(Rzd(q[4]),
-           np.dot(Tz(L[4]), np.dot(Ry(q[5]), np.dot(Ty(L[5]), Ttool)))))))))))))
-    J5r = np.dot(J5p, np.vstack((np.hstack((np.linalg.inv(R), np.zeros((3, 1)))), np.array([[0, 0, 0, 1]]))))
-    J5 = Jcol(J5r)
-
-    # 6th column of Jacobian
-    J6p = np.dot(Tbase, np.dot(Rz(q[0]), np.dot(Tz(L[0]), np.dot(Ry(q[1]), np.dot(Tz(L[1]),
-           np.dot(Ry(q[2]), np.dot(Tz(L[2]), np.dot(Ry(q[3]), np.dot(Ty(L[3]), np.dot(Rz(q[4]),
-           np.dot(Tz(L[4]), np.dot(Ryd(q[5]), np.dot(Ty(L[5]), Ttool)))))))))))))
-    J6r = np.dot(J6p, np.vstack((np.hstack((np.linalg.inv(R), np.zeros((3, 1)))), np.array([[0, 0, 0, 1]]))))
-    J6 = Jcol(J6r)
-
-    # Combine columns to form the full Jacobian
-    J = np.concatenate((J1, J2, J3, J4, J5, J6), axis=1)
+        J[:3, i] = Jp
+        J[3:, i] = Jo
 
     return J
 
@@ -619,7 +648,7 @@ def admittance_controller_factory():
         v = dot_v * dt + eef_vel_now
 
         global plot_data_display
-        plot_data_display[2] = v[2]
+        plot_data_display[:3] = v[:3]
 
         return v, F_err_I
 
@@ -648,8 +677,8 @@ def compute_inverse_kinematics(p_goal, F_target = 0.0, F_ext = [0.0, 0.0, 0.0, 0
 
     # 获取当前末端位置
     q_current = np.array(qpos) # 保证不修改原始输入的值
-    q_current[1] += np.pi/2
-    q_current[3] += np.pi/2
+    # q_current[1] += np.pi/2
+    # q_current[3] += np.pi/2
     q_updated = q_current[:6]  
     p_curr_H = FK(q_current[:6])
     p_curr = p_curr_H
@@ -657,12 +686,19 @@ def compute_inverse_kinematics(p_goal, F_target = 0.0, F_ext = [0.0, 0.0, 0.0, 0
     # 计算位置误差
     err = np.zeros(6)
     err[:3] = p_goal[:3] - p_curr_H[:3, 3]  
+
     # 计算旋转误差（矩阵形式）
     rot_curr = p_curr_H[:3, :3]  
     rot_goal = Rotation.from_euler('xyz', p_goal[3:]).as_matrix()
     rot_err = np.dot(rot_goal, rot_curr.T)    # 计算旋转矩阵的相对旋转
-    euler_err = Rotation.from_matrix(rot_err).as_euler('xyz')
-    err[3:] = euler_err
+
+    # 转回欧拉角形式，有万向锁问题
+    # euler_err = Rotation.from_matrix(rot_err).as_euler('xyz')
+    # err[3:] = euler_err
+
+    # 转到旋转向量形式
+    rotvec_err = Rotation.from_matrix(rot_err).as_rotvec()
+    err[3:] = rotvec_err
 
     # 计算雅可比矩阵
     jacob = Jacobian(q_current)  
@@ -689,7 +725,10 @@ def compute_inverse_kinematics(p_goal, F_target = 0.0, F_ext = [0.0, 0.0, 0.0, 0
     I = np.eye(len(q0))
 
     # 末端的期望速度
-    err_vel = err * k_err  
+    # err_vel = err * k_err  
+    err_vel = np.zeros(6)
+    err_vel[:3] = k_pos * err[:3]
+    err_vel[3:] = k_rot * err[3:]
     
     # # 判断并合并力控制方向和位置控制方向的速度控制量
     # for i in range(3):
@@ -701,9 +740,9 @@ def compute_inverse_kinematics(p_goal, F_target = 0.0, F_ext = [0.0, 0.0, 0.0, 0
     SI = np.concatenate([np.concatenate([np.eye(len(q0)) * k_vel, np.zeros((len(q0), len(slack0)))], axis=1), np.concatenate([np.zeros((len(slack0), len(q0))), np.eye(len(slack0)) * k_slack], axis=1)], axis=0)
 
     # 最小化问题包含松弛量
-    cons = ({'type': 'eq', 'fun': lambda x: np.dot(Sjacob, x.reshape(-1,1)).flatten() - U_vel},
-            {'type': 'ineq', 'fun': lambda x: ((np.pi/2 - q_updated[1] * np.sign(q_updated[1])) - Ps)/(Pi - Ps) * k_positioncon - x[1] * np.sign(q_updated[1])})
-            # {'type': 'ineq', 'fun': lambda x: ((0.6 - q_updated[3] * np.sign(q_updated[3])) - Ps)/(Pi - Ps) * k_positioncon - x[3] * np.sign(q_updated[3])})
+    cons = ({'type': 'eq', 'fun': lambda x: np.dot(Sjacob, x.reshape(-1,1)).flatten() - U_vel}, )       # 运动学约束
+            # {'type': 'ineq', 'fun': lambda x: ((np.pi - q_updated[1] * np.sign(q_updated[1])) - Ps)/(Pi - Ps) * k_positioncon - x[1] * np.sign(q_updated[1])})   # 关节2角度限制
+            # {'type': 'ineq', 'fun': lambda x: ((0.6 - q_updated[3] * np.sign(q_updated[3])) - Ps)/(Pi - Ps) * k_positioncon - x[3] * np.sign(q_updated[3])})    # 关节3角度限制
     obj = lambda x: (np.dot(np.dot(x, SI), x.reshape(-1,1)) / 2)[0] #+ np.dot(Mjacob.T, x[:6].reshape(-1,1))[0]
     bounds = [(-1, 1), (-1, 1), (-1, 1), (-1, 1), (-1, 1), (-1, 1), (None, None), (None, None), (None, None), (None, None), (None, None), (None, None)]
     q_vel = minimize(obj, x0, constraints=cons, bounds=bounds)
@@ -717,8 +756,6 @@ def compute_inverse_kinematics(p_goal, F_target = 0.0, F_ext = [0.0, 0.0, 0.0, 0
 def calculate_eef_pos():
     global p_control_target
     q_current = np.array(qpos) # 更新末端状态
-    q_current[1] += np.pi/2
-    q_current[3] += np.pi/2 
     eef_pos = FK(q_current[:6])
     p_control_target = eef_pos[:3, 3]
 
@@ -843,7 +880,7 @@ class JointVelocityIK(Node):
         force_x = force.x - force_init[0]
         force_y = force.y - force_init[1]
         force_z = force.z - force_init[2]
-        data = np.array([-force_x, -force_z, force_y]).reshape(3, 1)
+        data = np.array([-force_x, force_y, -force_z]).reshape(3, 1)
     
         # 定义重力加速度
         g = 9.81  # m/s^2, eef_mass[0]是工具重力，若输入质量则需要乘g
@@ -891,72 +928,103 @@ class JointVelocityIK(Node):
 
         msg = Float64MultiArray()
         msg.data = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-        force_data_display = [0.0, 0.0, 0.0]
 
-        if time.time() - self.iniT <= 0.5:
+        time_from_start = time.time() - self.iniT
+
+        if time_from_start <= start_time:
             calculate_eef_pos()
-            _, force_data_display = get_target_position(self.force_data, [p_control_target[0], p_control_target[1], p_control_target[2], 0.0-1.57, 0.0, 0.0])
+            _ = get_target_position(self.force_data, [p_control_target[0], p_control_target[1], p_control_target[2], 0.0-1.57, 0.0, 0.0])
 
-        if time.time() - self.iniT > 0.5 and time.time() - self.iniT <= 5:
+        # 找到当前时间段
+        current_task = None
+        for row in time_plan:
+            t_min, t_max, offset, force_mode, fz = row
+            if t_min < time_from_start <= t_max:
+                current_task = row
+                break
 
-            # pos_target = [0.11, 0.0, 0.1*np.sin(time.time()*0.06)]
-            pos_target = [0.0, 0.0, 0.0]
+        if current_task:
+            t_min, t_max, offset, force_mode, fz = current_task
 
-            p_target, force_data_display = get_target_position(self.force_data, [-trolley_position[0]-pos_target[0], -trolley_position[1]-pos_target[1], trolley_position[2]+pos_target[2], -trolley_position[4], trolley_position[3], trolley_position[5]])
-            IK, eef_pos, des_eef_vel, eef_vel = compute_inverse_kinematics(p_target)
+            # 力位混合控制中力控制的方向向量
+            force_vector = [0.0, 0.0, 1.0, 0.0, 0.0, 0.0] if force_mode else [0.0] * 6
+            F_target = np.array(fz)
 
-            # 设置小数点精度
-            precision = 6
-            data_list = [round(value, precision) for value in IK]
-            msg.data = data_list
+            # 获取目标位置
+            box_pos = trolley_position
+            pos_target = [box_pos[0] + offset[0],
+                        box_pos[1] + offset[1],
+                        box_pos[2] + offset[2]]
 
-        if time.time() - self.iniT > 5 and time.time() - self.iniT <= 70:
-
-            # force_control_sign = True
-            # pos_target = [0, 0, 0]
-            pos_target = [0.0, 0.0, 0.30*np.sin((time.time() - self.iniT - 5) * 0.02)]
-            # F_target = np.array(-10.0)  # 期望输出力
-            F_target = np.array(F_target_preset)    # 使用预设的期望输出力
-            force_vector = [0.0, 1.0, 0.0, 0.0, 0.0, 0.0]   # 力位混合控制中力控制的方向向量
-
-            p_target, force_data_display = get_target_position(self.force_data, [-trolley_position[0]-pos_target[0], -trolley_position[1]-pos_target[1], trolley_position[2]+pos_target[2], -trolley_position[4], trolley_position[3], trolley_position[5]])
+            # IK 求解
+            p_target = get_target_position(self.force_data, [pos_target[0], pos_target[1], pos_target[2], -trolley_position[4], trolley_position[3], trolley_position[5]])
             IK, eef_pos, des_eef_vel, eef_vel = compute_inverse_kinematics(p_target, F_target, self.force_data, force_vector)
 
-            # 设置小数点精度
-            precision = 6
-            data_list = [round(value, precision) for value in IK]
-            msg.data = data_list
+            msg.data = [round(v, 6) for v in IK]
 
-        if time.time() - self.iniT > 70:
+        # if time.time() - self.iniT > 0.5 and time.time() - self.iniT <= 5:
 
-            pos_target = [-0.0, 0.0, 0.0]
-            F_target = np.array(0.0)  # 期望输出力
-            # F_target = np.array(F_target_preset)    # 使用预设的期望输出力
-            force_vector = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]   # 力位混合控制中力控制的方向向量
+        #     # pos_target = [0.11, 0.0, 0.1*np.sin(time.time()*0.06)]
+        #     pos_target = [0.0, 0.0, 0.0]
 
-            p_target, force_data_display = get_target_position(self.force_data, [-trolley_position[0]-pos_target[0], -trolley_position[1]-pos_target[1], trolley_position[2]+pos_target[2], -trolley_position[4], trolley_position[3], trolley_position[5]])
-            IK, eef_pos, des_eef_vel, eef_vel = compute_inverse_kinematics(p_target, F_target, self.force_data, force_vector)
+        #     p_target = get_target_position(self.force_data, [-trolley_position[0]-pos_target[0], -trolley_position[1]-pos_target[1], trolley_position[2]+pos_target[2], -trolley_position[4], trolley_position[3], trolley_position[5]])
+        #     IK, eef_pos, des_eef_vel, eef_vel = compute_inverse_kinematics(p_target)
 
-            # 设置小数点精度
-            precision = 6
-            data_list = [round(value, precision) for value in IK]
-            msg.data = data_list
+        #     # 设置小数点精度
+        #     precision = 6
+        #     data_list = [round(value, precision) for value in IK]
+        #     msg.data = data_list
+
+        # if time.time() - self.iniT > 5 and time.time() - self.iniT <= 70:
+
+        #     # force_control_sign = True
+        #     # pos_target = [0, 0, 0]
+        #     pos_target = [0.0, 0.0, 0.0*0.30*np.sin((time.time() - self.iniT - 5) * 0.02)]
+        #     # F_target = np.array(-10.0)  # 期望输出力
+        #     F_target = np.array(F_target_preset)    # 使用预设的期望输出力
+        #     force_vector = [0.0, 0.0, 1.0, 0.0, 0.0, 0.0]   # 力位混合控制中力控制的方向向量
+
+        #     p_target = get_target_position(self.force_data, [-trolley_position[0]-pos_target[0], -trolley_position[1]-pos_target[1], trolley_position[2]+pos_target[2], -trolley_position[4], trolley_position[3], trolley_position[5]])
+        #     IK, eef_pos, des_eef_vel, eef_vel = compute_inverse_kinematics(p_target, F_target, self.force_data, force_vector)
+
+        #     # 设置小数点精度
+        #     precision = 6
+        #     data_list = [round(value, precision) for value in IK]
+        #     msg.data = data_list
+
+        # if time.time() - self.iniT > 70:
+
+        #     pos_target = [-0.0, 0.0, 0.0]
+        #     F_target = np.array(0.0)  # 期望输出力
+        #     # F_target = np.array(F_target_preset)    # 使用预设的期望输出力
+        #     force_vector = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]   # 力位混合控制中力控制的方向向量
+
+        #     p_target = get_target_position(self.force_data, [-trolley_position[0]-pos_target[0], -trolley_position[1]-pos_target[1], trolley_position[2]+pos_target[2], -trolley_position[4], trolley_position[3], trolley_position[5]])
+        #     IK, eef_pos, des_eef_vel, eef_vel = compute_inverse_kinematics(p_target, F_target, self.force_data, force_vector)
+
+        #     # 设置小数点精度
+        #     precision = 6
+        #     data_list = [round(value, precision) for value in IK]
+        #     msg.data = data_list
 
         # F/T传感器数据显示部分
         # 存储时间戳和数据
         current_time = time.time()
-        self.data_list.append((current_time, force_data_display[plot_axis]))  
+        self.data_list.append((current_time, self.force_data[plot_axis]))  
         self.data_list_2.append((current_time, plot_data_display[plot_axis])) 
-        self.save_data.append((current_time - self.iniT, force_data_display[plot_axis], trolley_position_display[0], trolley_position_display[1], trolley_position_display[2]))
+        self.save_data.append((current_time - self.iniT, self.force_data[plot_axis], trolley_position_display[0], trolley_position_display[1], trolley_position_display[2]))
         # 清除超过5秒的数据
         self.data_list = [(t, data) for t, data in self.data_list if current_time - t <= self.plot_duration]
         self.data_list_2 = [(t, data) for t, data in self.data_list_2 if current_time - t <= self.plot_duration]
 
+        # 发布数据
         self.publisher_.publish(msg)
         self.run_publisher.publish(Bool(data=self.run_sign))
 
 
 def main(args=None):
+
+    init_params()
     rclpy.init(args=args)
 
     joint_velocity_IK = JointVelocityIK()

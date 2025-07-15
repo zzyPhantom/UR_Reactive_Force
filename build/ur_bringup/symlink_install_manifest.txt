@@ -1,4 +1,5 @@
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/acf.launch.py
+/home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/battery_sanding.launch.py
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/calibration.launch.py
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/fake_ur_driver.launch.py
 /home/zzy/ur_real/install/ur_bringup/share/ur_bringup//launch/ft_senser.launch.py

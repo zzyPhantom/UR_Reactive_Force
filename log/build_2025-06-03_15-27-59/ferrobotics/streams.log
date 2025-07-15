@@ -1,0 +1,23 @@
+[0.319s] Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24
+[0.772s] [  2%] Built target ferrobotics__cpp
+[0.772s] [ 12%] Built target ferrobotics__rosidl_generator_c
+[0.773s] [ 12%] Built target ament_cmake_python_symlink_ferrobotics
+[0.773s] [ 23%] Built target ferrobotics__rosidl_typesupport_cpp
+[0.773s] [ 34%] Built target ferrobotics__rosidl_typesupport_c
+[0.773s] [ 44%] Built target ferrobotics__rosidl_typesupport_introspection_cpp
+[0.773s] [ 55%] Built target ferrobotics__rosidl_typesupport_introspection_c
+[0.773s] [ 65%] Built target ferrobotics__rosidl_typesupport_fastrtps_c
+[0.773s] [ 76%] Built target ferrobotics__rosidl_typesupport_fastrtps_cpp
+[0.773s] [ 76%] Built target ferrobotics
+[0.773s] [ 78%] Built target ferrobotics__py
+[0.773s] [ 87%] Built target ferrobotics__rosidl_generator_py
+[0.773s] [100%] Built target ferrobotics__rosidl_typesupport_c__pyext
+[0.773s] [100%] Built target ferrobotics__rosidl_typesupport_introspection_c__pyext
+[0.773s] [100%] Built target ferrobotics__rosidl_typesupport_fastrtps_c__pyext
+[0.773s] running egg_info
+[0.773s] writing ferrobotics.egg-info/PKG-INFO
+[0.774s] writing dependency_links to ferrobotics.egg-info/dependency_links.txt
+[0.774s] writing top-level names to ferrobotics.egg-info/top_level.txt
+[0.774s] reading manifest file 'ferrobotics.egg-info/SOURCES.txt'
+[0.774s] writing manifest file 'ferrobotics.egg-info/SOURCES.txt'
+[0.774s] [100%] Built target ament_cmake_python_build_ferrobotics_egg

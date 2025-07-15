@@ -1,0 +1,31 @@
+[1.399s] Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur10_moveit_config -- -j24 -l24
+[1.598s] Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur10_moveit_config -- -j24 -l24
+[1.727s] Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur10_moveit_config
+[1.756s] -- Install configuration: ""
+[1.757s] -- Execute custom install script
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config//launch/__pycache__/ur_moveit.launch.cpython-310.pyc
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config//launch/ur_moveit.launch.py
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/controllers.yaml
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/joint_limits.yaml
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/kinematics.yaml
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/ompl_planning.yaml
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/config/ur_servo.yaml
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/srdf/ur.srdf.xacro
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/srdf/ur_macro.srdf.xacro
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/rviz/view_robot.rviz
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ament_index/resource_index/package_run_dependencies/ur10_moveit_config
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ament_index/resource_index/parent_prefix_path/ur10_moveit_config
+[1.757s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/ament_prefix_path.sh
+[1.758s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/ament_prefix_path.dsv
+[1.758s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/path.sh
+[1.758s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/environment/path.dsv
+[1.758s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.bash
+[1.758s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.sh
+[1.758s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.zsh
+[1.758s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/local_setup.dsv
+[1.758s] -- Symlinking: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.dsv
+[1.774s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ament_index/resource_index/packages/ur10_moveit_config
+[1.784s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/cmake/ur10_moveit_configConfig.cmake
+[1.784s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/cmake/ur10_moveit_configConfig-version.cmake
+[1.784s] -- Up-to-date symlink: /home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.xml
+[1.795s] Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur10_moveit_config

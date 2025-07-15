@@ -1,0 +1,34 @@
+[2.659s] Invoking command in '/home/zzy/ur_real/build/gravity_compensation': PYTHONPATH=/home/zzy/ur_real/build/gravity_compensation/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/gravity_compensation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/gravity_compensation/build --no-deps symlink_data
+[2.785s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[2.785s]   warnings.warn(msg)
+[2.916s] running develop
+[2.916s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[2.916s] !!
+[2.916s] 
+[2.916s]         ********************************************************************************
+[2.916s]         Please avoid running ``setup.py`` and ``easy_install``.
+[2.916s]         Instead, use pypa/build, pypa/installer or other
+[2.916s]         standards-based tools.
+[2.916s] 
+[2.916s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[2.916s]         ********************************************************************************
+[2.917s] 
+[2.917s] !!
+[2.917s]   easy_install.initialize_options(self)
+[3.082s] running egg_info
+[3.092s] writing gravity_compensation.egg-info/PKG-INFO
+[3.093s] writing dependency_links to gravity_compensation.egg-info/dependency_links.txt
+[3.093s] writing entry points to gravity_compensation.egg-info/entry_points.txt
+[3.093s] writing requirements to gravity_compensation.egg-info/requires.txt
+[3.093s] writing top-level names to gravity_compensation.egg-info/top_level.txt
+[3.117s] reading manifest file 'gravity_compensation.egg-info/SOURCES.txt'
+[3.118s] writing manifest file 'gravity_compensation.egg-info/SOURCES.txt'
+[3.131s] running build_ext
+[3.131s] Creating /home/zzy/ur_real/install/gravity_compensation/lib/python3.10/site-packages/gravity-compensation.egg-link (link to .)
+[3.132s] Installing ft_calib script to /home/zzy/ur_real/install/gravity_compensation/lib/gravity_compensation
+[3.132s] Installing pos_calib script to /home/zzy/ur_real/install/gravity_compensation/lib/gravity_compensation
+[3.132s] Installing testpy script to /home/zzy/ur_real/install/gravity_compensation/lib/gravity_compensation
+[3.132s] 
+[3.132s] Installed /home/zzy/ur_real/build/gravity_compensation
+[3.132s] running symlink_data
+[3.159s] Invoked command in '/home/zzy/ur_real/build/gravity_compensation' returned '0': PYTHONPATH=/home/zzy/ur_real/build/gravity_compensation/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/gravity_compensation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/gravity_compensation/build --no-deps symlink_data

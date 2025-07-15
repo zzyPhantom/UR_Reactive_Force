@@ -1,0 +1,33 @@
+[1.138s] Invoking command in '/home/zzy/ur_real/build/ati_sensor': PYTHONPATH=/home/zzy/ur_real/build/ati_sensor/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ati_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ati_sensor/build --no-deps symlink_data
+[1.247s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[1.247s]   warnings.warn(msg)
+[1.360s] running develop
+[1.360s] /home/zzy/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.360s] !!
+[1.360s] 
+[1.360s]         ********************************************************************************
+[1.360s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.360s]         Instead, use pypa/build, pypa/installer or other
+[1.361s]         standards-based tools.
+[1.361s] 
+[1.361s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.361s]         ********************************************************************************
+[1.361s] 
+[1.361s] !!
+[1.361s]   easy_install.initialize_options(self)
+[1.506s] running egg_info
+[1.517s] writing ati_sensor.egg-info/PKG-INFO
+[1.517s] writing dependency_links to ati_sensor.egg-info/dependency_links.txt
+[1.517s] writing entry points to ati_sensor.egg-info/entry_points.txt
+[1.517s] writing requirements to ati_sensor.egg-info/requires.txt
+[1.517s] writing top-level names to ati_sensor.egg-info/top_level.txt
+[1.539s] reading manifest file 'ati_sensor.egg-info/SOURCES.txt'
+[1.539s] writing manifest file 'ati_sensor.egg-info/SOURCES.txt'
+[1.551s] running build_ext
+[1.551s] Creating /home/zzy/ur_real/install/ati_sensor/lib/python3.10/site-packages/ati-sensor.egg-link (link to .)
+[1.551s] Installing ati_net_ft_driver_ros script to /home/zzy/ur_real/install/ati_sensor/lib/ati_sensor
+[1.552s] Installing test_rpi_ati_net_ft script to /home/zzy/ur_real/install/ati_sensor/lib/ati_sensor
+[1.552s] 
+[1.552s] Installed /home/zzy/ur_real/build/ati_sensor
+[1.552s] running symlink_data
+[1.583s] Invoked command in '/home/zzy/ur_real/build/ati_sensor' returned '0': PYTHONPATH=/home/zzy/ur_real/build/ati_sensor/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ati_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ati_sensor/build --no-deps symlink_data

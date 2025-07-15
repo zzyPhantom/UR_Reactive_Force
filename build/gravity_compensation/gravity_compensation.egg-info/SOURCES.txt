@@ -10,6 +10,7 @@ setup.py
 ../../build/gravity_compensation/gravity_compensation.egg-info/zip-safe
 gravity_compensation/__init__.py
 gravity_compensation/ft_calib.py
+gravity_compensation/pos_calib.py
 gravity_compensation.egg-info/PKG-INFO
 gravity_compensation.egg-info/SOURCES.txt
 gravity_compensation.egg-info/dependency_links.txt

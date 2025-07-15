@@ -22,9 +22,12 @@ setup(
         'console_scripts': [
         'publisher_forward_velocity_controller = ur10_vel.publisher_forward_velocity_controller:main',
         'joint_velocity_IK = ur10_vel.joint_velocity_IK:main',
+        'battery_sanding = ur10_vel.battery_sanding:main',
         'check_collision = ur10_vel.check_collision:main',
         'check_keyboard = ur10_vel.check_keyboard:main',
         'Joint_Velocity_Transfer = ur10_vel.Joint_Velocity_Transfer:main',
+        'audio_transformer = ur10_vel.audio_transformer:main',
+        'data_plot = ur10_vel.data_plot:main',
         ],
     },
 )

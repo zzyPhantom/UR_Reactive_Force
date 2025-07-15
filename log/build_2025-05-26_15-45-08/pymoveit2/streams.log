@@ -1,0 +1,60 @@
+[0.616s] Invoking command in '/home/zzy/ur_real/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/pymoveit2 -- -j24 -l24
+[0.771s] Built target ament_cmake_python_symlink_pymoveit2
+[0.827s] running egg_info
+[0.840s] writing pymoveit2.egg-info/PKG-INFO
+[0.841s] writing dependency_links to pymoveit2.egg-info/dependency_links.txt
+[0.841s] writing top-level names to pymoveit2.egg-info/top_level.txt
+[0.874s] reading manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[0.875s] writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[0.897s] Built target ament_cmake_python_build_pymoveit2_egg
+[0.905s] Invoked command in '/home/zzy/ur_real/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/pymoveit2 -- -j24 -l24
+[0.923s] Invoking command in '/home/zzy/ur_real/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/pymoveit2
+[0.929s] -- Install configuration: ""
+[0.929s] -- Execute custom install script
+[0.930s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/pythonpath.sh
+[0.930s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/pythonpath.dsv
+[0.931s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-4.0.0-py3.10.egg-info/PKG-INFO
+[0.931s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-4.0.0-py3.10.egg-info/SOURCES.txt
+[0.931s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-4.0.0-py3.10.egg-info/dependency_links.txt
+[0.931s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-4.0.0-py3.10.egg-info/top_level.txt
+[0.932s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/__init__.py
+[0.932s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/gripper_command.py
+[0.932s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/gripper_interface.py
+[0.932s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2.py
+[0.933s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2_gripper.py
+[0.933s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2_servo.py
+[0.933s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/__init__.py
+[0.933s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/crane_x7.py
+[0.934s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/kinova.py
+[0.934s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/lbr.py
+[0.934s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/panda.py
+[0.934s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/phantomx_pincher.py
+[0.935s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_allow_collisions.py
+[0.935s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_clear_planning_scene.py
+[0.935s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_collision_mesh.py
+[0.935s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_collision_primitive.py
+[0.935s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_fk.py
+[0.935s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_gripper.py
+[0.936s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_ik.py
+[0.936s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_joint_goal.py
+[0.936s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_orientation_path_constraint.py
+[0.936s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_pose_goal.py
+[0.936s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/lib/pymoveit2/ex_servo.py
+[0.936s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/ament_index/resource_index/package_run_dependencies/pymoveit2
+[0.937s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/ament_index/resource_index/parent_prefix_path/pymoveit2
+[0.937s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.sh
+[0.937s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.dsv
+[0.938s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/path.sh
+[0.938s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/environment/path.dsv
+[0.938s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/local_setup.bash
+[0.939s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/local_setup.sh
+[0.939s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/local_setup.zsh
+[0.939s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/local_setup.dsv
+[0.939s] -- Symlinking: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.dsv
+[0.946s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/ament_index/resource_index/packages/pymoveit2
+[0.947s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config.cmake
+[0.947s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config-version.cmake
+[0.947s] -- Up-to-date symlink: /home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.xml
+[1.003s] Listing '/home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2'...
+[1.004s] Listing '/home/zzy/ur_real/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots'...
+[1.009s] Invoked command in '/home/zzy/ur_real/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/pymoveit2

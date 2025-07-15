@@ -1,10 +1,12 @@
 import pickle
 import matplotlib.pyplot as plt
+import numpy as np
 
-startTime = 5 # 开始时间
+startTime = 10 # 开始时间
 startTime2 = 8
-endTime = 70 # 结束时间
-target_force = -20
+endTime = 500 # 结束时间
+target_force = -2  # 目标力
+init_force = 10  # 初始力
 
 # 加载数据
 def load_data(filename):
@@ -13,14 +15,17 @@ def load_data(filename):
     return data
 
 # 绘制前10秒的数据
-def plot_first_10_seconds(data):
+def plot_first_n_seconds(data):
 
     # 提取前n秒的数据
     times = [entry[0] for entry in data if entry[0] <= endTime and entry[0] >= startTime]
-    force = [entry[1] for entry in data if entry[0] <= endTime and entry[0] >= startTime]
+    force = [entry[1]-init_force for entry in data if entry[0] <= endTime and entry[0] >= startTime]
     pos_x = [entry[2] for entry in data if entry[0] <= endTime and entry[0] >= startTime2]
     pos_y = [entry[3] for entry in data if entry[0] <= endTime and entry[0] >= startTime2]
     pos_z = [entry[4] for entry in data if entry[0] <= endTime and entry[0] >= startTime2]
+    pos_err = np.vstack([entry[5] for entry in data if startTime <= entry[0] <= endTime])
+    predicted_force = [entry[6] for entry in data if entry[0] <= endTime and entry[0] >= startTime]
+   
     # 创建 force_target 列表，所有值都为 -20
     force_target = [target_force] * len(times)    
 
@@ -53,20 +58,28 @@ def plot_first_10_seconds(data):
     # 子图1: 时间-力
     axes[0].plot(times, force_target, label="Force Target", color="r", linestyle="--")
     axes[0].plot(times, force, label="Force on Z-Axis", color="b")
+    axes[0].plot(times, predicted_force, label="Predicted Force", color="g")
     axes[0].set_xlabel("Time (s)")
     axes[0].set_ylabel("Z-Axis Force (N)")
     axes[0].set_title("Time vs Force")
     axes[0].legend()
     axes[0].grid(True)
 
-    # 子图2: X-Y平面上的曲线
-    axes[1].plot(pos_y, pos_z, label="Trajectory in XY Plane", color="g")
-    axes[1].set_xlabel("Position X")
-    axes[1].set_ylabel("Position Y")
-    axes[1].set_title("Trajectory in XY Plane")
-    axes[1].grid(True)
-    axes[1].set_aspect('equal')  # 确保坐标轴比例相同
-    axes[1].set_box_aspect(1.5)  # 设置宽高比为 1.5
+    # 子图2: 时间-末端位置误差
+    # axes[1].plot(times, pos_err[:,2], label="Pos_Z", color="g")
+    # axes[1].set_xlabel("Time (s)")
+    # axes[1].set_ylabel("Z-Axis Position (m)")
+    # axes[1].set_title("Time vs Z-Axis Position Error")
+    # axes[1].grid(True)
+
+    # # 子图2: X-Y平面上的曲线
+    # axes[1].plot(pos_y, pos_z, label="Trajectory in XY Plane", color="g")
+    # axes[1].set_xlabel("Position X")
+    # axes[1].set_ylabel("Position Y")
+    # axes[1].set_title("Trajectory in XY Plane")
+    # axes[1].grid(True)
+    # axes[1].set_aspect('equal')  # 确保坐标轴比例相同
+    # axes[1].set_box_aspect(1.5)  # 设置宽高比为 1.5
 
     # # 子图2: 时间-位置X
     # axes[0, 1].plot(times, pos_x, label="Position X", color="g")
@@ -98,4 +111,4 @@ def plot_first_10_seconds(data):
 if __name__ == "__main__":
     filename = '/home/zzy/temporary_data/force_pos_data.pkl'
     data = load_data(filename)
-    plot_first_10_seconds(data)
+    plot_first_n_seconds(data)

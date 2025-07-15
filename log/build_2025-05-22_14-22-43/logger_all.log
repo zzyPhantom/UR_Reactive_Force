@@ -1,0 +1,859 @@
+[0.173s] DEBUG:colcon:Command line arguments: ['/home/zzy/.local/bin/colcon', 'build', '--symlink-install']
+[0.173s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f168cf4d2a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f168d072080>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f168d072080>>, mixin_verb=('build',))
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.221s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zzy/ur_real'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'ros'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['cmake', 'python']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'cmake'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'python'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extensions ['python_setup_py']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents) by extension 'python_setup_py'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extension 'ros'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extensions ['cmake', 'python']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extension 'cmake'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extension 'python'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extensions ['python_setup_py']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/10-29 平滑路径规划) by extension 'python_setup_py'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extension 'ros'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extensions ['cmake', 'python']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extension 'cmake'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extension 'python'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extensions ['python_setup_py']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/11-22 push box) by extension 'python_setup_py'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extension 'ros'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extensions ['cmake', 'python']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extension 'cmake'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extension 'python'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extensions ['python_setup_py']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-16 UR10打磨加速度-位置-力) by extension 'python_setup_py'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extension 'ros'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extensions ['cmake', 'python']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extension 'cmake'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extension 'python'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extensions ['python_setup_py']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/12-9 IMU测试) by extension 'python_setup_py'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extension 'ros'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extensions ['cmake', 'python']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extension 'cmake'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extension 'python'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extensions ['python_setup_py']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Documents/force_z_axis) by extension 'python_setup_py'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ati_sensor) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ati_sensor' with type 'ros.ament_python' and name 'ati_sensor'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera' with type 'ros.ament_python' and name 'camera'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extension 'ros'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extensions ['cmake', 'python']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extension 'cmake'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extension 'python'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extensions ['python_setup_py']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2) by extension 'python_setup_py'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extension 'ros'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extensions ['cmake', 'python']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extension 'cmake'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extension 'python'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extensions ['python_setup_py']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs) by extension 'python_setup_py'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extension 'ros'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extensions ['cmake', 'python']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extension 'cmake'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extension 'python'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extensions ['python_setup_py']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/docs/img) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2) by extension 'ros'
+[0.241s] DEBUG:colcon.colcon_core.package_identification:Package 'src/easy_handeye2/easy_handeye2' with type 'ros.ament_python' and name 'easy_handeye2'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2_msgs) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2_msgs) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2_msgs) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2_msgs) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2_msgs) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2_msgs) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2_msgs) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/easy_handeye2/easy_handeye2_msgs) by extension 'ros'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/easy_handeye2/easy_handeye2_msgs' with type 'ros.ament_cmake' and name 'easy_handeye2_msgs'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics) by extension 'ros'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ferrobotics' with type 'ros.ament_cmake' and name 'ferrobotics'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/ferrobotics_acf) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ferrobotics_acf' with type 'ros.ament_python' and name 'ferrobotics_acf'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/gravity_compensation) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/gravity_compensation) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/gravity_compensation) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/gravity_compensation) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/gravity_compensation) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/gravity_compensation) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/gravity_compensation) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/gravity_compensation) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/gravity_compensation) by extension 'ros'
+[0.244s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gravity_compensation' with type 'ros.ament_python' and name 'gravity_compensation'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'ros'
+[0.245s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pymoveit2' with type 'ros.ament_cmake' and name 'pymoveit2'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_moveit_config) by extension 'ros'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur10_moveit_config' with type 'ros.ament_cmake' and name 'ur10_moveit_config'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur10_vel) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur10_vel' with type 'ros.ament_python' and name 'ur10_vel'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_bringup) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur_bringup' with type 'ros.ament_cmake' and name 'ur_bringup'
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.269s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/zzy/ur_real/install
+[0.270s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 400 installed packages in /opt/ros/humble
+[0.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_target' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'ati_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.302s] DEBUG:colcon.colcon_core.verb:Building package 'ati_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ati_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ati_sensor', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ati_sensor', 'symlink_install': True, 'test_result_base': None}
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.302s] DEBUG:colcon.colcon_core.verb:Building package 'camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/camera', 'merge_install': False, 'path': '/home/zzy/ur_real/src/camera', 'symlink_install': True, 'test_result_base': None}
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2_msgs' build argument 'cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2_msgs' build argument 'cmake_target' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'easy_handeye2_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/easy_handeye2_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/easy_handeye2_msgs', 'merge_install': False, 'path': '/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_target' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_clean_first' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'cmake_force_configure' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'ament_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'ferrobotics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ferrobotics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ferrobotics', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ferrobotics', 'symlink_install': True, 'test_result_base': None}
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_target' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_clean_first' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'cmake_force_configure' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'ament_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'ferrobotics_acf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'ferrobotics_acf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ferrobotics_acf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ferrobotics_acf', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ferrobotics_acf', 'symlink_install': True, 'test_result_base': None}
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'gravity_compensation' build argument 'cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'gravity_compensation' build argument 'cmake_target' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'gravity_compensation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'gravity_compensation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'gravity_compensation' build argument 'cmake_clean_first' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'gravity_compensation' build argument 'cmake_force_configure' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'gravity_compensation' build argument 'ament_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'gravity_compensation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'gravity_compensation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'gravity_compensation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/gravity_compensation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/gravity_compensation', 'merge_install': False, 'path': '/home/zzy/ur_real/src/gravity_compensation', 'symlink_install': True, 'test_result_base': None}
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_target' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_clean_first' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_force_configure' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'ament_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.304s] DEBUG:colcon.colcon_core.verb:Building package 'pymoveit2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/pymoveit2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/pymoveit2', 'merge_install': False, 'path': '/home/zzy/ur_real/src/pymoveit2', 'symlink_install': True, 'test_result_base': None}
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.304s] DEBUG:colcon.colcon_core.verb:Building package 'ur10_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ur10_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ur10_moveit_config', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ur10_moveit_config', 'symlink_install': True, 'test_result_base': None}
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_target' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_clean_cache' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_clean_first' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'cmake_force_configure' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'ament_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'catkin_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'ur10_vel' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.304s] DEBUG:colcon.colcon_core.verb:Building package 'ur10_vel' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ur10_vel', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ur10_vel', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ur10_vel', 'symlink_install': True, 'test_result_base': None}
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'ur_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'ur_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/ur_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/ur_bringup', 'merge_install': False, 'path': '/home/zzy/ur_real/src/ur_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2' build argument 'cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'easy_handeye2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'easy_handeye2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zzy/ur_real/build/easy_handeye2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zzy/ur_real/install/easy_handeye2', 'merge_install': False, 'path': '/home/zzy/ur_real/src/easy_handeye2/easy_handeye2', 'symlink_install': True, 'test_result_base': None}
+[0.305s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.306s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.306s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs' with build type 'ament_cmake'
+[0.306s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zzy/ur_real/src/easy_handeye2/easy_handeye2_msgs'
+[0.316s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.316s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.316s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.318s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zzy/ur_real/src/ati_sensor' with build type 'ament_python'
+[0.319s] Level 1:colcon.colcon_core.shell:create_environment_hook('ati_sensor', 'ament_prefix_path')
+[0.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/ament_prefix_path.ps1'
+[0.319s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/ament_prefix_path.dsv'
+[0.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/ament_prefix_path.sh'
+[0.320s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.320s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.322s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zzy/ur_real/src/camera' with build type 'ament_python'
+[0.322s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'ament_prefix_path')
+[0.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/camera/share/camera/hook/ament_prefix_path.ps1'
+[0.323s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/camera/share/camera/hook/ament_prefix_path.dsv'
+[0.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/camera/share/camera/hook/ament_prefix_path.sh'
+[0.323s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.323s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.325s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zzy/ur_real/src/ferrobotics' with build type 'ament_cmake'
+[0.325s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zzy/ur_real/src/ferrobotics'
+[0.325s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.326s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.328s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zzy/ur_real/src/ferrobotics_acf' with build type 'ament_python'
+[0.328s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics_acf', 'ament_prefix_path')
+[0.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/ament_prefix_path.ps1'
+[0.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/ament_prefix_path.dsv'
+[0.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/ament_prefix_path.sh'
+[0.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.331s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zzy/ur_real/src/gravity_compensation' with build type 'ament_python'
+[0.331s] Level 1:colcon.colcon_core.shell:create_environment_hook('gravity_compensation', 'ament_prefix_path')
+[0.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation/hook/ament_prefix_path.ps1'
+[0.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation/hook/ament_prefix_path.dsv'
+[0.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation/hook/ament_prefix_path.sh'
+[0.332s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.332s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.334s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zzy/ur_real/src/pymoveit2' with build type 'ament_cmake'
+[0.334s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zzy/ur_real/src/pymoveit2'
+[0.334s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.334s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.336s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zzy/ur_real/src/ur10_moveit_config' with build type 'ament_cmake'
+[0.336s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zzy/ur_real/src/ur10_moveit_config'
+[0.336s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.336s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.338s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zzy/ur_real/src/ur10_vel' with build type 'ament_python'
+[0.338s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur10_vel', 'ament_prefix_path')
+[0.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/ament_prefix_path.ps1'
+[0.339s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/ament_prefix_path.dsv'
+[0.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/ament_prefix_path.sh'
+[0.339s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.339s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.341s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zzy/ur_real/src/ur_bringup' with build type 'ament_cmake'
+[0.341s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zzy/ur_real/src/ur_bringup'
+[0.342s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.342s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/easy_handeye2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/easy_handeye2_msgs -- -j24 -l24
+[0.524s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zzy/ur_real/src/ati_sensor'
+[0.525s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.525s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.866s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zzy/ur_real/src/camera'
+[0.867s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.867s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24
+[1.406s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zzy/ur_real/src/ferrobotics_acf'
+[1.406s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.726s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zzy/ur_real/src/gravity_compensation'
+[1.726s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.726s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/pymoveit2 -- -j24 -l24
+[1.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur10_moveit_config -- -j24 -l24
+[1.892s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zzy/ur_real/src/ur10_vel'
+[1.892s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.893s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24
+[1.935s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur10_moveit_config -- -j24 -l24
+[2.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur10_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur10_moveit_config
+[2.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ur_bringup -- -j24 -l24
+[2.131s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur10_moveit_config)
+[2.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur10_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur10_moveit_config
+[2.139s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config' for CMake module files
+[2.139s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config' for CMake config files
+[2.140s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur10_moveit_config', 'cmake_prefix_path')
+[2.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.ps1'
+[2.140s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.dsv'
+[2.141s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.sh'
+[2.141s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/bin'
+[2.142s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/lib/pkgconfig/ur10_moveit_config.pc'
+[2.142s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/lib/python3.10/site-packages'
+[2.142s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/bin'
+[2.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.ps1'
+[2.144s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.dsv'
+[2.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.sh'
+[2.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.bash'
+[2.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.zsh'
+[2.161s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ur10_moveit_config/share/colcon-core/packages/ur10_moveit_config)
+[2.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur_bringup
+[2.248s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/pymoveit2 -- -j24 -l24
+[2.256s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur10_moveit_config)
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config' for CMake module files
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config' for CMake config files
+[2.258s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur10_moveit_config', 'cmake_prefix_path')
+[2.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.ps1'
+[2.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.dsv'
+[2.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/hook/cmake_prefix_path.sh'
+[2.259s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/bin'
+[2.259s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/lib/pkgconfig/ur10_moveit_config.pc'
+[2.260s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/lib/python3.10/site-packages'
+[2.260s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_moveit_config/bin'
+[2.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.ps1'
+[2.261s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.dsv'
+[2.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.sh'
+[2.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.bash'
+[2.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_moveit_config/share/ur10_moveit_config/package.zsh'
+[2.263s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ur10_moveit_config/share/colcon-core/packages/ur10_moveit_config)
+[2.264s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_bringup)
+[2.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ur_bringup
+[2.264s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup' for CMake module files
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup' for CMake config files
+[2.265s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_bringup', 'cmake_prefix_path')
+[2.265s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.ps1'
+[2.266s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.dsv'
+[2.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.sh'
+[2.266s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/bin'
+[2.267s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/lib/pkgconfig/ur_bringup.pc'
+[2.267s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/lib/python3.10/site-packages'
+[2.267s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/bin'
+[2.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.ps1'
+[2.268s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.dsv'
+[2.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.sh'
+[2.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.bash'
+[2.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.zsh'
+[2.269s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ur_bringup/share/colcon-core/packages/ur_bringup)
+[2.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/pymoveit2
+[2.383s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_bringup)
+[2.384s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup' for CMake module files
+[2.385s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup' for CMake config files
+[2.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_bringup', 'cmake_prefix_path')
+[2.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.ps1'
+[2.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.dsv'
+[2.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/hook/cmake_prefix_path.sh'
+[2.387s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/bin'
+[2.387s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/lib/pkgconfig/ur_bringup.pc'
+[2.388s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/lib/python3.10/site-packages'
+[2.388s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur_bringup/bin'
+[2.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.ps1'
+[2.389s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.dsv'
+[2.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.sh'
+[2.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.bash'
+[2.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur_bringup/share/ur_bringup/package.zsh'
+[2.391s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ur_bringup/share/colcon-core/packages/ur_bringup)
+[2.530s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pymoveit2)
+[2.531s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2' for CMake module files
+[2.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/pymoveit2
+[2.532s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2' for CMake config files
+[2.532s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'cmake_prefix_path')
+[2.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.ps1'
+[2.533s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.dsv'
+[2.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.sh'
+[2.535s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2/lib'
+[2.535s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2/bin'
+[2.535s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2/lib/pkgconfig/pymoveit2.pc'
+[2.536s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2/lib/python3.10/site-packages'
+[2.536s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2/bin'
+[2.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.ps1'
+[2.537s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.dsv'
+[2.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.sh'
+[2.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.bash'
+[2.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.zsh'
+[2.540s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/pymoveit2/share/colcon-core/packages/pymoveit2)
+[2.567s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pymoveit2)
+[2.567s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2' for CMake module files
+[2.568s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2' for CMake config files
+[2.568s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'cmake_prefix_path')
+[2.568s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.ps1'
+[2.569s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.dsv'
+[2.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.sh'
+[2.570s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2/lib'
+[2.570s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2/bin'
+[2.570s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2/lib/pkgconfig/pymoveit2.pc'
+[2.570s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2/lib/python3.10/site-packages'
+[2.570s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/pymoveit2/bin'
+[2.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.ps1'
+[2.571s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.dsv'
+[2.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.sh'
+[2.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.bash'
+[2.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/pymoveit2/share/pymoveit2/package.zsh'
+[2.573s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/pymoveit2/share/colcon-core/packages/pymoveit2)
+[2.699s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/ferrobotics -- -j24 -l24
+[2.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ferrobotics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ferrobotics
+[2.850s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/gravity_compensation': PYTHONPATH=/home/zzy/ur_real/build/gravity_compensation/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/gravity_compensation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/gravity_compensation/build --no-deps symlink_data
+[2.851s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ferrobotics_acf': PYTHONPATH=/home/zzy/ur_real/build/ferrobotics_acf/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ferrobotics_acf/build --no-deps symlink_data
+[2.854s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/camera': PYTHONPATH=/home/zzy/ur_real/build/camera/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/camera/build --no-deps symlink_data
+[2.855s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ur10_vel': PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ur10_vel/build --no-deps symlink_data
+[2.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/ati_sensor': PYTHONPATH=/home/zzy/ur_real/build/ati_sensor/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ati_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ati_sensor/build --no-deps symlink_data
+[2.869s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ferrobotics)
+[2.870s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics' for CMake module files
+[2.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ferrobotics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/ferrobotics
+[2.872s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics' for CMake config files
+[2.872s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics', 'cmake_prefix_path')
+[2.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.ps1'
+[2.873s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.dsv'
+[2.874s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.sh'
+[2.874s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib'
+[2.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics', 'ld_library_path_lib')
+[2.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.ps1'
+[2.875s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.dsv'
+[2.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.sh'
+[2.876s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/bin'
+[2.876s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib/pkgconfig/ferrobotics.pc'
+[2.876s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib/python3.10/site-packages'
+[2.877s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/bin'
+[2.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.ps1'
+[2.878s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.dsv'
+[2.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.sh'
+[2.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.bash'
+[2.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.zsh'
+[2.880s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ferrobotics/share/colcon-core/packages/ferrobotics)
+[3.009s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ferrobotics)
+[3.009s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics' for CMake module files
+[3.010s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics' for CMake config files
+[3.010s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics', 'cmake_prefix_path')
+[3.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.ps1'
+[3.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.dsv'
+[3.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/cmake_prefix_path.sh'
+[3.012s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib'
+[3.012s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics', 'ld_library_path_lib')
+[3.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.ps1'
+[3.013s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.dsv'
+[3.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/hook/ld_library_path_lib.sh'
+[3.014s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/bin'
+[3.014s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib/pkgconfig/ferrobotics.pc'
+[3.014s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/lib/python3.10/site-packages'
+[3.014s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics/bin'
+[3.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.ps1'
+[3.016s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.dsv'
+[3.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.sh'
+[3.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.bash'
+[3.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics/share/ferrobotics/package.zsh'
+[3.017s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ferrobotics/share/colcon-core/packages/ferrobotics)
+[3.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/easy_handeye2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/easy_handeye2_msgs -- -j24 -l24
+[3.395s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics_acf', 'pythonpath_develop')
+[3.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath_develop.ps1'
+[3.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ferrobotics_acf' returned '0': PYTHONPATH=/home/zzy/ur_real/build/ferrobotics_acf/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ferrobotics_acf/build --no-deps symlink_data
+[3.397s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/build/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath_develop.dsv'
+[3.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath_develop.sh'
+[3.398s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf' for CMake module files
+[3.398s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf' for CMake config files
+[3.399s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf/lib'
+[3.399s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf/bin'
+[3.399s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf/lib/pkgconfig/ferrobotics_acf.pc'
+[3.399s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf/lib/python3.10/site-packages'
+[3.399s] Level 1:colcon.colcon_core.shell:create_environment_hook('ferrobotics_acf', 'pythonpath')
+[3.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath.ps1'
+[3.400s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath.dsv'
+[3.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/hook/pythonpath.sh'
+[3.401s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ferrobotics_acf/bin'
+[3.401s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ferrobotics_acf)
+[3.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/package.ps1'
+[3.402s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/package.dsv'
+[3.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/package.sh'
+[3.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/package.bash'
+[3.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ferrobotics_acf/share/ferrobotics_acf/package.zsh'
+[3.403s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ferrobotics_acf/share/colcon-core/packages/ferrobotics_acf)
+[3.403s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'pythonpath_develop')
+[3.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/camera/share/camera/hook/pythonpath_develop.ps1'
+[3.404s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/build/camera/share/camera/hook/pythonpath_develop.dsv'
+[3.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/camera' returned '0': PYTHONPATH=/home/zzy/ur_real/build/camera/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/camera/build --no-deps symlink_data
+[3.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/camera/share/camera/hook/pythonpath_develop.sh'
+[3.405s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera' for CMake module files
+[3.405s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera' for CMake config files
+[3.405s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera/lib'
+[3.405s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera/bin'
+[3.405s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera/lib/pkgconfig/camera.pc'
+[3.406s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera/lib/python3.10/site-packages'
+[3.406s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'pythonpath')
+[3.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/camera/share/camera/hook/pythonpath.ps1'
+[3.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/camera/share/camera/hook/pythonpath.dsv'
+[3.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/camera/share/camera/hook/pythonpath.sh'
+[3.406s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/camera/bin'
+[3.406s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera)
+[3.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/camera/share/camera/package.ps1'
+[3.407s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/camera/share/camera/package.dsv'
+[3.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/camera/share/camera/package.sh'
+[3.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/camera/share/camera/package.bash'
+[3.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/camera/share/camera/package.zsh'
+[3.408s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/camera/share/colcon-core/packages/camera)
+[3.409s] Level 1:colcon.colcon_core.shell:create_environment_hook('ati_sensor', 'pythonpath_develop')
+[3.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ati_sensor/share/ati_sensor/hook/pythonpath_develop.ps1'
+[3.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/build/ati_sensor/share/ati_sensor/hook/pythonpath_develop.dsv'
+[3.409s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ati_sensor' returned '0': PYTHONPATH=/home/zzy/ur_real/build/ati_sensor/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ati_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ati_sensor/build --no-deps symlink_data
+[3.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ati_sensor/share/ati_sensor/hook/pythonpath_develop.sh'
+[3.410s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor' for CMake module files
+[3.411s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor' for CMake config files
+[3.411s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor/lib'
+[3.411s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor/bin'
+[3.411s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor/lib/pkgconfig/ati_sensor.pc'
+[3.411s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor/lib/python3.10/site-packages'
+[3.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('ati_sensor', 'pythonpath')
+[3.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/pythonpath.ps1'
+[3.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/pythonpath.dsv'
+[3.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/hook/pythonpath.sh'
+[3.412s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ati_sensor/bin'
+[3.412s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ati_sensor)
+[3.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/package.ps1'
+[3.412s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/package.dsv'
+[3.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/package.sh'
+[3.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/package.bash'
+[3.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ati_sensor/share/ati_sensor/package.zsh'
+[3.413s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ati_sensor/share/colcon-core/packages/ati_sensor)
+[3.413s] Level 1:colcon.colcon_core.shell:create_environment_hook('gravity_compensation', 'pythonpath_develop')
+[3.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/gravity_compensation/share/gravity_compensation/hook/pythonpath_develop.ps1'
+[3.414s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/build/gravity_compensation/share/gravity_compensation/hook/pythonpath_develop.dsv'
+[3.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/gravity_compensation/share/gravity_compensation/hook/pythonpath_develop.sh'
+[3.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/gravity_compensation' returned '0': PYTHONPATH=/home/zzy/ur_real/build/gravity_compensation/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/gravity_compensation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/gravity_compensation/build --no-deps symlink_data
+[3.415s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/gravity_compensation' for CMake module files
+[3.415s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/gravity_compensation' for CMake config files
+[3.415s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/gravity_compensation/lib'
+[3.415s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/gravity_compensation/bin'
+[3.415s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/gravity_compensation/lib/pkgconfig/gravity_compensation.pc'
+[3.415s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/gravity_compensation/lib/python3.10/site-packages'
+[3.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('gravity_compensation', 'pythonpath')
+[3.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation/hook/pythonpath.ps1'
+[3.416s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation/hook/pythonpath.dsv'
+[3.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation/hook/pythonpath.sh'
+[3.416s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/gravity_compensation/bin'
+[3.416s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gravity_compensation)
+[3.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation/package.ps1'
+[3.416s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation/package.dsv'
+[3.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation/package.sh'
+[3.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation/package.bash'
+[3.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/gravity_compensation/share/gravity_compensation/package.zsh'
+[3.417s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/gravity_compensation/share/colcon-core/packages/gravity_compensation)
+[3.417s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur10_vel', 'pythonpath_develop')
+[3.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ur10_vel/share/ur10_vel/hook/pythonpath_develop.ps1'
+[3.418s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/build/ur10_vel/share/ur10_vel/hook/pythonpath_develop.dsv'
+[3.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/ur10_vel/share/ur10_vel/hook/pythonpath_develop.sh'
+[3.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/ur10_vel' returned '0': PYTHONPATH=/home/zzy/ur_real/build/ur10_vel/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/ur10_vel/build --no-deps symlink_data
+[3.419s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel' for CMake module files
+[3.419s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel' for CMake config files
+[3.419s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel/lib'
+[3.419s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel/bin'
+[3.419s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel/lib/pkgconfig/ur10_vel.pc'
+[3.419s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel/lib/python3.10/site-packages'
+[3.419s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur10_vel', 'pythonpath')
+[3.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/pythonpath.ps1'
+[3.420s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/pythonpath.dsv'
+[3.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/hook/pythonpath.sh'
+[3.420s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/ur10_vel/bin'
+[3.420s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur10_vel)
+[3.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/package.ps1'
+[3.421s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/package.dsv'
+[3.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/package.sh'
+[3.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/package.bash'
+[3.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/ur10_vel/share/ur10_vel/package.zsh'
+[3.421s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/ur10_vel/share/colcon-core/packages/ur10_vel)
+[3.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/easy_handeye2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/easy_handeye2_msgs
+[3.749s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(easy_handeye2_msgs)
+[3.749s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs' for CMake module files
+[3.749s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/easy_handeye2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --install /home/zzy/ur_real/build/easy_handeye2_msgs
+[3.750s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs' for CMake config files
+[3.750s] Level 1:colcon.colcon_core.shell:create_environment_hook('easy_handeye2_msgs', 'cmake_prefix_path')
+[3.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/cmake_prefix_path.ps1'
+[3.751s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/cmake_prefix_path.dsv'
+[3.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/cmake_prefix_path.sh'
+[3.751s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs/lib'
+[3.751s] Level 1:colcon.colcon_core.shell:create_environment_hook('easy_handeye2_msgs', 'ld_library_path_lib')
+[3.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/ld_library_path_lib.ps1'
+[3.752s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/ld_library_path_lib.dsv'
+[3.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/ld_library_path_lib.sh'
+[3.752s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs/bin'
+[3.752s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs/lib/pkgconfig/easy_handeye2_msgs.pc'
+[3.752s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs/lib/python3.10/site-packages'
+[3.752s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs/bin'
+[3.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/package.ps1'
+[3.753s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/package.dsv'
+[3.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/package.sh'
+[3.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/package.bash'
+[3.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/package.zsh'
+[3.753s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/easy_handeye2_msgs/share/colcon-core/packages/easy_handeye2_msgs)
+[4.249s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(easy_handeye2_msgs)
+[4.249s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs' for CMake module files
+[4.250s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs' for CMake config files
+[4.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('easy_handeye2_msgs', 'cmake_prefix_path')
+[4.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/cmake_prefix_path.ps1'
+[4.251s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/cmake_prefix_path.dsv'
+[4.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/cmake_prefix_path.sh'
+[4.252s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs/lib'
+[4.252s] Level 1:colcon.colcon_core.shell:create_environment_hook('easy_handeye2_msgs', 'ld_library_path_lib')
+[4.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/ld_library_path_lib.ps1'
+[4.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/ld_library_path_lib.dsv'
+[4.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/hook/ld_library_path_lib.sh'
+[4.254s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs/bin'
+[4.254s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs/lib/pkgconfig/easy_handeye2_msgs.pc'
+[4.254s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs/lib/python3.10/site-packages'
+[4.255s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2_msgs/bin'
+[4.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/package.ps1'
+[4.256s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/package.dsv'
+[4.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/package.sh'
+[4.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/package.bash'
+[4.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2_msgs/share/easy_handeye2_msgs/package.zsh'
+[4.257s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/easy_handeye2_msgs/share/colcon-core/packages/easy_handeye2_msgs)
+[4.258s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zzy/ur_real/src/easy_handeye2/easy_handeye2' with build type 'ament_python'
+[4.258s] Level 1:colcon.colcon_core.shell:create_environment_hook('easy_handeye2', 'ament_prefix_path')
+[4.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/hook/ament_prefix_path.ps1'
+[4.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/hook/ament_prefix_path.dsv'
+[4.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/hook/ament_prefix_path.sh'
+[4.260s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.260s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.422s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zzy/ur_real/src/easy_handeye2/easy_handeye2'
+[4.422s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.422s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zzy/ur_real/build/easy_handeye2': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/easy_handeye2_msgs:/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/pymoveit2:/home/zzy/ur_real/install/ferrobotics LD_LIBRARY_PATH=/home/zzy/ur_real/install/easy_handeye2_msgs/lib:/home/zzy/ur_real/install/ferrobotics/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/zzy/mujoco-3.1.6/bin PYTHONPATH=/home/zzy/ur_real/build/easy_handeye2/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/easy_handeye2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/easy_handeye2/build --no-deps symlink_data
+[5.216s] Level 1:colcon.colcon_core.shell:create_environment_hook('easy_handeye2', 'pythonpath_develop')
+[5.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zzy/ur_real/build/easy_handeye2' returned '0': CMAKE_PREFIX_PATH=/home/zzy/ur_real/install/easy_handeye2_msgs:/home/zzy/ur_real/install/ur_bringup:/home/zzy/ur_real/install/ur10_moveit_config:/home/zzy/ur_real/install/pymoveit2:/home/zzy/ur_real/install/ferrobotics LD_LIBRARY_PATH=/home/zzy/ur_real/install/easy_handeye2_msgs/lib:/home/zzy/ur_real/install/ferrobotics/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/zzy/mujoco-3.1.6/bin PYTHONPATH=/home/zzy/ur_real/build/easy_handeye2/prefix_override:/home/zzy/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/zzy/ur_real/install/easy_handeye2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zzy/ur_real/build/easy_handeye2/build --no-deps symlink_data
+[5.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/easy_handeye2/share/easy_handeye2/hook/pythonpath_develop.ps1'
+[5.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/build/easy_handeye2/share/easy_handeye2/hook/pythonpath_develop.dsv'
+[5.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/build/easy_handeye2/share/easy_handeye2/hook/pythonpath_develop.sh'
+[5.218s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2' for CMake module files
+[5.218s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2' for CMake config files
+[5.218s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2/lib'
+[5.218s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2/bin'
+[5.218s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2/lib/pkgconfig/easy_handeye2.pc'
+[5.219s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2/lib/python3.10/site-packages'
+[5.219s] Level 1:colcon.colcon_core.shell:create_environment_hook('easy_handeye2', 'pythonpath')
+[5.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/hook/pythonpath.ps1'
+[5.219s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/hook/pythonpath.dsv'
+[5.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/hook/pythonpath.sh'
+[5.219s] Level 1:colcon.colcon_core.environment:checking '/home/zzy/ur_real/install/easy_handeye2/bin'
+[5.219s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(easy_handeye2)
+[5.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/package.ps1'
+[5.220s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/package.dsv'
+[5.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/package.sh'
+[5.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/package.bash'
+[5.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/zzy/ur_real/install/easy_handeye2/share/easy_handeye2/package.zsh'
+[5.221s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zzy/ur_real/install/easy_handeye2/share/colcon-core/packages/easy_handeye2)
+[5.221s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.221s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.221s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.221s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.226s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.226s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.226s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.241s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.241s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zzy/ur_real/install/local_setup.ps1'
+[5.242s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zzy/ur_real/install/_local_setup_util_ps1.py'
+[5.243s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zzy/ur_real/install/setup.ps1'
+[5.244s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zzy/ur_real/install/local_setup.sh'
+[5.244s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zzy/ur_real/install/_local_setup_util_sh.py'
+[5.245s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zzy/ur_real/install/setup.sh'
+[5.245s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zzy/ur_real/install/local_setup.bash'
+[5.246s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zzy/ur_real/install/setup.bash'
+[5.246s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zzy/ur_real/install/local_setup.zsh'
+[5.247s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zzy/ur_real/install/setup.zsh'

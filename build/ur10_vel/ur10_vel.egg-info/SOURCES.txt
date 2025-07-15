@@ -11,10 +11,14 @@ setup.py
 resource/ur10_vel
 ur10_vel/Joint_Velocity_Transfer.py
 ur10_vel/__init__.py
+ur10_vel/audio_transformer.py
+ur10_vel/battery_sanding.py
 ur10_vel/check_collision.py
 ur10_vel/check_keyboard.py
 ur10_vel/compute_manipulability_J.py
+ur10_vel/data_plot.py
 ur10_vel/joint_velocity_IK.py
+ur10_vel/joint_velocity_IK_EndposToJointvel.py
 ur10_vel/moveit_bringup.py
 ur10_vel/publisher_forward_velocity_controller.py
 ur10_vel.egg-info/PKG-INFO

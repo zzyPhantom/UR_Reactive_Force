@@ -1,0 +1,9 @@
+[0.604s] Invoking command in '/home/zzy/ur_real/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zzy/ur_real/install/ur10_vel:/home/zzy/ur_real/install/gravity_compensation:/home/zzy/ur_real/install/ferrobotics_acf:/home/zzy/ur_real/install/easy_handeye2:/home/zzy/ur_real/install/camera:/home/zzy/ur_real/install/ati_sensor:/opt/ros/humble /usr/bin/cmake --build /home/zzy/ur_real/build/pymoveit2 -- -j24 -l24
+[0.766s] Built target ament_cmake_python_symlink_pymoveit2
+[0.817s] running egg_info
+[0.827s] writing pymoveit2.egg-info/PKG-INFO
+[0.828s] writing dependency_links to pymoveit2.egg-info/dependency_links.txt
+[0.828s] writing top-level names to pymoveit2.egg-info/top_level.txt
+[0.859s] reading manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[0.859s] writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[0.878s] Built target ament_cmake_python_build_pymoveit2_egg

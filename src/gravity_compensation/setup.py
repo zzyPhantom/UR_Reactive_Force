@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'ft_calib = gravity_compensation.ft_calib:main',
+            'pos_calib = gravity_compensation.pos_calib:main',
             'testpy = gravity_compensation.testpy:main',
         ],
     },
